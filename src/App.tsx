@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components';
+import {createGlobalStyle} from 'styled-components';
+import { Routes, Route } from 'react-router-dom';
+import { About, Blog, Contact, Faq, Main, Services } from './pages';
+
+const GlobalStyle = createGlobalStyle`
+  html, body{
+    width:100vw;
+    user-select:none;
+    box-sizing:border-box;
+    margin:0;
+    padding: 0
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle/>
+      <Routes>
+        <Route path='/' element={<Main/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/faq' element={<Faq/>} />
+        <Route path='/services' element={<Services/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/blog' element={<Blog/>} />
+      </Routes>
+    </>
   );
 }
 
