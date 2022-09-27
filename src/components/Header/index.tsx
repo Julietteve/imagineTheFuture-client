@@ -4,8 +4,8 @@ import { MainContainer, MainLogoCircle, If, NavIcon} from './styles';
 const Header = () => {
     return (
         <MainContainer>
-            <MainLogoCircle>
-                <If>if</If>
+            <MainLogoCircle  to='/'>
+                <span>if</span>
             </MainLogoCircle>
                 <NavIcon to='/about'> About </NavIcon>
                 <NavIcon to='/services'> Services </NavIcon>

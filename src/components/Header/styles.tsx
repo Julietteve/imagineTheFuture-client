@@ -9,19 +9,30 @@ export const MainContainer = styled.div `
     align-items: center;
     padding: 1rem ;
 `
-export const  MainLogoCircle = styled.div`
+export const  MainLogoCircle = styled(LinkIcon)`
     width: 40px ;
     height: 40px ;
-    background-color: #000 ;
+    background-color: #fff ;
+    color:#000 ;
+    border: #000 1px solid ;
     border-radius:1000px ;
     justify-content:center ;
     align-items:center ;
     display: flex ;
+    text-decoration:none ;
+
+    span{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &.active{
+        background-color: #000 ;
+        color:#fff;
+    }
 `
 export const  If = styled.span`
-    text-align: center;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+   
 `
 
 export const NavIcon = styled(LinkIcon)`

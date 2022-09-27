@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const SocialContainer = styled.div `
-    height: auto;
     display: flex;
     flex-direction: column ;
-    justify-content: space-around ;
+    justify-content: flex-end;
     position: fixed ;
     bottom: 1rem ;
     padding: 1rem ;
