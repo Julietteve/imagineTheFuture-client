@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const Box = styled.div`
     display: flex ;
     flex-direction: row ;
-    justify-content: space-between ;
-    width:80% ;
+    justify-content: space-around;
+    width:100% ;
     box-sizing:border-box ;
 `
 export const AboutMe = styled.div`
@@ -15,12 +15,12 @@ export const AboutMe = styled.div`
     justify-content: center ;
     font-family: 'Cairo', sans-serif;
     font-size: 3rem ;
-    padding:2rem ;
-    flex:1
+    padding: 5rem ;
 `
 export const Info = styled.div`
     font-family: 'Roboto', sans-serif;
     padding:1rem ;
+    font-weight:400 ;
     text-align: justify ;
     font-size: 1rem ;
     line-height:1.2 ;
@@ -29,7 +29,7 @@ export const Info = styled.div`
     span{
         color:gray;
         font-style: normal ;
-        font-family: 'Cairo', sans-serif;
+        font-family: 'Ovo',serif;
         letter-spacing:.5 ;
     }
 `

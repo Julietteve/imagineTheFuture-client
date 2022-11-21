@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Header, SocialBar } from '../../components';
+import Footer from '../../components/Footer';
 import { AboutMe, Info,Box,ColDiv, ProfileImage } from './styles';
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
                         <Info>
                             My work spans industries including tech, hospitality, financial services, healthcare, luxury, education and international affairs. I have lived and worked in more than 50 countries in 5 continents and speaks several languages with a powerful cultural and DEI lens that I integrate into everything I do. 
                         </Info>
+                        <ProfileImage src='/images/if-about-1.jpeg'/>
                         <Info>
                             I leverage my rich personal and professional experiences to partner and help early to senior level professionals develop their leadership, managerial skills, and design their next chapter in life and work. My approach is holistic and starts with exploration and discovery, assessment and figuring out what challenges or issues the client needs to solve. This entails finding real motivation, identifying blocks, assessing strengths, talent and unfulfilled dreams. My focus is based on providing amazing client experiences that lead to setting goals, outcomes and deliberate action. I believe I have the ability to translate my knowledge and experience to serve my clients - individuals and organizations - and make sure they achieve and surpass their goals. 
                         </Info>
@@ -33,10 +35,11 @@ const About = () => {
                                 My mission is to help people find purpose, imagine and design a bright future.
                             </span>
                         </Info>
-                        <ProfileImage src='/images/if-about.jpeg'/>
+                        <ProfileImage src='/images/if-about-2.jpeg'/>
                     </ColDiv>
                 </Box>
             }/>
+            <Footer/>
         </>
     );
 };

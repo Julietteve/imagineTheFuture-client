@@ -1,12 +1,20 @@
 import React from 'react';
-import { Header, SocialBar } from '../../components';
+import { Container, Header, SocialBar } from '../../components';
+import { AboutMe, ColDiv } from '../About/styles';
+import { Box } from '../Main/styles';
 
 const Services = () => {
     return (
         <>
             <Header/>
             <SocialBar/>
-            <h1>SERVICES</h1>
+            <Container children={
+                <Box>
+                    <AboutMe> Services. </AboutMe>
+                    <ColDiv>
+                    </ColDiv>
+                </Box>
+            }></Container>
         </>
     );
 };

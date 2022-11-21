@@ -1,22 +1,23 @@
 import React from 'react';
 import { Container, Header, SocialBar } from '../../components';
-import { AboutMe, ColDiv } from '../About/styles';
-import { Box } from '../Main/styles';
+import Footer from '../../components/Footer';
+import { AboutMe, ColDiv,Box } from '../About/styles';
 
-const Faq = () => {
+const Testimonials = () => {
     return (
         <>
             <Header/>
             <SocialBar/>
             <Container children = {
                 <Box>
-                <AboutMe> FAQs. </AboutMe>
+                <AboutMe> Testimonials. </AboutMe>
                 <ColDiv>
                 </ColDiv>
             </Box>
             }/>
+            <Footer/>
         </>
     );
 };
 
-export default Faq;
+export default Testimonials;

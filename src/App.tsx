@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from './components';
 import {createGlobalStyle} from 'styled-components';
 import { Routes, Route } from 'react-router-dom';
-import { About, Blog, Contact, Faq, Main, Services } from './pages';
+import { About, Testimonials, Contact, Faq, Main, Services } from './pages';
 
 const GlobalStyle = createGlobalStyle`
   html, body{
@@ -24,7 +24,7 @@ function App() {
         <Route path='/faq' element={<Faq/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/contact' element={<Contact/>} />
-        <Route path='/blog' element={<Blog/>} />
+        <Route path='/testimonials' element={<Testimonials/>} />
       </Routes>
     </>
   );
