@@ -9,6 +9,7 @@ let styleLink = {
     fontSize:"14px" ,
     textDecoration: "none",
     paddingTop:'15px'
+
 }
 
 const Footer = () => {

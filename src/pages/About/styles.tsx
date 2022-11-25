@@ -5,7 +5,7 @@ export const Box = styled.div`
     display: flex ;
     flex-direction: row ;
     justify-content: space-around;
-    width:100% ;
+    width:98% ;
     box-sizing:border-box ;
 `
 export const AboutMe = styled.div`
@@ -19,7 +19,7 @@ export const AboutMe = styled.div`
 `
 export const Info = styled.div`
     font-family: 'Roboto', sans-serif;
-    padding:1rem ;
+    padding:.8rem ;
     font-weight:400 ;
     text-align: justify ;
     font-size: 1rem ;

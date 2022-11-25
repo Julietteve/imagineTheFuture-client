@@ -1,10 +1,15 @@
 import React from 'react';
-import {FaLinkedinIn, FaInstagram, FaRegEnvelope} from 'react-icons/fa'
+import {FaLinkedinIn, FaInstagram, FaRegEnvelope,FaWhatsapp} from 'react-icons/fa'
 import { Anchor, SocialContainer} from './styles';
+
+let text = "Hi Ines, I am interested in booking a call "
 
 const SocialBar = () => {
     return (
         <SocialContainer>
+            <Anchor  href={`https://wa.me/19173715378?text=${text}`} target="_blank">
+                <FaWhatsapp/>
+            </Anchor>
             <Anchor href='https://www.linkedin.com/in/inesita/' target="_blank">
                 <FaLinkedinIn/>
             </Anchor>

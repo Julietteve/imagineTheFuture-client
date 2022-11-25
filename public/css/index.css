@@ -1,0 +1,45 @@
+.generic-container{
+    padding-right: 3rem;
+}
+
+.question-faqs{
+    font-family: 'Roboto', sans-serif;
+    padding:.8rem ;
+    font-weight:400 ;
+    color: black;
+    font-size: larger;
+}
+
+.answer-faqs{
+    font-family: 'Roboto', sans-serif;
+    padding:.8rem ;
+    font-size: smaller;
+    color: darkgray;
+}
+
+.underline-faq{
+    border-bottom: 1px solid #E5E5E5;
+    width:100%;
+    height: 10px;
+}
+
+.drop-a-line{
+    font-family: 'Roboto', sans-serif;
+    padding:.8rem ;
+    font-size: small;
+    font-style: italic;
+    color: darkgray;
+    padding-left: 3rem;
+    align-self: baseline;
+    bottom: 10;
+    position: absolute;
+}
+
+
+.page-spinner{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto; 
+    align-items: center;
+    display: flex;
+}

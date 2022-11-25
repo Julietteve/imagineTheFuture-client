@@ -60,4 +60,7 @@ export const NavIcon = styled(LinkIcon)`
             left: 45%;
         }
     }
+    :hover{
+        color:#414141
+    }
 `;

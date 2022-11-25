@@ -34,6 +34,12 @@ export const Anchor = styled.a`
     font-size:14px ;
     text-decoration: none;
     padding-top:15px ;
+
+    :hover{
+        color:#414141
+    }
+
+    
 `;
 
 export const Logo = styled.img`
@@ -60,7 +66,7 @@ export const BootomFooterSpan = styled.span`
     font-family: 'Roboto', sans-serif;
     color: darkgray;
     justify-content: center ;
-    font-size:14px ;
+    font-size:12px ;
     margin-bottom:.4rem ;
 `
 

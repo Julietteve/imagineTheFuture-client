@@ -10,14 +10,13 @@ export const Box = styled.div`
 `
 export const Text = styled.div`
     height: auto ;
-    width:80% ;
     display: flex ;
     justify-content: center ;
     align-items: center ;
     flex-direction: column ;
 `
 export const Image = styled.img`
-    width:40% ;
+    width:80% ;
     margin-right: 2rem ;
 `
 
