@@ -6,6 +6,10 @@ export const FooterContainer = styled.div`
     align-items: center ;
     flex-direction: row ;
     width:95% ;
+
+    @media only screen and (max-width: 768px) {
+        display: none ;
+    }
 `
 
 export const Data = styled.div`
@@ -68,5 +72,11 @@ export const BootomFooterSpan = styled.span`
     justify-content: center ;
     font-size:12px ;
     margin-bottom:.4rem ;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 10px ;
+        margin-top: .8rem ;
+        margin-bottom: .8rem ;
+    }
 `
 

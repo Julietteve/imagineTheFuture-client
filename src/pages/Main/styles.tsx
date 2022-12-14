@@ -14,8 +14,15 @@ export const Text = styled.div`
     justify-content: center ;
     align-items: center ;
     flex-direction: column ;
+    @media only screen and (max-width: 768px) {
+        height: 100vh ;
+    }
 `
 export const Image = styled.img`
+    @media only screen and (max-width: 768px) {
+    width:100% ;
+    margin-right: 0rem ;
+    }
     width:80% ;
     margin-right: 2rem ;
 `

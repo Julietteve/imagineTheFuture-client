@@ -16,6 +16,10 @@ export const AboutMe = styled.div`
     font-family: 'Cairo', sans-serif;
     font-size: 3rem ;
     padding: 5rem ;
+
+    @media only screen and (max-width: 768px) {
+        height:25vh ;
+    }
 `
 export const Info = styled.div`
     font-family: 'Roboto', sans-serif;
@@ -26,11 +30,19 @@ export const Info = styled.div`
     line-height:1.2 ;
     font-style:italic ;
 
+    @media only screen and (max-width: 768px) {
+        font-size: .8rem;
+        line-height:1.5 ;
+    }
+    
     span{
         color:gray;
         font-style: normal ;
         font-family: 'Ovo',serif;
         letter-spacing:.5 ;
+         @media only screen and (max-width: 768px) {
+        font-size: .8rem
+    }
     }
 `
 

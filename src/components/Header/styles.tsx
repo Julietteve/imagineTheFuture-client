@@ -8,6 +8,10 @@ export const MainContainer = styled.div `
     justify-content: space-around ;
     align-items: center;
     padding: 1rem ;
+
+    @media only screen and (max-width: 768px) {
+        display: none ;
+    }
 `
 export const  MainLogoCircle = styled(LinkIcon)`
     width: 40px ;

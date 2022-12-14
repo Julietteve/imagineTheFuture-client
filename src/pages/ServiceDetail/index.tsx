@@ -6,11 +6,17 @@ import { AboutMe, ColDiv, Info } from '../About/styles';
 import { Box } from '../Main/styles';
 import { serviceDetail } from '../../Data/Services';
 import Loading from '../../components/Loading';
+import SideBar from '../../components/SideBarMobile';
 
 const ServiceDetail = () => {
     const location = useLocation();
     const [ data, setData ] = useState<IDataService>()
     const [ loading, setLoading ] = useState(false)
+    const [ isOpen, setIsOpen] = useState(false)
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
     
     useEffect(()=>{
         setLoading(true)
@@ -31,6 +37,7 @@ const ServiceDetail = () => {
         <>
             <Header/>
             <SocialBar/>
+            <SideBar isOpen={isOpen} toggle={()=>toggle()}></SideBar>
             {
                 loading ? <Loading/>
                 :
@@ -40,9 +47,11 @@ const ServiceDetail = () => {
                             <AboutMe> {data?.title} </AboutMe>
                         </div>
                         <div className='col-md-8 col-sm-12'>
-                            {data?.data.map((item:string)=>(
-                                <Info>{item}</Info>
-                            ))}
+                            <div className="generic-padding">
+                                {data?.data.map((item:string)=>(
+                                    <Info>{item}</Info>
+                                ))}
+                            </div>
                         </div>
                     </div>
                     <Footer/>

@@ -1,11 +1,17 @@
 import React,{useState,useEffect} from 'react';
 import { Container, Header, SocialBar } from '../../components';
 import Loading from '../../components/Loading';
+import SideBar from '../../components/SideBarMobile';
 import { Consultant, Future, Image, Imagine, Ines, Text, SignBox, ArrowBox,Arrow,Box } from './styles';
 
 const Main = () => {
 
     const [ loading, setLoading ] = useState(false)
+    const [ isOpen, setIsOpen] = useState(false)
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
 
     useEffect(()=>{
         setLoading(true)
@@ -14,13 +20,17 @@ const Main = () => {
         },1000)
     },[])
 
+    useEffect(()=>{ console.log(isOpen)},[isOpen])
+
     return (
         <>
             <Header/>
             <SocialBar/>
+            <SideBar isOpen={isOpen} toggle={()=>toggle()}></SideBar>
             {
                 loading ? <Loading/>
                 :
+                <>
                     <div className='row'>
                         <div className='col-md-6 col-sm-12' style={{alignItems:"center",display:"flex"}}>
                             <Text>
@@ -39,6 +49,7 @@ const Main = () => {
                             <Image src='/images/main-land.jpeg'/>
                         </div>
                     </div>
+                </>
             }
         </>
     );

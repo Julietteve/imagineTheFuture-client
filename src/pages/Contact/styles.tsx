@@ -5,6 +5,12 @@ export const Form = styled.form`
     width:80% ;
     height: 80vh;
     align-self:center ;
+
+    @media only screen and (max-width: 768px) {
+        padding:2rem ;
+        width:100% ;
+        height: auto;
+    }
 `
 
 export const Label = styled.label`
@@ -31,6 +37,10 @@ export const Input = styled.input `
   border-bottom: 1px solid darkgray;
   outline: none;
   background: transparent;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `
 
 export const Textarea = styled.textarea `
@@ -44,6 +54,11 @@ export const Textarea = styled.textarea `
   border-bottom: 1px solid darkgray;
   outline: none;
   background: transparent;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  
 `
 
 export const Submit = styled.button `
@@ -88,5 +103,9 @@ export const Submit = styled.button `
     :active {
     box-shadow: none;
     transform: translateY(0);
+    }
+
+    @media only screen and (max-width: 768px) {
+        width:40% ;
     }
 ` 

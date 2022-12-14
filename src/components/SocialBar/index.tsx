@@ -2,7 +2,7 @@ import React from 'react';
 import {FaLinkedinIn, FaInstagram, FaRegEnvelope,FaWhatsapp} from 'react-icons/fa'
 import { Anchor, SocialContainer} from './styles';
 
-let text = "Hi Ines, I am interested in booking a call "
+let text = "Hi Inés, I am interested in booking a call "
 
 const SocialBar = () => {
     return (

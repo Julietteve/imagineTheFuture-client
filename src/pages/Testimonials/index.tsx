@@ -4,12 +4,18 @@ import Carousel from 'react-bootstrap/Carousel';
 import Footer from '../../components/Footer';
 import { AboutMe, ColDiv,Box } from '../About/styles';
 import Loading from '../../components/Loading';
+import SideBar from '../../components/SideBarMobile';
 
 const imgs = [ "1","2","3","4","5","6","7"]
 
 const Testimonials = () => {
 
   const [ loading, setLoading ] = useState(false)
+  const [ isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+      setIsOpen(!isOpen)
+  }
 
     useEffect(()=>{
         setLoading(true)
@@ -22,6 +28,7 @@ const Testimonials = () => {
         <>
           <Header/>
             <SocialBar/>
+            <SideBar isOpen={isOpen} toggle={()=>toggle()}></SideBar>
             {
               loading ? <Loading/>
               :
@@ -36,7 +43,7 @@ const Testimonials = () => {
                         imgs.map((item)=>(
                           <Carousel.Item>
                             <img
-                              style={{width:"10%"}}
+                              style={{width:"20%"}}
                               className="d-block w-100"
                               src={`/images/${item}.png`}
                               alt="First slide"

@@ -7,6 +7,9 @@ export const SocialContainer = styled.div `
     position: fixed ;
     bottom: 1rem ;
     padding: 1rem ;
+    @media only screen and (max-width: 768px) {
+        display: none
+    }
     
 `
 export const Anchor = styled.a`
