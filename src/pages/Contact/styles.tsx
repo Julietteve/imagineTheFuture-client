@@ -17,6 +17,9 @@ export const Label = styled.label`
     font-family: 'Roboto', sans-serif;
     color: darkgray ;
     font-size:14px ;
+    @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `
 
 export const Row = styled.div `
@@ -38,9 +41,7 @@ export const Input = styled.input `
   outline: none;
   background: transparent;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 14px;
-  }
+  
 `
 
 export const Textarea = styled.textarea `
@@ -107,5 +108,6 @@ export const Submit = styled.button `
 
     @media only screen and (max-width: 768px) {
         width:40% ;
+        font-size: 14px;
     }
 ` 

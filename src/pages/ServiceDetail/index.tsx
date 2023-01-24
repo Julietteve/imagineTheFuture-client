@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Header, SocialBar } from '../../components';
 import Footer from '../../components/Footer';
 import { useLocation } from 'react-router-dom'
-import { AboutMe, ColDiv, Info } from '../About/styles';
+import { AboutMe, ColDiv, Info, ProfileImage } from '../About/styles';
 import { Box } from '../Main/styles';
 import { serviceDetail } from '../../Data/Services';
 import Loading from '../../components/Loading';
@@ -48,8 +48,14 @@ const ServiceDetail = () => {
                         </div>
                         <div className='col-md-8 col-sm-12'>
                             <div className="generic-padding">
-                                {data?.data.map((item:string)=>(
-                                    <Info>{item}</Info>
+                                {data?.data.map((item:string, index:number)=>(
+                                    <>
+                                        <Info>{item}</Info>
+                                        {
+                                            index == 0 &&
+                                                <ProfileImage src={ data?.title == "COACHING" ? '/images/coaching-corner.png' : '/images/consulting.png'}/>
+                                        }
+                                    </>
                                 ))}
                             </div>
                         </div>

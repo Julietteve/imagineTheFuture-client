@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { MutableRefObject } from "react"
 import { Container, Header, SocialBar } from '../../components';
 import Footer from '../../components/Footer';
 import Loading from '../../components/Loading';
@@ -7,6 +8,8 @@ import { AboutMe,Box, ColDiv } from '../About/styles';
 import { Form, Input, Label,Row, Textarea,Submit } from './styles';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
+import apiKey from "../../keys"
 import { useNavigate } from 'react-router-dom';
 
 const style = {
@@ -14,7 +17,7 @@ const style = {
     padding:"8px 0px 30px ",
     color:"gray",
     fontFamily:"Roboto",
-    fontSize:"14px",
+    fontSize:"12px",
     textDecoration:"underline"
 
 }
@@ -24,6 +27,15 @@ const Contact = () => {
     const navigate = useNavigate();
     const [ loading, setLoading ] = useState(false)
     const [ isOpen, setIsOpen] = useState(false)
+    const [ savedState, setSavedState] = useState({
+        save:{
+            name:"",
+            email:"",
+            surname:""
+        }
+       
+    })
+    const form = useRef<any>();
 
     const toggle = () => {
         setIsOpen(!isOpen)
@@ -38,10 +50,18 @@ const Contact = () => {
 
     const notify = (e:any) => {
         e.preventDefault()
-        toast("Message sent successfully!")
-        setTimeout(()=>{
-            navigate('/')
-        },4000)
+       emailjs.sendForm( apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, form.current, apiKey.PUBLIC_KEY)
+        .then((result) => {
+            if(result.text == 'OK'){
+                toast("Message sent successfully!")
+                setTimeout(()=>{
+                    navigate('/')
+                },4000)
+            };
+        }, (error) => {
+            console.log(error.text);
+                toast("Error sending message")
+        })
 
     } 
 
@@ -63,17 +83,17 @@ const Contact = () => {
                     </div>
                         <div className='col-md-8 col-sm-12'>
                             <div className="generic-padding">
-                                <Form>
-                                        <Label>Name</Label>
-                                        <Input></Input>
-                                        <Label>Last Name</Label>
-                                        <Input></Input>
-                                        <Label>Your e-mail</Label>
-                                        <Input></Input>
-                                        <Label>Your Message</Label>
-                                        <Textarea></Textarea>
+                                <Form ref={form} onSubmit={notify}>
+                                    <Label>Name</Label>
+                                        <Input type="text" name="from_name" required></Input>
+                                    <Label>Last Name</Label>
+                                        <Input type="text" name="from_last_name"></Input>
+                                    <Label>Your e-mail</Label>
+                                        <Input type="email" name="reply_to" required></Input>
+                                    <Label>Your Message</Label>
+                                        <Textarea name="message" required></Textarea>
                                         <span style={style}><i>A free 30-minute consultation awaits. Let’s talk!</i></span>
-                                        <Submit onClick={notify}>Send</Submit>
+                                    <Submit  type="submit" >Send</Submit>
                                 </Form>
                             </div>
                         </div>

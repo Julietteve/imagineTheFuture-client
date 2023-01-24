@@ -53,7 +53,6 @@ const About = () => {
                                         My mission is to help people find purpose, imagine and design a bright future.
                                     </span>
                                 </Info>
-                                <ProfileImage src='/images/if-about-2.jpeg'/>
                             </div>
                         </div>
                     </div>
