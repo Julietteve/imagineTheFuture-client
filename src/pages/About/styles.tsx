@@ -53,4 +53,7 @@ export const ColDiv = styled.div`
 `
 export const ProfileImage = styled.img`
     width:100% ;
+    padding: 1.5rem;
+    display: block;
+    margin: 0 auto;
 `

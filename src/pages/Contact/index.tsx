@@ -56,7 +56,7 @@ const Contact = () => {
                 toast("Message sent successfully!")
                 setTimeout(()=>{
                     navigate('/')
-                },4000)
+                },2000)
             };
         }, (error) => {
             console.log(error.text);
@@ -100,7 +100,7 @@ const Contact = () => {
                     </div>
                     <ToastContainer
                         position="bottom-right"
-                        autoClose={4000}
+                        autoClose={2000}
                         hideProgressBar={false}
                         newestOnTop={false}
                         closeOnClick

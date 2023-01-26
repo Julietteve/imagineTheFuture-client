@@ -37,7 +37,7 @@ const Services = () => {
                             ))
                         }
                         <div className="row">
-                            <div className='col-md-6 col-sm-12' style={{justifyContent:"center",alignSelf:"center", alignItems:'center',display:'flex'}}>
+                            <div className='col-md-6 col-sm-12 ' style={{justifyContent:"center",alignSelf:"center", alignItems:'center',display:'flex'}}>
                                 <ServiceBox onClick={()=>handleConsultation()}>
                                     <p>Consulting</p>
                                     <ReadMore>

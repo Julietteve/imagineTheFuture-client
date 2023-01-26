@@ -39,7 +39,7 @@ const Main = () => {
                                 <ArrowBox>
                                     <Arrow src='/images/arrow.png'></Arrow>
                                     <SignBox>
-                                        <Ines>Inés Fernandez</Ines>
+                                        <Ines>Inés Fernández</Ines>
                                         <Consultant>Consultant & Certified Coach</Consultant>
                                     </SignBox>
                                 </ArrowBox>

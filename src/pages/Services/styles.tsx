@@ -5,6 +5,7 @@ export const ServiceBox = styled.div`
     min-height:120px;
     cursor: pointer;
     opacity:1 ;
+    margin-top:2rem ;
 
     p{
         font-size:25px;

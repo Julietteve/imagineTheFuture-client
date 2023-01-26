@@ -37,7 +37,7 @@ const Footer = () => {
         </FooterContainer>
         <Bottom>
             <BootomFooter/>
-            <BootomFooterSpan> ©{new Date().getFullYear()} Imagine the future by Ines Fernandez</BootomFooterSpan>
+            <BootomFooterSpan> ©{new Date().getFullYear()} Imagine the future by Inés Fernández</BootomFooterSpan>
         </Bottom>
         </>
     );
