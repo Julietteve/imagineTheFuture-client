@@ -3,7 +3,7 @@ import { Container, Header, SocialBar } from '../../components';
 import Footer from '../../components/Footer';
 import Loading from '../../components/Loading';
 import SideBar from '../../components/SideBarMobile';
-import { aboutData } from '../../Data/Services';
+import { aboutData, howIHelp } from '../../Data/Services';
 import { AboutMe, Info,Box,ColDiv, ProfileImage } from './styles';
 
 const About = () => {
@@ -46,6 +46,12 @@ const About = () => {
                                     <ProfileImage src='/images/if-about-1.jpeg'/>
                                     :
                                     <Info>{item}</Info>
+                                    ))
+                                }
+                                <Info><strong>How I help coaching clients :</strong></Info>
+                                {
+                                    howIHelp.map((item,index)=>(
+                                        <Info>→ {item}</Info>
                                     ))
                                 }
                                 <Info>

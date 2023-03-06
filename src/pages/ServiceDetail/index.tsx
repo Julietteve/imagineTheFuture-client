@@ -48,6 +48,7 @@ const ServiceDetail = () => {
                         </div>
                         <div className='col-md-8 col-sm-12'>
                             <div className="generic-padding">
+                                {data?.title == "CONSULTING" && <Info><strong>Look at Deloitte and BCG</strong></Info>}
                                 {data?.data.map((item:string, index:number)=>(
                                     <>
                                         <Info>{item}</Info>
