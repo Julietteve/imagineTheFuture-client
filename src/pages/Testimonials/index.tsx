@@ -6,7 +6,7 @@ import { AboutMe, ColDiv,Box } from '../About/styles';
 import Loading from '../../components/Loading';
 import SideBar from '../../components/SideBarMobile';
 
-const imgs = [ "1","2","3","4","5","6","7"]
+const imgs = [ "1","2","3","4","5","6","7","8","9","10","11","12"]
 
 const Testimonials = () => {
 
@@ -45,7 +45,7 @@ const Testimonials = () => {
                             <img
                               style={{width:"20%"}}
                               className="d-block w-100"
-                              src={`/images/${item}.png`}
+                              src={`/images/${item}.jpeg`}
                               alt="First slide"
                             />
                           </Carousel.Item>
