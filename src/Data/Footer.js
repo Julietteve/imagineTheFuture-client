@@ -30,7 +30,7 @@ export  const FooterData = [
                 external: false
             },
             {
-                name:'FAQs',
+                name:'FAQ',
                 url:'/faq',
                 external: false
             }

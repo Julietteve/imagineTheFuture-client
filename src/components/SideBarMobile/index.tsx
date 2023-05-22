@@ -22,10 +22,10 @@ const SideBar = ( {toggle,isOpen}: IProps ) => {
                <Links>
                     <NavIcon to="/">Home</NavIcon>
                     <NavIcon to="/about">About</NavIcon>
-                    <NavIcon to="/faq">FAQs</NavIcon>
                     <NavIcon to="/services">Services</NavIcon>
-                    <NavIcon to="/contact">Contact</NavIcon>
+                    <NavIcon to="/faq">FAQ</NavIcon>
                     <NavIcon to="/testimonials">Testimonials</NavIcon>
+                    <NavIcon to="/contact">Contact</NavIcon>
                </Links>
                <Social>
                     <IconLink 

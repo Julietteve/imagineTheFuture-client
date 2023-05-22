@@ -21,7 +21,7 @@ const Faq = () => {
             <SideBar isOpen={isOpen} toggle={()=>toggle()}></SideBar>
             <div className='row'>
                 <div className='col-md-4 col-sm-12'>
-                    <AboutMe> FAQs. </AboutMe>
+                    <AboutMe> FAQ. </AboutMe>
                 </div>
                 <div className='col-md-8 col-sm-12'>
                     <div className="generic-padding">

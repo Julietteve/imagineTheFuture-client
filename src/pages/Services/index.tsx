@@ -29,12 +29,12 @@ const Services = () => {
                 </div>
                 <div className='col-md-8 col-sm-12'>
                     <div className="generic-padding">
-                        {
-                            mainService.map((item,index)=>(
-                                <Info>{item}</Info>
-                            ))
-                        }   
                         <div className="row">
+                        <Info>
+                            <div className='mission-tag'>
+                                "My mission is to help people find purpose, imagine and design a bright future."
+                            </div>
+                        </Info>
                             <div className='col-md-6 col-sm-12 ' style={{justifyContent:"center",alignSelf:"center", alignItems:'center',display:'flex'}}>
                                 <ServiceBox onClick={()=>handleConsultation()}>
                                     <p>Consulting</p>
@@ -54,11 +54,6 @@ const Services = () => {
                                 </ServiceBox>
                             </div>
                         </div>
-                        <Info>
-                            <span>
-                                "My mission is to help people find purpose, imagine and design a bright future."
-                            </span>
-                        </Info>
                          {/* <Info><strong>How I help coaching clients :</strong></Info>
                         <div>
                             {howIHelp.map((item,index)=>(
