@@ -9,6 +9,7 @@ import Loading from '../../components/Loading';
 import SideBar from '../../components/SideBarMobile';
 
 const ServiceDetail = () => {
+
     const location = useLocation();
     const [ data, setData ] = useState<IDataService>()
     const [ loading, setLoading ] = useState(false)
@@ -48,13 +49,12 @@ const ServiceDetail = () => {
                         </div>
                         <div className='col-md-8 col-sm-12'>
                             <div className="generic-padding">
-                                {data?.title == "CONSULTING" && <Info><strong>Look at Deloitte and BCG</strong></Info>}
                                 {data?.data.map((item:string, index:number)=>(
                                     <>
                                         <Info>{item}</Info>
                                         {
-                                            index == 0 &&
-                                                <ProfileImage src={ data?.title == "COACHING" ? '/images/coaching-corner.png' : '/images/consulting.png'}/>
+                                            index == (data?.title == "The Coaching Corner." ? 1 : 0) &&
+                                                <ProfileImage src={ data?.title == "The Coaching Corner." ? '/images/coaching-corner.png' : '/images/consulting.png'}/>
                                         }
                                     </>
                                 ))}

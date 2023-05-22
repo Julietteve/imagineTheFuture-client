@@ -22,16 +22,6 @@ export  const FooterData = [
         ]
     },
     {
-        title: "Policies",
-        data:[
-            {
-                name:'Terms and conditions',
-                url:" https://www.universaleverything.com/terms-and-conditions",
-                external: true
-            }
-        ]
-    },
-    {
         title:"About",
         data:[
             {

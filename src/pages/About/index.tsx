@@ -34,31 +34,19 @@ const About = () => {
                     <div className='row'>
                         <div className='col-md-4 col-sm-12'>
                             <AboutMe>
-                                About.
+                                About Me.
                             </AboutMe>
                         </div>
                         <div className='col-md-8 col-sm-12'>
                             <div className='generic-padding'>
-                                <Info><strong> I was born in La Paz, Bolivia ...</strong></Info>
                                 {
                                     aboutData.map((item,index)=>(
-                                    index == 3 ? 
-                                    <ProfileImage src='/images/if-about-1.jpeg'/>
-                                    :
-                                    <Info>{item}</Info>
+                                        <>
+                                            {index == 4  && <ProfileImage src='/images/if-about-1.jpeg'/>}
+                                            <Info>{item}</Info>
+                                        </>
                                     ))
                                 }
-                                <Info><strong>How I help coaching clients :</strong></Info>
-                                {
-                                    howIHelp.map((item,index)=>(
-                                        <Info>→ {item}</Info>
-                                    ))
-                                }
-                                <Info>
-                                    <span>
-                                        My mission is to help people find purpose, imagine and design a bright future.
-                                    </span>
-                                </Info>
                             </div>
                         </div>
                     </div>

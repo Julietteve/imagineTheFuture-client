@@ -1,12 +1,10 @@
 import React, { useCallback, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container, Header, SocialBar } from '../../components';
+import { Header, SocialBar } from '../../components';
 import Footer from '../../components/Footer';
 import SideBar from '../../components/SideBarMobile';
-import { mainService } from '../../Data/Services';
 import { AboutMe, ColDiv, Info } from '../About/styles';
-import { Row } from '../Contact/styles';
-import { Box } from '../Main/styles';
+import { howIHelp, mainService } from '../../Data/Services';
 import { ServiceBox , ReadMore} from './styles';
 
 const Services = () => {
@@ -35,7 +33,7 @@ const Services = () => {
                             mainService.map((item,index)=>(
                                 <Info>{item}</Info>
                             ))
-                        }
+                        }   
                         <div className="row">
                             <div className='col-md-6 col-sm-12 ' style={{justifyContent:"center",alignSelf:"center", alignItems:'center',display:'flex'}}>
                                 <ServiceBox onClick={()=>handleConsultation()}>
@@ -48,7 +46,7 @@ const Services = () => {
                             </div>
                             <div className='col-md-6 col-sm-12' style={{justifyContent:"center", alignSelf:"center",alignItems:'center', display:'flex'}}>
                                 <ServiceBox onClick={()=>handleCoaching()} >
-                                    <p>Individual & Group Coaching</p>
+                                    <p>The Coaching Corner</p>
                                     <ReadMore>
                                         <p>Read more</p>
                                         <p>→</p>
@@ -56,6 +54,17 @@ const Services = () => {
                                 </ServiceBox>
                             </div>
                         </div>
+                        <Info>
+                            <span>
+                                "My mission is to help people find purpose, imagine and design a bright future."
+                            </span>
+                        </Info>
+                         {/* <Info><strong>How I help coaching clients :</strong></Info>
+                        <div>
+                            {howIHelp.map((item,index)=>(
+                                <Info>→ {item}</Info>
+                            ))}
+                        </div> */}
                     </div>
                 </div>
             </div>

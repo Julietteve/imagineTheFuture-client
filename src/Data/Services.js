@@ -4,13 +4,11 @@ export const mainService = [
 ]
 
 export const aboutData = [
-    "I was born in La Paz, Bolivia, raised in Lima, Peru and Montevideo, Uruguay before coming to New York as a result of my father's work with IBM. ",
-    "My experience is rich and diverse. I have lived and worked in five continents and approximately 50 countries, understand and speak several languages that provide me with a keen global and cultural awareness and appreciation for people of diverse experience and backgrounds. This personal experience has extended to my career which allows me to connect, listen and value diversity, within various industry settings.",
-    "Building organizations from the ground up in corporate, nonprofit and international sectors gives me the perspective and flexibility required to navigate a wide range of cultural, and organizational environments. I have and always will focus on aligning people, talent and systems to achieve results that drive transformation and growth.",
-    "During the last decade,I have designed and led people and culture strategies to guide clients and organizations achieve strategic goals.  This includes creating and implementing end-to-end organizational development and talent strategies, processes, integrating technology and tools to drive efficiency. ",
-    "I have a B.S.in Business Administration from Pace University, and an MBA from the European Business School focused on International Management. ",
-    "The opportunity to share what I know to help others achieve their goals remains my inspiration and the source of enormous personal and professional fulfillment.",
-    "My passion for integrating art and science into everything I do speaks to my love and respect for nature; this inspires my own creative pursuits which include photography, literature, painting, meditation, and travels. Observing and studying the mystery of human nature and what makes us truly unique drives my desire to make a difference - in life and work. "
+    "I was born in La Paz, Bolivia, raised in Lima, Peru and Montevideo, Uruguay until my family moved to New York as a result of my father's work with IBM. This foundation inspired my life as a whole. I have lived and worked in five continents, and over 50 countries. I speak several languages and possess a keen appreciation for people of diverse cultural and social backgrounds.",
+    "Beyond my personal journey, my career has focused on building organizations from the ground up in corporate, nonprofit and international sectors. It provides me the perspective and flexibility required to support clients across different sectors, globally, domestically, large and small.",
+    "During the last decade, I have designed and led people and culture strategies to guide clients and organizations in achieving their goals.  This includes creating and executing change management and talent initiatives, restructuring processes, integrating technology, and implementing tools to drive agility and innovation.",
+    "I have a B.S. in Business Administration from Pace University, and an MBA from the European Business School focused on International Management.",
+    "My passion for integrating art and science into what I do speaks to my respect for the universal qualities that unite us as human beings.  I love the outdoors, literary fiction, film, painting, playing with clay, classical, jazz and rock music, and  photography.  This, and travel, forever keep my sense of wonder and renewal alive."
 ]
 
 export const howIHelp = [
@@ -27,18 +25,19 @@ export const howIHelp = [
 
 export const serviceDetail= [
     {
-        title: "COACHING",
+        title: "The Coaching Corner.",
         data: [
-            "“Be patient to all that is unsolved in your heart, and try to love the questions themselves, like locked rooms and like books that are now written in a very foreign tongue. Do not now seek the answers, which cannot be given you because you would not be able to live them. And the point is to live everything. Live the questions now. Perhaps you will then gradually, without noticing it, live along some distant day into the answer.”   ~ Rainer Maria Rilke",
-            "My approach is based on providing a safe space where my clients can feel free to express themselves without judgment. They may be stuck, at a crossroads,  looking to reinvent, transform to create a future that aligns with their authentic selves, and what they value most. Through exploration, discovery and clear action plans and accountability, they will design a bright future, and manage transformation in alignment to priorities, lifestyle, and where they are. Engagements can be short, long and outcomes will be set by identifying goals that gradually move the client forward. The tools and processes are designed to uncover and discover long-lost hopes and dreams, find true motivation and purpose and see where habits and fears may have become blocks. By eliminating or becoming aware of those blocks, clients are able to understand themselves and take action to create fulfillment in life and work.",
-            "I am a certified coach from the Life Purpose Institute credentialed by International Coaching Federation (ICF), and have partnered and helped 100+ clients grow, change and improve their lives"
+           "Is a safe space where clients feel free to express themselves without judgement. They may be stuck, at a crossroads, looking to reinvent, transform to create a future that aligns with their authentic selves, and what they value most.",
+           "Through exploration, discovery and clear action plans and accountability, they will design a roadmap, and manage transformation in alignment to priorities, lifestyle, and where they are in their career and personal lives. The use of tools and processes is designed to uncover and discover long-lost hopes and dreams, find true motivation and purpose and see where habits and fears may have become blocks. By eliminating or becoming aware of those blocks, clients are able to understand themselves and take action to create fulfilment in life and work.",
+           "I am a certified coach from the Life Purpose Institute credentialed by International Coaching Federation (ICF). Since I started my practice, I have helped over 100 early- and mid-level professionals develop, change and improve their lives."
         ]
     },
     {
-        title: "CONSULTING",
+        title: "Consulting.",
         data: [
-            "I support startups, corporate, and nonprofit organizations to advance their mission. As a strategist, my approach is to design solutions that align structure, people and business processes and thus create change. My expertise lies within Human Capital and Organizational Development including Talent Acquisition and Management; Operations; Performance Management, Learning and Change Management.  In close partnership with the client, we formulate strategy, tactics and metrics to monitor and manage the process. A strong DEI lens and multicultural awareness guide my work.",
-            "I have 25+ years advising leaders in corporate, non profit, and international sectors, as well as  startups from tech, life sciences, fin. I have worked across industries including tech, hospitality, financial services, private equity, healthcare, luxury, education and international affairs.",
+            "I partner with leaders in startups, corporate, and non profit organizations. My approach is to align people, talent and culture initiatives to drive performance and transformation. Specialties include  strategic planning, communications, talent acquisition, people operations and talent management. Clients and I collaborate to formulate strategy, design detailed plans and metrics to monitor and manage implementation. A strong DEI lens and multicultural awareness guide my work.",
+            "“We're here to put a dent in the universe. Otherwise why else even be here?”  -Steve Jobs",
+            "Clients include global companies from the tech, life sciences, education, humanitarian, financial sectors."
         ]
     }
 ]
@@ -57,7 +56,7 @@ export const faqs = [
         answer : "If you ask this question, you are closer to deciding whether coaching is for you. Coaching fees vary from an hourly fee to packages that vary in length and depth. Coaching is a journey which depends on the issue or issues a client brings forth. Some people need specific support or guidance for a specific reason e.g. interview preparation, workplace issues; career decisions, etc. therefore, the hourly rate fits well in these cases. The coach will listen and suggest program options that fit the client’s goals, and budget. If you think you would like to work with a coach, explore this option, you will definitely get something from a free consultation. Investing in coaching may not seem the right move. At the same time, if coaching makes you wonder and dream about a brighter future, explore, it may be the best thing you do for yourself."
     },
     {
-        question : "Is consulting the same as coaching?",
+        question : "What is the difference between consulting and coaching?",
         answer : "Consulting is about advising, suggesting and giving recommendations and providing information to a client. The consulting tells the client what to do rather than guiding them to find answers. Coaches with a professional area of expertise can provide advice only if the coaching clients express interest - otherwise, consulting is a separate service/engagement."
     },
 
