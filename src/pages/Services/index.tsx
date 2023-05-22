@@ -54,12 +54,6 @@ const Services = () => {
                                 </ServiceBox>
                             </div>
                         </div>
-                         {/* <Info><strong>How I help coaching clients :</strong></Info>
-                        <div>
-                            {howIHelp.map((item,index)=>(
-                                <Info>→ {item}</Info>
-                            ))}
-                        </div> */}
                     </div>
                 </div>
             </div>

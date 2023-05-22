@@ -36,7 +36,7 @@ export const serviceDetail= [
         title: "Consulting.",
         data: [
             "I partner with leaders in startups, corporate, and non profit organizations. My approach is to align people, talent and culture initiatives to drive performance and transformation. Specialties include  strategic planning, communications, talent acquisition, people operations and talent management. Clients and I collaborate to formulate strategy, design detailed plans and metrics to monitor and manage implementation. A strong DEI lens and multicultural awareness guide my work.",
-            "“We're here to put a dent in the universe. Otherwise why else even be here?”  -Steve Jobs",
+            "“We're here to put a dent in the universe. Otherwise why else even be here?”  -  Steve Jobs",
             "Clients include global companies from the tech, life sciences, education, humanitarian, financial sectors."
         ]
     }
