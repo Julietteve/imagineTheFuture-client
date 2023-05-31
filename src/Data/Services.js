@@ -28,7 +28,7 @@ export const serviceDetail= [
         title: "The Coaching Corner.",
         data: [
            "Is a safe space where clients feel free to express themselves without judgement. They may be stuck, at a crossroads, looking to reinvent, transform to create a future that aligns with their authentic selves, and what they value most.",
-           "Through exploration, discovery and clear action plans and accountability, they will design a roadmap, and manage transformation in alignment to priorities, lifestyle, and where they are in their career and personal lives. The use of tools and processes is designed to uncover and discover long-lost hopes and dreams, find true motivation and purpose and see where habits and fears may have become blocks. By eliminating or becoming aware of those blocks, clients are able to understand themselves and take action to create fullfilment in life and work.",
+           "Through exploration, discovery and clear action plans and accountability, they will design a roadmap, and manage transformation in alignment to priorities, lifestyle, and where they are in their career and personal lives. The use of tools and processes is designed to uncover and discover long-lost hopes and dreams, find true motivation and purpose and see where habits and fears may have become blocks. By eliminating or becoming aware of those blocks, clients are able to understand themselves and take action to create fulfillment in life and work.",
            "I am a certified coach from the Life Purpose Institute credentialed by International Coaching Federation (ICF). Since I started my practice, I have helped over 100 early- and mid-level professionals develop, change and improve their lives."
         ]
     },
