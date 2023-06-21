@@ -21,14 +21,14 @@ export const AboutMe = styled.div`
         height:25vh ;
     }
 `
-export const Info = styled.div`
+export const Info = styled.div <Props>`
     font-family: 'Roboto', sans-serif;
     padding:.8rem ;
     font-weight:400 ;
     text-align: justify ;
     font-size: 1rem ;
     line-height:1.2 ;
-    font-style:italic ;
+    font-style: ${props => props.italic};
 
     @media only screen and (max-width: 768px) {
         font-size: .8rem;
@@ -57,3 +57,8 @@ export const ProfileImage = styled.img`
     display: block;
     margin: 0 auto;
 `
+
+interface Props {
+    italic : string
+  }
+  

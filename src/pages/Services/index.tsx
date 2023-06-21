@@ -30,9 +30,9 @@ const Services = () => {
                 <div className='col-md-8 col-sm-12'>
                     <div className="generic-padding">
                         <div className="row">
-                        <Info>
+                        <Info italic={'none'}>
                             <div className='mission-tag'>
-                                "My mission is to help people find purpose, imagine and design a bright future."
+                               "<i>My mission</i> is to help people find purpose, imagine and design a bright future."
                             </div>
                         </Info>
                             <div className='col-md-6 col-sm-12 ' style={{justifyContent:"center",alignSelf:"center", alignItems:'center',display:'flex'}}>

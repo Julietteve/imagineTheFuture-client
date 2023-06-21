@@ -41,10 +41,10 @@ const About = () => {
                             <div className='generic-padding'>
                                 {
                                     aboutData.map((item,index)=>(
-                                        <>
+                                        <div key={index}>
                                             {index == 4  && <ProfileImage src='/images/if-about-1.jpeg'/>}
-                                            <Info>{item}</Info>
-                                        </>
+                                            <Info italic={'italic'}>{item}</Info>
+                                        </div>
                                     ))
                                 }
                             </div>
