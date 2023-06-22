@@ -58,13 +58,6 @@ const ServiceDetail = () => {
                                         }
                                     </div>
                                 ))}
-                                { data?.title == "Consulting." ? 
-                                <>
-                                    <Info italic={'none'}>Clients include global companies from the tech, life sciences, education, humanitarian, financial sectors.</Info>
-                                </>
-                                :
-                                null  
-                            }
                             </div>
                         </div>
                     </div>
