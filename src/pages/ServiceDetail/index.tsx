@@ -53,7 +53,7 @@ const ServiceDetail = () => {
                                     <div key={index}>
                                         <Info italic={'none'}>{item}</Info>
                                         {
-                                            index == (data?.title == "The Coaching Corner." ? 1 : 0) &&
+                                            index == (data?.title == "The Coaching Corner." ? 1 : 1) &&
                                                 <ProfileImage src={ data?.title == "The Coaching Corner." ? '/images/coaching-corner.jpg' : '/images/consulting.png'}/>
                                         }
                                     </div>

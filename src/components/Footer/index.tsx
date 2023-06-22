@@ -22,7 +22,6 @@ const Footer = () => {
             <Logo src='/images/main-logo.png' onClick={handleOnClick}></Logo>
             <Data>
                 {FooterData.map((item,index)=>(
-                    
                     <DataContainer key={index}>
                         <Title>{item.title}</Title>
                         {item.data.map((anchor)=>(
