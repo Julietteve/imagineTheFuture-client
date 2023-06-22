@@ -54,13 +54,12 @@ const ServiceDetail = () => {
                                         <Info italic={'none'}>{item}</Info>
                                         {
                                             index == (data?.title == "The Coaching Corner." ? 1 : 0) &&
-                                                <ProfileImage src={ data?.title == "The Coaching Corner." ? '/images/coaching-corner.png' : '/images/consulting.png'}/>
+                                                <ProfileImage src={ data?.title == "The Coaching Corner." ? '/images/coaching-corner.jpg' : '/images/consulting.png'}/>
                                         }
                                     </div>
                                 ))}
                                 { data?.title == "Consulting." ? 
                                 <>
-                                    <Info italic={'italic'} >We're here to put a dent in the universe. Otherwise why else even be here?&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;Steve Jobs</Info>  
                                     <Info italic={'none'}>Clients include global companies from the tech, life sciences, education, humanitarian, financial sectors.</Info>
                                 </>
                                 :
