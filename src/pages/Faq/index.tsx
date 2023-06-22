@@ -39,7 +39,7 @@ const Faq = () => {
                                 ))
                             }
                         </FaqsCont>
-                        <span className='drop-a-line'>Drop me a line here:  ma.ines@mac.com</span>
+                        <span className='drop-a-line'>Drop me a line here:  ines.imaginethefuture@gmail.com</span>
                     </div>
                 </div>
             </div>

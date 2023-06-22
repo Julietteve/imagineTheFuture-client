@@ -52,7 +52,7 @@ const SideBar = ( {toggle,isOpen}: IProps ) => {
                     <IconLink
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        href='mailto:ma.ines@mac.com'
+                        href='mailto:ines.imaginethefuture@gmail.com'
                     >
                         <FaRegEnvelope/>
                     </IconLink>

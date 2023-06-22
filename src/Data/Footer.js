@@ -15,7 +15,7 @@ export  const FooterData = [
             },
             {
                 name:'E-mail me!',
-                url: 'mailto:ma.ines@mac.com',
+                url: 'mailto:ines.imaginethefuture@gmail.com',
                 external: true
 
             }

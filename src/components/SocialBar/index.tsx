@@ -16,7 +16,7 @@ const SocialBar = () => {
             <Anchor href='https://www.instagram.com/inesdlcroix/' target="_blank">
                 <FaInstagram/>
             </Anchor>
-            <Anchor  href='mailto:ma.ines@mac.com' target="_blank">
+            <Anchor  href='mailto:ines.imaginethefuture@gmail.com' target="_blank">
                 <FaRegEnvelope/>
             </Anchor>
         </SocialContainer>
