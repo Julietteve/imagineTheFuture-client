@@ -37,9 +37,17 @@ const Faq = () => {
                                     <div className='underline-faq'></div>
                                     </>
                                 ))
-                            }
+                            } 
                         </FaqsCont>
-                        <span className='drop-a-line'>Drop me a line here:  ines.imaginethefuture@gmail.com</span>
+                        <span className='drop-a-line'>Drop me a line here: {' '}
+                            <a 
+                            style={{color:"#808080"}}
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            href='mailto:ines.imaginethefuture@gmail.com'>
+                                ines.imaginethefuture@gmail.com
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>

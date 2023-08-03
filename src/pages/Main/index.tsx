@@ -3,6 +3,7 @@ import { Container, Header, SocialBar } from '../../components';
 import Loading from '../../components/Loading';
 import SideBar from '../../components/SideBarMobile';
 import { Consultant, Future, Image, Imagine, Ines, Text, SignBox, ArrowBox,Arrow,Box } from './styles';
+import { NavLink } from 'react-router-dom';
 
 const Main = () => {
 
@@ -39,7 +40,9 @@ const Main = () => {
                                 <ArrowBox>
                                     <Arrow src='/images/arrow.png'></Arrow>
                                     <SignBox>
-                                        <Ines>Inés Fernández</Ines>
+                                        <Ines>
+                                            <NavLink style={{color:'#000'}} to="/about">Inés Fernández</NavLink>
+                                        </Ines>
                                         <Consultant>Consultant & Certified Coach</Consultant>
                                     </SignBox>
                                 </ArrowBox>
