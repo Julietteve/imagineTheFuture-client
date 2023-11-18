@@ -60,3 +60,11 @@ export const faqs = [
     },
 
 ]
+
+export const blogArticles = [
+    {
+        title : "Unlocking the story : My interview with Shoutout Miami",
+        text : "Thrilled to share insights about my life and work and the journey that lead to starting my own bussines.",
+        link : "https://shoutoutmiami.com/meet-maria-ines-fernandez-management-consultant-certified-coach/"
+    }
+]

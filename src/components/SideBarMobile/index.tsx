@@ -26,6 +26,7 @@ const SideBar = ( {toggle,isOpen}: IProps ) => {
                     <NavIcon to="/faq">FAQ</NavIcon>
                     <NavIcon to="/testimonials">Testimonials</NavIcon>
                     <NavIcon to="/contact">Contact</NavIcon>
+                    <NavIcon to="/blog">Blog</NavIcon>
                </Links>
                <Social>
                     <IconLink 

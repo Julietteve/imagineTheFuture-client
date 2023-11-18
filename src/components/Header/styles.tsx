@@ -8,6 +8,7 @@ export const MainContainer = styled.div `
     justify-content: space-around ;
     align-items: center;
     padding: 1rem ;
+    padding-bottom: 1.5rem;
 
     @media only screen and (max-width: 768px) {
         display: none ;

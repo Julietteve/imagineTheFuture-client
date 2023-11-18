@@ -12,6 +12,7 @@ const Header = () => {
                 <NavIcon to='/faq'> Faq </NavIcon>
                 <NavIcon to='/testimonials'> Testimonials </NavIcon>
                 <NavIcon to='/contact'> Contact </NavIcon>
+                <NavIcon to='/blog'> Blog </NavIcon>
         </MainContainer>
     );
 };

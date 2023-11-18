@@ -3,7 +3,7 @@ import { Header } from './components';
 import {createGlobalStyle} from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
-import { About, Testimonials, Contact, Faq, Main, Services, ServiceDetail } from './pages';
+import { About, Testimonials, Contact, Faq, Main, Services, ServiceDetail, Blog } from './pages';
 
 const GlobalStyle = createGlobalStyle`
   html, body{
@@ -50,6 +50,7 @@ function App() {
         <Route path='/services/:id' element={<ServiceDetail/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/testimonials' element={<Testimonials/>} />
+        <Route path='/blog' element={<Blog/>} />
       </Routes>
     </>
   );

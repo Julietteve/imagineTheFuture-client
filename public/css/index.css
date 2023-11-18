@@ -55,6 +55,10 @@
     font-size: larger;
 }
 
+.card-text{
+    font-family: 'Roboto', sans-serif;
+}
+
 @media only screen and (max-width: 768px) {
     .generic-padding{
         padding: 0.5rem;
