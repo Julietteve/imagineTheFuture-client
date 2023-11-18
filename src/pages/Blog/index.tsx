@@ -43,7 +43,7 @@ const Blog = () => {
                             <div className='generic-padding'>
                                 <div className="row">
                                 {blogArticles.map((item)=>(
-                                    <div className="col-md-4 col-sm-12 offset-0.5" style={{marginBottom: '10px'}}>
+                                    <div className="col-md-4 col-sm-12 offset-0.5 d-flex justify-content-center " style={{marginBottom: '10px'}}>
                                             <Card style={{ width: '18rem', fontFamily: 'Roboto' }}>
                                                 <Card.Img variant="top" src="/images/interview.jpg" />
                                                 <Card.Body>
