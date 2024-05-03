@@ -19,6 +19,8 @@ export const AboutMe = styled.div`
 
     @media only screen and (max-width: 768px) {
         height:25vh ;
+        font-size: 1.5rem ;
+        padding: 2rem ;
     }
 `
 export const Info = styled.div <Props>`
@@ -29,6 +31,7 @@ export const Info = styled.div <Props>`
     font-size: 1rem ;
     line-height:1.2 ;
     font-style: ${props => props.italic};
+    font-weight: ${props => props?.weight};
 
     @media only screen and (max-width: 768px) {
         font-size: .8rem;
@@ -59,6 +62,7 @@ export const ProfileImage = styled.img`
 `
 
 interface Props {
-    italic : string
+    italic : string,
+    weight : string
   }
   

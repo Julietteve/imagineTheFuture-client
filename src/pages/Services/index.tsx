@@ -17,6 +17,7 @@ const Services = () => {
     const navigate = useNavigate();
     const handleConsultation = useCallback(() => navigate('/services/consulting', {replace: true}), [navigate]);
     const handleCoaching = useCallback(() => navigate('/services/coaching', {replace: true}), [navigate]);
+    const handleOutplacement = useCallback(() => navigate('/services/outplacement', {replace: true}), [navigate]);
     
     return (
         <>
@@ -30,7 +31,7 @@ const Services = () => {
                 <div className='col-md-8 col-sm-12'>
                     <div className="generic-padding">
                         <div className="row">
-                        <Info italic={'none'}>
+                        <Info italic={'none'} weight='400'>
                             <div className='mission-tag'>
                                "<i>My mission</i> is to help people find purpose, imagine and design a bright future."
                             </div>
@@ -47,6 +48,15 @@ const Services = () => {
                             <div className='col-md-6 col-sm-12' style={{justifyContent:"center", alignSelf:"center",alignItems:'center', display:'flex'}}>
                                 <ServiceBox onClick={()=>handleCoaching()} >
                                     <p>The Coaching Corner</p>
+                                    <ReadMore>
+                                        <p>Read more</p>
+                                        <p>→</p>
+                                    </ReadMore>
+                                </ServiceBox>
+                            </div>
+                            <div className='col-md-6 col-sm-12' style={{justifyContent:"center", alignSelf:"center",alignItems:'center', display:'flex'}}>
+                                <ServiceBox onClick={()=>handleOutplacement()} >
+                                    <p>Outplacement Services</p>
                                     <ReadMore>
                                         <p>Read more</p>
                                         <p>→</p>

@@ -61,7 +61,7 @@
 
 @media only screen and (max-width: 768px) {
     .generic-padding{
-        padding: 0.5rem;
+        padding: 1rem;
     }
     .question-faqs{
        font-size: .9rem;
