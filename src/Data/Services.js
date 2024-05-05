@@ -33,7 +33,7 @@ export const serviceDetail = [
            "Through a holistic approach of exploration, discovery and clear action plans and accountability, clients design a roadmap and manage transformation in alignment to priorities, lifestyle from where they are in their career and personal lives. The use of tools and processes is designed to uncover and discover long-lost hopes and dreams, find true motivation and purpose and see where habits and fears may have become blocks.",
            "I am a certified coach from the Life Purpose Institute credentialed by International Coaching Federation (ICF). Since I started my practice, I have coached hundreds of people , transform, improve and advance their lives.",
            "New Offering for Corporate Clients!",
-           "→ OUTPLACEMENT AND CAREER TRANSITION SERVICES ←",
+           "OUTPLACEMENT AND CAREER TRANSITION SERVICES",
            "As of January 2024, I have expanded services to include a new offering for companies aimed to support outgoing and remaining employees after unavoidable layoffs/terminations/downsizing."
         ]
     },

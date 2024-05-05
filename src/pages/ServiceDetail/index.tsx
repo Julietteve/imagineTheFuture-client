@@ -63,7 +63,7 @@ const ServiceDetail = () => {
                                                 <Info align='center' weight='400' italic={'none'}>{item} </Info>
                                                 :
                                             index == (data?.title == "The Coaching Corner."  ?  (5) : null ) ?
-                                                <Info align='left' weight='400' italic={'none'}>{item} </Info>
+                                                <Info align='center' weight='400' italic={'none'}>{item} </Info>
                                                 :
                                                 <Info align='justify' weight='400' italic={'none'}>{item}</Info>}
                                         {
