@@ -43,7 +43,7 @@ const About = () => {
                                     aboutData.map((item,index)=>(
                                         <div key={index}>
                                             {index == 5  && <ProfileImage src='/images/if-about-1.jpeg'/>}
-                                            <Info weight='400' italic={'italic'}>{item}</Info>
+                                            <Info align='justify' weight='400' italic={'italic'}>{item}</Info>
                                         </div>
                                     ))
                                 }

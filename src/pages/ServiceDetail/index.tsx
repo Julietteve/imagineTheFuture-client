@@ -55,7 +55,17 @@ const ServiceDetail = () => {
                                 { (data?.title === "The Coaching Corner." || data?.title ===  "Consulting.")  ?
                                     data?.data.map((item:string, index:number)=>(
                                     <div key={index}> 
-                                        { index == (data?.title == "The Coaching Corner."  ?  (3) : null ) ? <Info weight='bolder' italic={'none'}>{item}</Info> : <Info weight='400' italic={'none'}>{item}</Info>}
+                                        { 
+                                            index == (data?.title == "The Coaching Corner."  ?  (3) : null ) ?
+                                                <Info align='center' weight='bolder' italic={'none'}>{item}</Info> 
+                                                :
+                                            index == (data?.title == "The Coaching Corner."  ?  (4) : null ) ?
+                                                <Info align='center' weight='400' italic={'none'}>{item} </Info>
+                                                :
+                                            index == (data?.title == "The Coaching Corner."  ?  (5) : null ) ?
+                                                <Info align='left' weight='400' italic={'none'}>{item} </Info>
+                                                :
+                                                <Info align='justify' weight='400' italic={'none'}>{item}</Info>}
                                         {
                                             index == (data?.title == "The Coaching Corner." ? 2 : 1) &&
                                                 <ProfileImage src={ data?.title == "The Coaching Corner." ? '/images/coaching-corner.png' : '/images/consulting.png'}/>
@@ -64,7 +74,7 @@ const ServiceDetail = () => {
                                 ))
                                 :
                                 <>
-                                    <Info weight='bolder' italic='italic'>Helping People Move Forward</Info>
+                                    <Info align='justify' weight='bolder' italic='italic'>Helping People Move Forward</Info>
                                     <div className='row m-3'>
                                         <div className='col-md-6 col-sm-12 mb-2'>
                                             <img width={'90%'} src="/images/LEFT.png" alt="" />
@@ -74,18 +84,18 @@ const ServiceDetail = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <Info italic='none' weight='bolder'>Who is this for?</Info>
+                                        <Info align='justify' italic='none' weight='bolder'>Who is this for?</Info>
                                         {   serviceDetailOut.forWho.map((item) => (
-                                             <Info italic='none' weight='400'><li>{item}</li></Info>
+                                             <Info align='justify' italic='none' weight='400'><li>{item}</li></Info>
                                          
                                         ))}
-                                        <Info italic='none' weight='bolder'>Benefits</Info>
+                                        <Info align='justify' italic='none' weight='bolder'>Benefits</Info>
                                         {   serviceDetailOut.benefits.map((item) => (
-                                            <Info italic='none' weight='400'><li>{item}</li></Info>
+                                            <Info align='justify' italic='none' weight='400'><li>{item}</li></Info>
                                         ))}
-                                        <Info italic='none' weight='bolder'>Offering includes different packages / pricing options.</Info>
-                                        <Info italic='none' weight='bolder'/>
-                                        <Info italic='italic' weight='400'>{serviceDetailOut.footer}</Info>
+                                        <Info align='justify' italic='none' weight='bolder'>Offering includes different packages / pricing options.</Info>
+                                        <Info align='justify' italic='none' weight='bolder'/>
+                                        <Info align='justify' italic='italic' weight='400'>{serviceDetailOut.footer}</Info>
                                     </div>
                                 </>
                                     

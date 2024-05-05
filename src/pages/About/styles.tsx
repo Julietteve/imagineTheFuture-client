@@ -27,7 +27,7 @@ export const Info = styled.div <Props>`
     font-family: 'Roboto', sans-serif;
     padding:.8rem ;
     font-weight:400 ;
-    text-align: justify ;
+    text-align:${props => props.align};
     font-size: 1rem ;
     line-height:1.2 ;
     font-style: ${props => props.italic};
@@ -63,6 +63,7 @@ export const ProfileImage = styled.img`
 
 interface Props {
     italic : string,
-    weight : string
+    weight : string,
+    align:string
   }
   

@@ -31,7 +31,7 @@ const Services = () => {
                 <div className='col-md-8 col-sm-12'>
                     <div className="generic-padding">
                         <div className="row">
-                        <Info italic={'none'} weight='400'>
+                        <Info  align='justify' italic={'none'} weight='400'>
                             <div className='mission-tag'>
                                "<i>My mission</i> is to help people find purpose, imagine and design a bright future."
                             </div>
