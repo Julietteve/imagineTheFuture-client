@@ -1,82 +1,87 @@
 import styled from "styled-components";
 
-export const FooterContainer = styled.div`
-    display: flex;
-    justify-content:space-between ;
-    align-items: center ;
-    flex-direction: row ;
-    width:95% ;
-
-    @media only screen and (max-width: 768px) {
-        display: none ;
-    }
-`
+export const FooterContainer = styled.div<{ $showTopDivider?: boolean }>`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 6rem;
+  ${({ $showTopDivider }) => $showTopDivider && `border-top: 1px solid #e5e5e5;`}
+  
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
 export const Data = styled.div`
-    display:flex ;
-    align-items:stretch ;
-    justify-content: space-around;
-    flex-direction: row;
-`
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-direction: row;
+`;
 
 export const Title = styled.h5`
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold ;
-`
+  font-family: "Tiempos", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #062e64;
+`;
 
 export const DataContainer = styled.div`
-    display:flex ;
-    justify-content:flex-start ;
-    flex-direction:column ;
-    margin-left:20px;
-    margin-right: 20px;
-`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+`;
 
 export const Anchor = styled.a`
-    color: grey;
-    font-family: 'Roboto', sans-serif;
-    font-size:14px ;
-    text-decoration: none;
-    padding-top:15px ;
+  color: grey;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-top: 15px;
 
-    :hover{
-        color:#414141
-    }
-
-    
+  :hover {
+    color: #414141;
+  }
 `;
 
 export const Logo = styled.img`
-    width: 20% ;
-    margin-left:6rem;
-    cursor: pointer;
-`
+  width: 20%;
+  margin-left: 2rem;
+  cursor: pointer;
+`;
 
 export const Bottom = styled.div`
-  display: flex ;
+  display: flex;
   justify-content: center;
-  align-items:center ;
-  width:100% ;
-  flex-direction:column ;
-`
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+`;
 
 export const BootomFooter = styled.div`
-   width: 50% ;
-   border-top: lightgray 1px solid;
-   margin-bottom: .8rem ;
-`
+  width: 50%;
+  border-top: lightgray 1px solid;
+  margin-bottom: 0.8rem;
+`;
 
 export const BootomFooterSpan = styled.span`
-    font-family: 'Roboto', sans-serif;
-    color: darkgray;
-    justify-content: center ;
-    font-size:12px ;
-    margin-bottom:.4rem ;
+  font-family: "Tiempos", sans-serif;
+  color: darkgray;
+  justify-content: center;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 2px;
 
-    @media only screen and (max-width: 768px) {
-        font-size: 10px ;
-        margin-top: .8rem ;
-        margin-bottom: .8rem ;
-    }
-`
-
+  @media only screen and (max-width: 768px) {
+    font-size: 10px;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+`;

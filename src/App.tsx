@@ -1,11 +1,27 @@
-import React from 'react';
-import { Header } from './components';
-import {createGlobalStyle} from 'styled-components';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route } from 'react-router-dom';
-import { About, Testimonials, Contact, Faq, Main, Services, ServiceDetail, Blog } from './pages';
+import React from "react";
+import { Header } from "./components";
+import { createGlobalStyle } from "styled-components";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route } from "react-router-dom";
+import {
+  About,
+  Testimonials,
+  Contact,
+  Faq,
+  Main,
+  Services,
+  ServiceDetail,
+  Blog,
+} from "./pages";
+import Tiempos from "./assets/fonts/Tiempos-Regular.otf";
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Tiempos';
+    src: url(${Tiempos}) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
   html, body{
     width:100vw;
     user-select:none;
@@ -27,13 +43,12 @@ const GlobalStyle = createGlobalStyle`
     
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: lightgray; 
-      border-radius:20px
+      background: lightgray;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-      background: #000; 
+      background: #062e64; 
     }
   }
 `;
@@ -41,16 +56,16 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <>
-      <GlobalStyle/>
+      <GlobalStyle />
       <Routes>
-        <Route path='/' element={<Main/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/faq' element={<Faq/>} />
-        <Route path='/services' element={<Services/>} />
-        <Route path='/services/:id' element={<ServiceDetail/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/testimonials' element={<Testimonials/>} />
-        <Route path='/blog' element={<Blog/>} />
+        <Route path="/" element={<Main />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/:id" element={<ServiceDetail />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </>
   );

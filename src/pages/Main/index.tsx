@@ -1,61 +1,75 @@
-import React,{useState,useEffect} from 'react';
-import { Container, Header, SocialBar } from '../../components';
-import Loading from '../../components/Loading';
-import SideBar from '../../components/SideBarMobile';
-import { Consultant, Future, Image, Imagine, Ines, Text, SignBox, ArrowBox,Arrow,Box } from './styles';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import {
+  Container,
+  DecadeSection,
+  Header,
+  HeroSection,
+  SocialBar,
+  TestimonialSection,
+  WorkSection,
+} from "../../components";
+import Loading from "../../components/Loading";
+import SideBar from "../../components/SideBarMobile";
+import {
+  Consultant,
+  Future,
+  Image,
+  Imagine,
+  Ines,
+  Text,
+  SignBox,
+  ArrowBox,
+  Arrow,
+  Box,
+} from "./styles";
+import { NavLink } from "react-router-dom";
+import Footer from "../../components/Footer";
+
+// Componente para controlar márgenes de toda la página
+const PageWrapper = styled.div`
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+`;
 
 const Main = () => {
+  const [loading, setLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [ loading, setLoading ] = useState(false)
-    const [ isOpen, setIsOpen] = useState(false)
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
+  useEffect(() => {
+    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
 
-    useEffect(()=>{
-        setLoading(true)
-        setTimeout(()=>{
-            setLoading(false)
-        },1000)
-    },[])
+  useEffect(() => {
+    console.log(isOpen);
+  }, [isOpen]);
 
-    useEffect(()=>{ console.log(isOpen)},[isOpen])
-
-    return (
+  return (
+    <PageWrapper>
+      <Header />
+      {loading ? (
+        <Loading />
+      ) : (
         <>
-            <Header/>
-            <SocialBar/>
-            <SideBar isOpen={isOpen} toggle={()=>toggle()}></SideBar>
-            {
-                loading ? <Loading/>
-                :
-                <>
-                    <div className='row'>
-                        <div className='col-md-6 col-sm-12' style={{alignItems:"center",display:"flex"}}>
-                            <Text>
-                                <Imagine>Imagine the</Imagine>
-                                <Future>Future.</Future>
-                                <ArrowBox>
-                                    <Arrow src='/images/arrow.png'></Arrow>
-                                    <SignBox>
-                                        <Ines>
-                                            <NavLink style={{color:'#000'}} to="/about">Inés Fernández</NavLink>
-                                        </Ines>
-                                        <Consultant>Consultant & Certified Coach</Consultant>
-                                    </SignBox>
-                                </ArrowBox>
-                            </Text>
-                        </div>
-                        <div className='col-md-6 col-sm-12' style={{alignItems:"center",justifyContent:'flex-end'}}>
-                            <Image src='/images/main-land.jpeg'/>
-                        </div>
-                    </div>
-                </>
-            }
+          <HeroSection />
+          <WorkSection />
+          <TestimonialSection />
+          <DecadeSection />
+          <Footer showTopDivider={false} />
         </>
-    );
+      )}
+    </PageWrapper>
+  );
 };
 
 export default Main;

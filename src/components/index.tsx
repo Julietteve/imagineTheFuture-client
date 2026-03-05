@@ -1,6 +1,9 @@
-export {default as Header} from './Header'
-export {default as SocialBar} from './SocialBar'
-export {default as Container} from './Container'
-export {default as MobileNav } from './MobileNav'
-export {default as SideBarMobile } from './SideBarMobile'
-
+export { default as Header } from "./Header";
+export { default as SocialBar } from "./SocialBar";
+export { default as Container } from "./Container";
+export { default as MobileNav } from "./MobileNav";
+export { default as SideBarMobile } from "./SideBarMobile";
+export { default as HeroSection } from "./HeroSection";
+export { default as WorkSection } from "./WorkSection";
+export { default as TestimonialSection } from "./TestimonialSection";
+export { default as DecadeSection } from "./DecadeSection";
