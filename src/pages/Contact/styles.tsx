@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  padding: 40px 10px;
+  padding: 6rem 10px;
   max-width: 1200px;
   margin: 0 auto;
   min-height: 20vh;
@@ -13,7 +13,6 @@ export const ContactContainer = styled.div`
 export const ContactContent = styled.div`
   max-width: 800px;
   text-align: center;
-  padding: 1.5rem;
 
   @media only screen and (max-width: 768px) {
     padding: 1rem;
@@ -21,14 +20,14 @@ export const ContactContent = styled.div`
 `;
 
 export const ContactTitle = styled.h1`
-  font-family: "Tiempos", serif;
-  font-size: 2.5rem;
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
   color: #2c2c2c;
-  margin-bottom: 2rem;
   font-weight: 400;
+  line-height: 1.4;
 
   @media only screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
   }
 `;
@@ -62,11 +61,10 @@ export const ContactQuote = styled.p`
 export const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    gap: 1.5rem;
   }
 `;
 
@@ -80,7 +78,7 @@ export const ContactItem = styled.div`
 export const ContactLabel = styled.h3`
   font-family: "Tiempos", serif;
   font-size: 1.1rem;
-  color: #000000;
+  color: "light" #0b0a0a;
   margin: 0;
   font-weight: 500;
 
@@ -90,16 +88,17 @@ export const ContactLabel = styled.h3`
 `;
 
 export const ContactLink = styled.a`
-  font-family: "Inter", sans-serif;
-  font-size: 2rem;
+  text-decoration: none;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  font-family: "Tiempos", sans-serif;
+  font-size: 1.5rem;
   color: #0b0a0a;
-  text-decoration: underline;
   transition: color 0.3s ease;
-  font-weight: 500;
+  font-weight: 600;
 
   &:hover {
-    color: #9a7842;
-    text-decoration: underline;
+    color: #062e64;
   }
 
   @media only screen and (max-width: 768px) {
@@ -119,10 +118,8 @@ export const SocialLinks = styled.div`
 `;
 
 export const Subtitle = styled.p`
-  font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
-  color: #0b0a0a;
-  font-style: italic;
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
 
   @media only screen and (max-width: 768px) {
     font-size: 1.2rem;
@@ -154,4 +151,10 @@ export const SocialLink = styled.a`
     height: 45px;
     font-size: 1.3rem;
   }
+`;
+
+export const Logo = styled.img`
+  width: 35%;
+  margin-bottom: 6rem;
+  cursor: pointer;
 `;

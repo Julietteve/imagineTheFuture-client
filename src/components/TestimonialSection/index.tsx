@@ -8,29 +8,28 @@ const TestimonialsSection: React.FC = () => {
   return (
     <Container ref={ref as any} $visible={isVisible}>
       <Content>
-        <Title>What clients say</Title>
-
+        <Title>Client Reflections</Title>
+        <Line></Line>
         <TestimonialsGrid>
           <Testimonial>
             <Quote>
-              “Inés helped me rethink how I present my career in a strategic and
-              forward-looking way. She has added significant value in
-              positioning my trajectory and guiding me through a transformative
-              process.”
+              “You guided me through a very demanding<br></br> executive process
+              with clarity and candor –<br></br> bringing both insight and
+              perspective when it<br></br> mattered most ”
             </Quote>
-            <Author>— Senior Executive, IBM</Author>
+            <Author>C-Suite Healthcare Executive</Author>
           </Testimonial>
 
           <TestimonialDivider />
 
           <Testimonial>
             <Quote>
-              “Working with Ines helped me organize my search, target the right
-              opportunities, and strengthen my interview approach. I gained
-              clarity on both immediate steps and the bigger picture — and
-              ultimately secured a role with Salesforce.”
+              “Inés brings a rare combination of strategic insight<br></br> and
+              practical judgment. She creates the space to<br></br> think,
+              challenge assumptions, and move forward<br></br> with clarity and
+              confidence. ”
             </Quote>
-            <Author>— Salesforce Client</Author>
+            <Author>Senior Executive, IBM</Author>
           </Testimonial>
         </TestimonialsGrid>
       </Content>
@@ -57,6 +56,8 @@ const Container = styled.section<{ $visible: boolean }>`
 `;
 
 const Content = styled.div`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   max-width: 900px;
   width: 100%;
   display: flex;
@@ -71,13 +72,14 @@ const Content = styled.div`
 
 const Title = styled.h2`
   font-family: "Tiempos", sans-serif;
+
   font-size: 1.7rem;
   line-height: 48px;
   margin-bottom: 0;
-  color: #2c2c2c;
+  color: #565656;
 
   @media (min-width: 768px) {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 58px;
   }
 `;
@@ -146,5 +148,15 @@ const TestimonialDivider = styled.hr`
     width: 1px;
     height: auto;
     align-self: stretch;
+  }
+`;
+
+const Line = styled.div`
+  width: 60px;
+  height: 2px;
+  background-color: #f7e383;
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
   }
 `;

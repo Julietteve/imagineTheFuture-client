@@ -33,20 +33,29 @@ const Footer: React.FC<FooterProps> = ({ showTopDivider = true }) => {
   );
 
   return (
-    <>
+    <div style={{}}>
       <FooterContainer $showTopDivider={showTopDivider}>
         <Logo src="/images/logo.png" onClick={handleOnClick}></Logo>
         <Data>
           {FooterData.map((item, index) => (
             <DataContainer key={index}>
               <Title>{item.title}</Title>
-              {item.data.map((anchor) =>
+              {item.data.map((anchor, idx) =>
                 anchor.external ? (
-                  <Anchor target={"_blank"} href={anchor.url}>
+                  <Anchor
+                    key={anchor.name + idx}
+                    target={"_blank"}
+                    rel="noopener noreferrer"
+                    href={anchor.url}
+                  >
                     {anchor.name}
                   </Anchor>
                 ) : (
-                  <Link style={styleLink} to={anchor.url}>
+                  <Link
+                    key={anchor.name + idx}
+                    style={styleLink}
+                    to={anchor.url}
+                  >
                     {anchor.name}
                   </Link>
                 ),
@@ -62,7 +71,7 @@ const Footer: React.FC<FooterProps> = ({ showTopDivider = true }) => {
           ©{new Date().getFullYear()} Imagine the future by M. Ines Fernandez
         </BootomFooterSpan>
       </Bottom>
-    </>
+    </div>
   );
 };
 

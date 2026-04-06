@@ -13,22 +13,29 @@ const HeroSection: React.FC = () => {
 
         <NameRoleGroup>
           <Name>M. Ines Fernandez</Name>
-          <Role>Advisor to Leaders - Career & Leadership Coach</Role>
+          <Role>Advisor to Leaders | Career & Leadership Coach</Role>
         </NameRoleGroup>
-        <SubheadingGroup>
-          <Subheading>Translating complexity into clarity.</Subheading>
-          <Description>
-            I work with professionals, leaders, and organizations to clarify
-            direction,
-            <br /> strengthen judgment, and move forward with purpose and
-            impact.
-          </Description>
-        </SubheadingGroup>
+
+        <Subheading>Bringing clarity to complexity</Subheading>
+        <Description>
+          I work with professionals, leaders, and organizations navigating
+          change,<br></br>growth, and transition — clarifying direction, shaping
+          strategy, and <br></br> moving forward with impact.
+        </Description>
 
         <Description>
-          I partner across career stages and transitions — from rising talent to
-          the C-suite.
+          I partner with clients across career stages — <br></br>from emerging
+          talent to the C-suite.
         </Description>
+        <Description>
+          Drawing on senior leadership experience<br></br> across operations,
+          HR, and talent acquisition —
+        </Description>
+        <Description>
+          I advise leaders and professionals through<br></br>change,<br></br>
+          bringing both an organizational<br></br>and individual perspective.
+        </Description>
+        <Line></Line>
       </Content>
     </Container>
   );
@@ -43,8 +50,6 @@ const Container = styled.section<{ $visible: boolean }>`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 60px 32px;
-  position: relative;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
@@ -53,42 +58,26 @@ const Container = styled.section<{ $visible: boolean }>`
   transition:
     opacity 0.8s ease-out,
     transform 0.8s ease-out;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 1px;
-    background-color: #e0e0e0;
-  }
 `;
 
 const Subheading = styled.h3`
   font-family: "Tiempos", sans-serif;
   font-size: 1.3rem;
-  color: #062e64;
-  margin-bottom: 0;
-  font-weight: light;
+  color: #0b0a0a;
+  font-weight: bold;
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
+    margin-bottom: 10rem;
+    margin-top: 6rem;
   }
 `;
 
 const Content = styled.div`
-  max-width: 900px;
-  width: 100%;
+  width: 65%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-
-  @media (min-width: 1024px) {
-    max-width: 1200px;
-    gap: 2rem;
-  }
 `;
 
 const SubheadingGroup = styled.div`
@@ -105,24 +94,25 @@ const NameRoleGroup = styled.div`
 
 const Title = styled.h1`
   font-family: "Tiempos", sans-serif;
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: 48px;
-  color: #2c2c2c;
-  margin-bottom: 0;
+  color: #71706d;
 
   @media (min-width: 768px) {
     font-size: 5.5rem;
     line-height: 64px;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
   }
 `;
 
 const Name = styled.h2`
-  font-family: "Tiempos", sans-serif;
-  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
   line-height: 32px;
   color: #b08a4f;
   margin-top: 2rem;
-  font-weight: 500;
+  font-weight: 550;
 
   @media (min-width: 768px) {
     font-size: 3rem;
@@ -135,7 +125,7 @@ const Role = styled.p`
   line-height: 28px;
   color: #0b0a0a;
   margin-bottom: 0;
-  font-family: "Tiempos", sans-serif;
+  font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
     font-size: 22px;
@@ -144,7 +134,7 @@ const Role = styled.p`
 `;
 
 const Description = styled.p`
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   color: #0b0a0a;
   margin-bottom: 0;
@@ -153,6 +143,8 @@ const Description = styled.p`
   @media (min-width: 768px) {
     font-size: 22px;
     line-height: 36px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 `;
 
@@ -165,5 +157,16 @@ const Divider = styled.div`
 
   @media (min-width: 768px) {
     margin: 60px 80px 0 80px;
+  }
+`;
+
+const Line = styled.div`
+  width: 60px;
+  height: 2px;
+  background-color: #f7e383;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+
+  @media (min-width: 768px) {
   }
 `;

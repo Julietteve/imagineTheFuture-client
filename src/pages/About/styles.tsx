@@ -71,9 +71,10 @@ export const ImageContainer = styled.div`
   height: 100%;
   min-height: 600px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   padding: 1.5rem 1rem 1.5rem 2rem;
+  margin-top: 33.3rem;
 
   @media only screen and (max-width: 768px) {
     min-height: 400px;
@@ -91,7 +92,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  font-family: "Tiempos", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 2rem;
@@ -122,7 +123,7 @@ export const DropCap = styled.span`
 `;
 
 export const FirstParagraph = styled.p`
-  font-family: "Tiempos", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 1.6;

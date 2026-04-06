@@ -2,15 +2,15 @@ import styled from "styled-components";
 import { NavLink as LinkIcon } from "react-router-dom";
 
 export const MainContainer = styled.div`
-  width: 100%;
+  width: 65%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -42,29 +42,29 @@ export const MainLogoCircle = styled(LinkIcon)`
 export const If = styled.span``;
 
 export const NavIcon = styled(LinkIcon)`
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-family: "Tiempos", sans-serif;
   text-decoration: none;
-  color: #062e64;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #0b0a0a;
   padding-left: 15px;
   padding-right: 15px;
   transition: all 0.2s ease-in-out;
   position: relative;
   letter-spacing: 3px;
   &.active {
-    color: #062e64;
+    color: #414141;
     :after {
       content: "";
       height: 8px;
       width: 8px;
-      background-color: #062e64;
+      background-color: #414141;
       border-radius: 50%;
       display: inline-block;
       position: absolute;
-      bottom: -15px;
-      left: 45%;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
   :hover {

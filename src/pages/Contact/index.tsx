@@ -16,6 +16,7 @@ import {
   SocialLinks,
   SocialLink,
   Subtitle,
+  Logo,
 } from "./styles";
 
 const Contact = () => {
@@ -44,40 +45,22 @@ const Contact = () => {
             }}
           >
             <ContactContent>
-              <ContactTitle>Let's start a conversation</ContactTitle>
+              <Logo src="/images/logo.png"></Logo>
+              <ContactTitle>
+                If you’d like to start a conversation, you’re welcome{" "}
+                {<br></br>} to reach out directly.
+              </ContactTitle>
 
-              <ContactSubtitle>
-                I'd be delighted to explore how we might work together.
-              </ContactSubtitle>
               <ContactInfo>
                 <ContactItem>
-                  <ContactLabel>Email</ContactLabel>
                   <ContactLink href="mailto:ines.imaginethefuture@gmail.com">
                     ines.imaginethefuture@gmail.com
                   </ContactLink>
-                  <Subtitle>I personally respond to all inquiries.</Subtitle>
-                </ContactItem>
-
-                <ContactItem>
-                  <ContactLabel>Connect</ContactLabel>
-                  <SocialLinks>
-                    <SocialLink
-                      href="https://www.linkedin.com/in/inesita/"
-                      target="_blank"
-                      aria-label="LinkedIn"
-                    >
-                      <FaLinkedinIn />
-                    </SocialLink>
-                    <SocialLink
-                      href="https://www.instagram.com/inesdlcroix/"
-                      target="_blank"
-                      aria-label="Instagram"
-                    >
-                      <FaInstagram />
-                    </SocialLink>
-                  </SocialLinks>
                 </ContactItem>
               </ContactInfo>
+              <ContactLink href="mailto:ines.imaginethefuture@gmail.com">
+                <ContactTitle>Schedule a conversation →</ContactTitle>
+              </ContactLink>
             </ContactContent>
           </ContactContainer>
           <Footer />

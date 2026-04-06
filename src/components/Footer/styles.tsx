@@ -5,13 +5,12 @@ export const FooterContainer = styled.div<{ $showTopDivider?: boolean }>`
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 100%;
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-top: 6rem;
-  ${({ $showTopDivider }) => $showTopDivider && `border-top: 1px solid #e5e5e5;`}
-  
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  ${({ $showTopDivider }) =>
+    $showTopDivider && `border-top: 1px solid #e5e5e5;`}
+
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -20,6 +19,7 @@ export const FooterContainer = styled.div<{ $showTopDivider?: boolean }>`
 export const Data = styled.div`
   display: flex;
   align-items: stretch;
+  margin-top: -1rem;
   justify-content: space-around;
   flex-direction: row;
 `;
@@ -28,7 +28,7 @@ export const Title = styled.h5`
   font-family: "Tiempos", sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
-  color: #062e64;
+  color: #041414;
 `;
 
 export const DataContainer = styled.div`
@@ -75,9 +75,10 @@ export const BootomFooterSpan = styled.span`
   font-family: "Tiempos", sans-serif;
   color: darkgray;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0.4rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
 
   @media only screen and (max-width: 768px) {
     font-size: 10px;

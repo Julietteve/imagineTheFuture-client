@@ -11,6 +11,7 @@ import {
   DropCap,
   FirstParagraph,
 } from "./styles";
+import { Line, TextMain } from "../Services/styles";
 
 const About = () => {
   const [loading, setLoading] = useState(false);
@@ -37,7 +38,7 @@ const About = () => {
           <div
             style={{
               padding: "40px 10px",
-              maxWidth: "100vw",
+              maxWidth: "80vw",
               margin: "0 auto",
               justifyContent: "center",
               opacity: fadeIn ? 1 : 0,
@@ -49,46 +50,47 @@ const About = () => {
               <div className="col-md-2 col-sm-12"></div>
               <div className="col-md-4 col-sm-12">
                 <ContentContainer>
+                  <TextMain>About</TextMain>
+                  <Line></Line>
                   <FirstParagraph>
                     I was born in La Paz, Bolivia, and raised between Lima,
-                    Montevideo, and New York — experiences that shaped my
-                    philosophy and continue to inform how I think and advise.
+                    Montevideo, and New York.
                   </FirstParagraph>
 
                   <Paragraph>
-                    My career has centered on building and shaping organizations
-                    across corporate, nonprofit, and international sectors —
-                    serving in senior operational and people leadership
-                    capacities and establishing international operations from
-                    the ground up. I have contributed to strategic direction
-                    through periods of growth, transformation, M&A activity, and
-                    public offerings, with sustained focus on aligning strategy,
-                    culture, leadership, and performance.
+                    I have lived and worked across five continents, and traveled
+                    to more than 50 countries — experiences that shaped my
+                    perspective and continue to inform how I think and advise.
                   </Paragraph>
 
                   <Paragraph>
-                    Over time, my work brought me to the intersection of
+                    My work has centered on building and shaping organizations
+                    across corporate, nonprofit, and international sectors.
+                  </Paragraph>
+
+                  <Paragraph>
+                    In senior operational and people leadership roles, I have
+                    established international operations from the ground up and
+                    contributed to strategic direction through periods of
+                    growth, transformation, M&A activity, and public offerings.
+                  </Paragraph>
+
+                  <Paragraph>
+                    Over time, this work has brought me to the intersection of
                     leadership, talent, strategy, and organizational design —
-                    partnering with decision-makers navigating complexity and
-                    change.
+                    partnering with decision-makers through complexity and
+                    change with a sustained focus on aligning strategy, culture
+                    and impact.
                   </Paragraph>
-
                   <Paragraph>
-                    This breadth of experience informs the way I engage with
-                    individuals and organizations — from early and mid-career
-                    professionals to senior leaders — bringing perspective,
-                    structure, and accountability to the choices that shape
-                    careers, teams, and institutions.
+                    I bring perspective, structure, and a sense of
+                    accountability to the choices that shape careers, teams, and
+                    institutions.
                   </Paragraph>
-
                   <Paragraph>
                     Beyond the work, I remain deeply interested in the interplay
-                    of structure and creativity — how reflection, culture, and
-                    lived experience shape leadership. Travel, literature,
-                    painting, music, working with clay, and long walks —
-                    including the Camino — continue to inform my perspective,
-                    reminding me that thoughtful leadership requires both
-                    structure and creativity.
+                    between structure and creativity — and in how reflection,
+                    culture, and lived experience shape leadership.
                   </Paragraph>
                 </ContentContainer>
               </div>

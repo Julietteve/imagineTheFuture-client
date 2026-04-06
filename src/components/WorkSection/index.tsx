@@ -8,48 +8,56 @@ const WorkSection: React.FC = () => {
   return (
     <Container ref={ref as any} $visible={isVisible}>
       <Content>
-        <Title>How I work</Title>
-        <ContentSubHeading>
-          <Subheading>
-            Growth, transformation, and transition require both reflection and
-            structure.
-          </Subheading>
-          <Subheading>
-            My work supports leaders, professionals, and organizations
-            navigating complexity with clarity and intention — translating
-            insight into aligned action.
-          </Subheading>
-        </ContentSubHeading>
+        <Title>How I Work</Title>
+        <Description>
+          My work brings together strategy, coaching, and <br></br>
+          organizational insight—
+          <br></br>creating clarity and structure in moments of change,<br></br>{" "}
+          growth, and decision.
+        </Description>
+        <Description>
+          At the core of my work is SAETA™ —<br></br>a way to understand where
+          you are,<br></br>
+          what matters,<br></br> and how we move forward.
+        </Description>
+        <Description>
+          It is not a rigid framework —<br></br>but a way to create focus,
+          sequence, and direction.
+        </Description>
+
         <Block>
           <Subtitle style={{ marginTop: "10px" }}>Strategy</Subtitle>
           <Text>
-            Partnering with leaders and organizations to clarify vision,
-            positioning, culture, and direction during periods of growth and
-            transformation.
+            Vision, positioning, culture, and direction – advising leaders
+            <br></br> and organizations as they grow, scale, and align strategy,
+            <br></br>
+            systems, people, and execution, to deliver results for their
+            <br></br> teams, customers, and stakeholders.
           </Text>
         </Block>
-
-        <Divider />
 
         <Block>
-          <Subtitle>Career & Leadership Coaching</Subtitle>
+          <Subtitle>Executive & Career Coaching</Subtitle>
           <Text>
-            Supporting professionals and leaders across career stages as they
-            navigate transition, refine positioning, and strengthen leadership
-            presence with clarity and confidence.
+            Working with professionals and leaders to clarify direction,
+            <br></br>
+            strengthen leadership presence, and move forward in<br></br>{" "}
+            transitions, growth, and key career decisions.
           </Text>
         </Block>
-
-        <Divider />
-
         <Block>
           <Subtitle>Organizational Alignment</Subtitle>
           <Text>
-            Working with organizations as leadership, structure, and culture
-            evolve — ensuring strategy, people, and execution remain aligned
-            through change.
+            Working with organizations as leadership, structure, and<br></br>
+            culture evolve — ensuring strategy, people, and execution<br></br>
+            remain aligned through change.
           </Text>
         </Block>
+        <Line></Line>
+        <TextBottom>
+          Over the past decade, I have partnered with professionals<br></br> and
+          leaders across sectors, geographies, and career stages.
+        </TextBottom>
       </Content>
     </Container>
   );
@@ -62,57 +70,41 @@ const Container = styled.section<{ $visible: boolean }>`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 60px 32px;
-  position: relative;
-
-  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
-  transform: ${({ $visible }) =>
-    $visible ? "translateY(0px)" : "translateY(40px)"};
-
-  transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 1px;
-    background-color: #e0e0e0;
-  }
 `;
 
-const ContentSubHeading = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+const Description = styled.p`
+  line-height: 30px;
+  color: #0b0a0a;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+    line-height: 36px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+  }
 `;
 const Content = styled.div`
-  max-width: 800px;
-  width: 100%;
+  width: 65%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: 1024px) {
-    max-width: 1200px;
-  }
 `;
 
 const Title = styled.h2`
   font-family: "Tiempos", sans-serif;
-  font-size: 1.7rem;
+  font-size: 3rem;
   line-height: 48px;
   margin-bottom: 0;
   color: #2c2c2c;
 
   @media (min-width: 768px) {
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 58px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 10rem;
+    margin-top: 12rem;
   }
 `;
 
@@ -129,20 +121,22 @@ const Subheading = styled.h3`
 `;
 
 const Block = styled.div`
-  margin-bottom: 0;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
 `;
 
 const Subtitle = styled.h3`
   font-family: "Tiempos", sans-serif;
   font-size: 1.7rem;
   line-height: 30px;
-  color: #2c2c2c;
-  margin-bottom: 10px;
-  font-weight: 500;
+  color: #000;
+
+  font-weight: 600;
 
   @media (min-width: 768px) {
-    font-size: 1.9rem;
+    font-size: 2rem;
     line-height: 34px;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -160,7 +154,7 @@ const Text = styled.p`
 
 const Divider = styled.hr`
   border: none;
-  border-top: 1px solid #e0e0e0;
+  border-top: none;
   margin: 24px 0;
 `;
 
@@ -168,10 +162,35 @@ const SectionDivider = styled.div`
   width: 100%;
   max-width: 1200px;
   height: 1px;
-  background-color: #e0e0e0;
+  background-color: transparent;
   margin: 60px 60px 60px 60px;
 
   @media (min-width: 768px) {
     margin: 80px 80px 80px 80px;
+  }
+`;
+
+const Line = styled.div`
+  width: 60px;
+  height: 2px;
+  background-color: #f7e383;
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+  }
+`;
+
+const TextBottom = styled.p`
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0b0a0a;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+    line-height: 36px;
+    margin-top: 6rem;
   }
 `;

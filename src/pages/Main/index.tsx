@@ -25,6 +25,7 @@ import {
 } from "./styles";
 import { NavLink } from "react-router-dom";
 import Footer from "../../components/Footer";
+import CTA from "../../components/CTA";
 
 // Componente para controlar márgenes de toda la página
 const PageWrapper = styled.div`
@@ -64,8 +65,9 @@ const Main = () => {
           <HeroSection />
           <WorkSection />
           <TestimonialSection />
-          <DecadeSection />
-          <Footer showTopDivider={false} />
+          <DecadeSection></DecadeSection>
+          <CTA text="In moments of transition, direction, or complex decisions."></CTA>
+          <Footer showTopDivider={true} />
         </>
       )}
     </PageWrapper>
