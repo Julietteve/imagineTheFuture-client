@@ -1,5 +1,6 @@
 {
   "name": "imagine-the-future-client",
+  "homepage": "https://julietteve.github.io/imagineTheFuture-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
