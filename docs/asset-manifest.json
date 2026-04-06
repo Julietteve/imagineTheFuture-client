@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d221dc40.css",
+    "main.js": "/static/js/main.c922684c.js",
+    "static/js/453.c4c9855c.chunk.js": "/static/js/453.c4c9855c.chunk.js",
+    "static/media/Tiempos-Regular.otf": "/static/media/Tiempos-Regular.5b06f37cd54f3ddba4ce.otf",
+    "index.html": "/index.html",
+    "main.d221dc40.css.map": "/static/css/main.d221dc40.css.map",
+    "main.c922684c.js.map": "/static/js/main.c922684c.js.map",
+    "453.c4c9855c.chunk.js.map": "/static/js/453.c4c9855c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d221dc40.css",
+    "static/js/main.c922684c.js"
+  ]
+}
