@@ -77,10 +77,10 @@ const ServiceDetail = () => {
                                     <Info align='justify' weight='bolder' italic='italic'>Helping People Move Forward</Info>
                                     <div className='row m-3'>
                                         <div className='col-md-6 col-sm-12 mb-2'>
-                                            <img width={'90%'} src="/images/LEFT.png" alt="" />
+                                            <img width={'90%'} src={`${process.env.PUBLIC_URL}/images/LEFT.png`} alt="" />
                                         </div>
                                         <div className='col-md-6 col-sm-12 '>
-                                            <img width={'90%'} src="/images/RIGHT.png" alt="" />
+                                            <img width={'90%'} src={`${process.env.PUBLIC_URL}/images/RIGHT.png`} alt="" />
                                         </div>
                                     </div>
                                     <div>

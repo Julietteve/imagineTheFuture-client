@@ -56,84 +56,83 @@ export const ColDiv = styled.div`
   padding: 2rem;
 `;
 export const ProfileImage = styled.img`
-  width: 100%;
-  max-width: 500px;
+  width: 95%;
+  max-width: 400px;
   height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30rem;
 
-  @media only screen and (max-width: 768px) {
-    width: 95%;
-    max-width: 400px;
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 500px;
   }
 `;
 
 export const ImageContainer = styled.div`
   height: 100%;
-  min-height: 600px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 1.5rem 1rem 1.5rem 2rem;
-  margin-top: 33.3rem;
+  padding: 1rem;
 
-  @media only screen and (max-width: 768px) {
+  @media (min-width: 768px) {
     min-height: 400px;
-    padding: 1rem;
-    justify-content: flex-start;
+    padding: 1.5rem 1rem 1.5rem 2rem;
+    margin-top: 3rem;
   }
 `;
 
 export const ContentContainer = styled.div`
-  padding: 1.5rem;
+  padding: 1rem;
 
-  @media only screen and (max-width: 768px) {
-    padding: 1rem;
+  @media (min-width: 768px) {
+    padding: 1.5rem;
   }
 `;
 
 export const Paragraph = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 21px;
+  font-size: 0.9rem;
   font-weight: 400;
-  line-height: 2rem;
-  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
   color: #0b0a0a;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
+  @media (min-width: 768px) {
+    font-size: 21px;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
 export const DropCap = styled.span`
   font-family: "Tiempos", serif;
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1;
   float: left;
-  margin-right: 8px;
+  margin-right: 6px;
   margin-top: -2px;
   color: #0b0a0a;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 3rem;
-    margin-right: 6px;
+  @media (min-width: 768px) {
+    font-size: 6rem;
+    margin-right: 8px;
   }
 `;
 
 export const FirstParagraph = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 21px;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #0b0a0a;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
+  @media (min-width: 768px) {
+    font-size: 21px;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
   }
 `;
 

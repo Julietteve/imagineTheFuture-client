@@ -33,7 +33,7 @@ const Container = styled.section<{ $visible: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10rem;
+  padding: 3rem 1rem;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
@@ -42,6 +42,10 @@ const Container = styled.section<{ $visible: boolean }>`
   transition:
     opacity 0.9s ease-out,
     transform 0.9s ease-out;
+
+  @media (min-width: 768px) {
+    padding: 10rem;
+  }
 `;
 
 const Content = styled.div`
@@ -88,38 +92,49 @@ const CTAButton = styled(Link)`
   color: #000;
   border: none;
   background-color: transparent;
-  font-size: 1.1rem;
-  font-family: "Tiempos", sans-serif;
-  letter-spacing: 1.2px;
+  font-size: 0.9rem;
+  font-family: "Tiempos", serif;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: color 0.3s ease;
   border-radius: 2px;
   display: inline-block;
-  letter-spacing: 2px;
   text-decoration: none;
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   @media (min-width: 768px) {
     padding: 18px 36px;
     font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-top: 4rem;
   }
 `;
 
 const Text = styled.p`
   font-family: "Tiempos", serif;
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.5;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-top: 3rem;
+  }
 `;
 
 const Subheading = styled.h2`
   font-family: "Tiempos", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   font-weight: bold;
   color: #000;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 const Line = styled.div`
   width: 100px;

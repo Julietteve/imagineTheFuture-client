@@ -6,9 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/imagineTheFuture-client">
       <App />
-  </BrowserRouter>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

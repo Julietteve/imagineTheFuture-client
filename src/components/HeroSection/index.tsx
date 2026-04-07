@@ -61,10 +61,11 @@ const Container = styled.section<{ $visible: boolean }>`
 `;
 
 const Subheading = styled.h3`
-  font-family: "Tiempos", sans-serif;
-  font-size: 1.3rem;
+  font-family: "Tiempos", serif;
+  font-size: 1rem;
   color: #0b0a0a;
   font-weight: bold;
+  margin-bottom: 2rem;
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
@@ -74,10 +75,16 @@ const Subheading = styled.h3`
 `;
 
 const Content = styled.div`
-  width: 65%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 2rem 1rem;
+
+  @media (min-width: 768px) {
+    width: 65%;
+    padding: 0;
+  }
 `;
 
 const SubheadingGroup = styled.div`
@@ -93,14 +100,15 @@ const NameRoleGroup = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "Tiempos", sans-serif;
-  font-size: 5rem;
-  line-height: 48px;
+  font-family: "Tiempos", serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
   color: #71706d;
+  margin-bottom: 2rem;
 
   @media (min-width: 768px) {
     font-size: 5.5rem;
-    line-height: 64px;
+    line-height: 1.2;
     margin-top: 15rem;
     margin-bottom: 15rem;
   }
@@ -108,41 +116,41 @@ const Title = styled.h1`
 
 const Name = styled.h2`
   font-family: "Inter", sans-serif;
-  font-size: 3rem;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 1.4;
   color: #b08a4f;
   margin-top: 2rem;
   font-weight: 550;
 
   @media (min-width: 768px) {
     font-size: 3rem;
-    line-height: 40px;
+    line-height: 1.3;
   }
 `;
 
 const Role = styled.p`
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 1.4;
   color: #0b0a0a;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
     font-size: 22px;
-    line-height: 34px;
+    line-height: 1.5;
   }
 `;
 
 const Description = styled.p`
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: #0b0a0a;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
     font-size: 22px;
-    line-height: 36px;
+    line-height: 1.6;
     margin-top: 2rem;
     margin-bottom: 4rem;
   }

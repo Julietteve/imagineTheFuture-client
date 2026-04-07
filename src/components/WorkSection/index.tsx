@@ -73,36 +73,42 @@ const Container = styled.section<{ $visible: boolean }>`
 `;
 
 const Description = styled.p`
-  line-height: 30px;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: #0b0a0a;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 1.6;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    font-size: 1.5rem;
   }
 `;
 const Content = styled.div`
-  width: 65%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 2rem 1rem;
+
+  @media (min-width: 768px) {
+    width: 65%;
+    padding: 0;
+  }
 `;
 
 const Title = styled.h2`
-  font-family: "Tiempos", sans-serif;
-  font-size: 3rem;
-  line-height: 48px;
-  margin-bottom: 0;
+  font-family: "Tiempos", serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
   color: #2c2c2c;
 
   @media (min-width: 768px) {
     font-size: 4.5rem;
-    line-height: 58px;
+    line-height: 1.3;
     margin-bottom: 10rem;
     margin-top: 12rem;
   }
@@ -121,34 +127,39 @@ const Subheading = styled.h3`
 `;
 
 const Block = styled.div`
-  margin-bottom: 3rem;
-  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+  }
 `;
 
 const Subtitle = styled.h3`
-  font-family: "Tiempos", sans-serif;
-  font-size: 1.7rem;
-  line-height: 30px;
+  font-family: "Tiempos", serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
   color: #000;
-
   font-weight: 600;
+  margin-bottom: 0.5rem;
 
   @media (min-width: 768px) {
     font-size: 2rem;
-    line-height: 34px;
+    line-height: 1.4;
     margin-bottom: 1rem;
   }
 `;
 
 const Text = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: #0b0a0a;
 
   @media (min-width: 768px) {
     font-size: 22px;
-    line-height: 36px;
+    line-height: 1.6;
   }
 `;
 
@@ -182,15 +193,16 @@ const Line = styled.div`
 
 const TextBottom = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: #0b0a0a;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
   @media (min-width: 768px) {
     font-size: 22px;
-    line-height: 36px;
+    line-height: 1.6;
     margin-top: 6rem;
+    margin-bottom: 8rem;
   }
 `;

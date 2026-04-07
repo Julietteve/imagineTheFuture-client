@@ -1,29 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import {
-  Container,
   DecadeSection,
   Header,
   HeroSection,
-  SocialBar,
   TestimonialSection,
   WorkSection,
 } from "../../components";
 import Loading from "../../components/Loading";
-import SideBar from "../../components/SideBarMobile";
-import {
-  Consultant,
-  Future,
-  Image,
-  Imagine,
-  Ines,
-  Text,
-  SignBox,
-  ArrowBox,
-  Arrow,
-  Box,
-} from "./styles";
-import { NavLink } from "react-router-dom";
 import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 

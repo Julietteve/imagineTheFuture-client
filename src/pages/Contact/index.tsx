@@ -45,7 +45,7 @@ const Contact = () => {
             }}
           >
             <ContactContent>
-              <Logo src="/images/logo.png"></Logo>
+              <Logo src={`${process.env.PUBLIC_URL}/images/logo.png`}></Logo>
               <ContactTitle>
                 If you’d like to start a conversation, you’re welcome{" "}
                 {<br></br>} to reach out directly.

@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({ showTopDivider = true }) => {
   return (
     <div style={{}}>
       <FooterContainer $showTopDivider={showTopDivider}>
-        <Logo src="/images/logo.png" onClick={handleOnClick}></Logo>
+        <Logo src={`${process.env.PUBLIC_URL}/images/logo.png`} onClick={handleOnClick}></Logo>
         <Data>
           {FooterData.map((item, index) => (
             <DataContainer key={index}>

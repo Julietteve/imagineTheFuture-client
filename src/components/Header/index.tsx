@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { MainContainer, MainLogoCircle, If, NavIcon } from "./styles";
+import SideBarMobile from "../SideBarMobile";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div
       style={{
@@ -22,6 +28,7 @@ const Header = () => {
           <NavIcon to="/contact"> Contact </NavIcon>
         </div>
       </MainContainer>
+      <SideBarMobile isOpen={isOpen} toggle={toggle} />
     </div>
   );
 };

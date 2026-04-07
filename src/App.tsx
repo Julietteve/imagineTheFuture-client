@@ -1,5 +1,4 @@
 import React from "react";
-import { Header } from "./components";
 import { createGlobalStyle } from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";

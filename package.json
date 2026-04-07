@@ -1,8 +1,8 @@
 {
   "name": "imagine-the-future-client",
-  "homepage": "https://julietteve.github.io/imagineTheFuture-client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/imagineTheFuture-client",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.1",

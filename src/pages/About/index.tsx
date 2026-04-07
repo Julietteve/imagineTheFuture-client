@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Header } from "../../components";
 import Footer from "../../components/Footer";
 import Loading from "../../components/Loading";
+import styled from "styled-components";
 
 import {
   ProfileImage,
@@ -12,6 +13,17 @@ import {
   FirstParagraph,
 } from "./styles";
 import { Line, TextMain } from "../Services/styles";
+
+const AboutContainer = styled.div`
+  padding: 2rem 1rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  
+  @media (min-width: 768px) {
+    padding: 40px 10px;
+    max-width: 80vw;
+  }
+`;
 
 const About = () => {
   const [loading, setLoading] = useState(false);
@@ -35,12 +47,8 @@ const About = () => {
         <Loading />
       ) : (
         <>
-          <div
+          <AboutContainer
             style={{
-              padding: "40px 10px",
-              maxWidth: "80vw",
-              margin: "0 auto",
-              justifyContent: "center",
               opacity: fadeIn ? 1 : 0,
               transform: fadeIn ? "translateY(0px)" : "translateY(20px)",
               transition: "opacity 0.8s ease-out, transform 0.8s ease-out",
@@ -96,15 +104,17 @@ const About = () => {
               </div>
               <div className="col-md-6 col-sm-12">
                 <ImageContainer>
-                  <ProfileImage src="/images/profile.jpg" />
+                  <ProfileImage
+                    src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
+                  />
                 </ImageContainer>
               </div>
               <div className="col-md-2 col-sm-12"></div>
             </div>
-          </div>
-          <Footer />
+          </AboutContainer>
         </>
       )}
+      <Footer />
     </>
   );
 };
