@@ -18,7 +18,7 @@ const AboutContainer = styled.div`
   padding: 2rem 1rem;
   max-width: 90vw;
   margin: 0 auto;
-  
+
   @media (min-width: 768px) {
     padding: 40px 10px;
     max-width: 80vw;
@@ -99,6 +99,11 @@ const About = () => {
                     Beyond the work, I remain deeply interested in the interplay
                     between structure and creativity — and in how reflection,
                     culture, and lived experience shape leadership.
+                  </Paragraph>
+                  <Paragraph>
+                    Travel, literature, painting, music, working with clay, and
+                    long walks — including the Camino — continue to shape how I
+                    observe, think, and act.
                   </Paragraph>
                 </ContentContainer>
               </div>

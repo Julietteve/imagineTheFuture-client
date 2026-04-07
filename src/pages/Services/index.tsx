@@ -59,7 +59,7 @@ const Services = () => {
             <Subheading>
               Bringing clarity to complexity<br></br>
               <Sub>
-                <i>through perspective, structure and thoughtful execution.</i>
+                through perspective, structure and thoughtful execution.
               </Sub>
             </Subheading>
             <Text>
@@ -67,8 +67,9 @@ const Services = () => {
               moments of change, growth, and transition — bringing<br></br>{" "}
               perspective, structure, and thoughtful guidance to the decisions
               <br></br>
-              that shape careers, leadership, and organizations.<br></br> The
-              work is structured, yet never standardized.<br></br> Each
+              that shape careers, leadership, and organizations.<br></br>
+              <br></br>
+              The work is structured, yet never standardized.<br></br> Each
               engagement is shaped by context, need, and timing.
             </Text>
             <Line></Line>

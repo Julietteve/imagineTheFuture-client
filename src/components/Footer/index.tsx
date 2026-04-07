@@ -20,9 +20,9 @@ interface FooterProps {
 let styleLink = {
   color: "grey",
   fontFamily: "Inter, sans-serif",
-  fontSize: "1rem",
+  fontSize: "0.8rem",
   textDecoration: "none",
-  paddingTop: "15px",
+  paddingTop: "12px",
 };
 
 const Footer: React.FC<FooterProps> = ({ showTopDivider = true }) => {
@@ -35,7 +35,10 @@ const Footer: React.FC<FooterProps> = ({ showTopDivider = true }) => {
   return (
     <div style={{}}>
       <FooterContainer $showTopDivider={showTopDivider}>
-        <Logo src={`${process.env.PUBLIC_URL}/images/logo.png`} onClick={handleOnClick}></Logo>
+        <Logo
+          src={`${process.env.PUBLIC_URL}/images/logo.png`}
+          onClick={handleOnClick}
+        ></Logo>
         <Data>
           {FooterData.map((item, index) => (
             <DataContainer key={index}>

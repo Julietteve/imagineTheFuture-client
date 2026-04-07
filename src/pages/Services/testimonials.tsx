@@ -45,13 +45,13 @@ const Testimonial = styled.div``;
 const Quote = styled.p`
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  line-height: 26px;
+  line-height: 18px;
   color: #0b0a0a;
   margin-bottom: 0;
   font-style: italic;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 `;
 
@@ -65,7 +65,7 @@ const Author = styled.p`
   font-weight: 500;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 26px;
     margin-top: 1rem;
   }

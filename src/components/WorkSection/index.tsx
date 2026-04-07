@@ -9,7 +9,7 @@ const WorkSection: React.FC = () => {
     <Container ref={ref as any} $visible={isVisible}>
       <Content>
         <Title>How I Work</Title>
-        <Description>
+        <Description style={{ marginBottom: "15rem" }}>
           My work brings together strategy, coaching, and <br></br>
           organizational insight—
           <br></br>creating clarity and structure in moments of change,<br></br>{" "}
@@ -25,7 +25,7 @@ const WorkSection: React.FC = () => {
           sequence, and direction.
         </Description>
 
-        <Block>
+        <Block style={{ marginTop: "6rem" }}>
           <Subtitle style={{ marginTop: "10px" }}>Strategy</Subtitle>
           <Text>
             Vision, positioning, culture, and direction – advising leaders
@@ -73,17 +73,17 @@ const Container = styled.section<{ $visible: boolean }>`
 `;
 
 const Description = styled.p`
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.6;
   color: #0b0a0a;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 `;
 const Content = styled.div`
@@ -101,16 +101,16 @@ const Content = styled.div`
 
 const Title = styled.h2`
   font-family: "Tiempos", serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #2c2c2c;
 
   @media (min-width: 768px) {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 1.3;
-    margin-bottom: 10rem;
-    margin-top: 12rem;
+    margin-bottom: 8rem;
+    margin-top: 15rem;
   }
 `;
 
@@ -138,27 +138,27 @@ const Block = styled.div`
 
 const Subtitle = styled.h3`
   font-family: "Tiempos", serif;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.4;
   color: #000;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 1.4;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
   }
 `;
 
 const Text = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.6;
-  color: #0b0a0a;
+  color: #363535;
 
   @media (min-width: 768px) {
-    font-size: 22px;
+    font-size: 0.9rem;
     line-height: 1.6;
   }
 `;
@@ -193,14 +193,14 @@ const Line = styled.div`
 
 const TextBottom = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.6;
   color: #0b0a0a;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 
   @media (min-width: 768px) {
-    font-size: 22px;
+    font-size: 1rem;
     line-height: 1.6;
     margin-top: 6rem;
     margin-bottom: 8rem;

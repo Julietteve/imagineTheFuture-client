@@ -15,65 +15,71 @@ const PageWrapper = styled.div`
 
 const NotaWrapper = styled.div<{ $isEven: boolean }>`
   background-color: ${(props) => (props.$isEven ? "#fafafa" : "#ffffff")};
-  border-radius: 8px;
-  margin-bottom: 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
 `;
 
 const BlogContainer = styled.div`
-  padding: 2rem 1rem;
-  max-width: 90vw;
+  padding: 1.5rem 1rem;
+  width: 90%;
   margin: 0 auto;
+  text-align: left;
 
   @media (min-width: 768px) {
     padding: 40px 10px;
+    width: 65%;
+    margin: 0 auto;
     max-width: 80vw;
   }
 `;
 
 const Title = styled.h1`
   font-family: "Tiempos", serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #0b0a0a;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
 
   @media (min-width: 768px) {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
 const Line = styled.div`
-  width: 60px;
+  width: 45px;
   height: 2px;
   background-color: #b7b7b7;
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.8rem;
+  align-self: flex-start;
 
   @media (min-width: 768px) {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
 `;
 
 const Description = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.6;
   color: #0b0a0a;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
 
   @media (min-width: 768px) {
-    font-size: 22px;
+    font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 7.5rem;
+    margin-bottom: 4rem;
   }
 `;
 
 const Spacer = styled.div`
-  padding-top: 3rem;
+  padding-top: 2rem;
 
   @media (min-width: 768px) {
-    padding-top: 7.5rem;
+    padding-top: 4rem;
   }
 `;
 

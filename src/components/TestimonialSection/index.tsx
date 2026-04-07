@@ -44,7 +44,10 @@ const Container = styled.section<{ $visible: boolean }>`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 60px 32px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 6rem;
+  margin-bottom: 20%;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
@@ -73,14 +76,14 @@ const Content = styled.div`
 const Title = styled.h2`
   font-family: "Tiempos", sans-serif;
 
-  font-size: 1.7rem;
-  line-height: 48px;
+  font-size: 1.2rem;
+  line-height: 30px;
   margin-bottom: 0;
   color: #565656;
 
   @media (min-width: 768px) {
-    font-size: 2.5rem;
-    line-height: 58px;
+    font-size: 1.8rem;
+    line-height: 40px;
   }
 `;
 
@@ -99,25 +102,25 @@ const TestimonialsGrid = styled.div`
 const Testimonial = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 3rem 0;
+  gap: 0.8rem;
+  padding: 2rem 0;
 
   @media (min-width: 768px) {
     flex: 1;
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem;
   }
 `;
 
 const Quote = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 20px;
   color: #0b0a0a;
   margin-bottom: 0;
 
   @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 14px;
+    line-height: 24px;
   }
 `;
 
@@ -125,14 +128,14 @@ const Author = styled.p`
   font-family: "Tiempos", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 18px;
   color: #2c2c2c;
   font-weight: 500;
 
   @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 22px;
   }
 `;
 

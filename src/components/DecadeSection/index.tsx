@@ -24,11 +24,13 @@ const DecadeSection: React.FC = () => {
 export default DecadeSection;
 
 const Container = styled.section<{ $visible: boolean }>`
-  background-color: #f5f5f5;
+  background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8rem;
+  padding: 4rem;
+  padding-top: 10%;
+  padding-bottom: 10%;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
@@ -45,37 +47,37 @@ const Content = styled.div`
 
 const Title = styled.h2`
   font-family: "Tiempos", serif;
-  font-size: 22px;
+  font-size: 16px;
   color: #b08a4f;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 `;
 
 const Description = styled.p`
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 20px;
   color: #4a4a4a;
   font-family: "Inter", serif;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
 
   @media (min-width: 768px) {
-    font-size: 1.1rem;
-    line-height: 28px;
+    font-size: 0.9rem;
+    line-height: 24px;
   }
 `;
 
 const Quote = styled.h3`
   font-family: "Tiempos", serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #2c2c2c;
-  margin: 40px 0 10px 0;
+  margin: 25px 0 8px 0;
   font-weight: 400;
   @media (min-width: 768px) {
-    font-size: 1.8rem;
-    margin: 50px 0 15px 0;
+    font-size: 1.2rem;
+    margin: 30px 0 10px 0;
   }
 `;
 
@@ -83,25 +85,25 @@ const CTAButton = styled(Link)`
   color: #000;
   border: none;
   background-color: transparent;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-family: "Tiempos", sans-serif;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.9px;
   cursor: pointer;
   transition: color 0.3s ease;
   border-radius: 2px;
   display: inline-block;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-decoration: none;
 
   @media (min-width: 768px) {
-    padding: 18px 36px;
-    font-size: 1.3rem;
+    padding: 12px 24px;
+    font-size: 1rem;
   }
 `;
 
 const Text = styled.p`
   font-family: "Tiempos", serif;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 22px;
 `;

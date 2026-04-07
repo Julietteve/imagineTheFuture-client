@@ -77,73 +77,73 @@ function Nota({ titulo, contenido }) {
 export default Nota;
 
 export const Container = styled.div`
-  padding: 32px;
-  padding-bottom: 100px;
+  padding: 24px;
+  padding-bottom: 75px;
 `;
 
 export const Titulo = styled.h1`
   font-family: "Tiempos", serif;
-  font-size: 2rem;
-  margin-bottom: 32px;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
   color: #111;
 `;
 
 export const Subtitulo = styled.h2`
   font-family: "Tiempos", serif;
-  font-size: 1.5rem;
-  margin-bottom: 32px;
+  font-size: 1.125rem;
+  margin-bottom: 24px;
   color: #111;
 `;
 
 export const Parrafo = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1;
   color: #333;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 `;
 
 export const Bold = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1;
   color: #111;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 `;
 
 export const Italic = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1;
   color: #111;
   font-style: italic;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 `;
 
 export const Saeta = styled.span`
   font-family: "Tiempos", serif;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: #111;
   display: inline;
 `;
 
 export const Highlight = styled.span`
   color: #787878;
-  padding: 2px 6px;
-  border-radius: 3px;
+  padding: 1.5px 4.5px;
+  border-radius: 2px;
 `;
 
 export const Divider = styled.hr`
   border: none;
   border-top: 1px solid #ffffff;
-  margin: 40px 0;
+  margin: 30px 0;
 `;
 
 export const Line = styled.div`
-  width: 150px;
-  height: 1.5px;
+  width: 112px;
+  height: 1px;
   background-color: #b7b7b7;
-  margin: 60px 0;
+  margin: 45px 0;
 `;
