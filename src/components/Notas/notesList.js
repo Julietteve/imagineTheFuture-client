@@ -481,11 +481,6 @@ export const notasList = [
         tipo: "parrafo",
         text: "A moment to prove themselves.",
       },
-      {
-        tipo: "parrafo",
-        text: "A test. A performance. A moment to prove themselves.",
-      },
-
       { tipo: "divider" },
 
       { tipo: "parrafo", text: "And in part, it is." },

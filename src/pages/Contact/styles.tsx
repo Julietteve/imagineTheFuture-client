@@ -28,27 +28,27 @@ export const ContactContent = styled.div`
 
 export const ContactTitle = styled.h1`
   font-family: "Inter", serif;
-  font-size: 0.8rem;
+  font-size: 0.64rem;
   color: #2c2c2c;
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 0.8rem;
 
   @media (min-width: 768px) {
-    font-size: 1.1rem;
+    font-size: 0.88rem;
     line-height: 1.4;
   }
 `;
 
 export const ContactSubtitle = styled.p`
   font-family: "Tiempos", serif;
-  font-size: 0.8rem;
+  font-size: 0.64rem;
   color: #0b0a0a;
   margin-bottom: 0.6rem;
   line-height: 1.6;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 0.8rem;
     line-height: 1.5;
   }
@@ -56,13 +56,13 @@ export const ContactSubtitle = styled.p`
 
 export const ContactQuote = styled.p`
   font-family: "Tiempos", serif;
-  font-size: 0.7rem;
+  font-size: 0.56rem;
   color: #062e64;
   margin-bottom: 1rem;
   line-height: 1.6;
 
   @media (min-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 0.72rem;
     margin-bottom: 1.5rem;
   }
 `;
@@ -82,13 +82,13 @@ export const ContactItem = styled.div`
 
 export const ContactLabel = styled.h3`
   font-family: "Tiempos", serif;
-  font-size: 0.7rem;
+  font-size: 0.56rem;
   color: #0b0a0a;
   margin: 0;
   font-weight: 500;
 
   @media (min-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 0.72rem;
   }
 `;
 
@@ -97,7 +97,7 @@ export const ContactLink = styled.a`
   padding-top: 1.5rem;
   padding-bottom: 2.5rem;
   font-family: "Tiempos", serif;
-  font-size: 0.7rem;
+  font-size: 0.56rem;
   color: #0b0a0a;
   transition: color 0.3s ease;
   font-weight: 600;
@@ -109,7 +109,7 @@ export const ContactLink = styled.a`
   @media (min-width: 768px) {
     padding-top: 2.5rem;
     padding-bottom: 4.5rem;
-    font-size: 1.1rem;
+    font-size: 0.88rem;
   }
 `;
 
@@ -126,10 +126,10 @@ export const SocialLinks = styled.div`
 
 export const Subtitle = styled.p`
   font-family: "Inter", serif;
-  font-size: 0.8rem;
+  font-size: 0.64rem;
 
   @media (min-width: 768px) {
-    font-size: 1.1rem;
+    font-size: 0.88rem;
   }
 `;
 
@@ -143,7 +143,7 @@ export const SocialLink = styled.a`
   border-radius: 50%;
   background-color: #0b0a0a;
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.72rem;
   text-decoration: none;
   transition: all 0.3s ease;
 
@@ -156,7 +156,7 @@ export const SocialLink = styled.a`
   @media (min-width: 768px) {
     width: 40px;
     height: 40px;
-    font-size: 1.2rem;
+    font-size: 0.96rem;
   }
 `;
 
