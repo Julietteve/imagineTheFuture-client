@@ -35,7 +35,7 @@ const SideBar = ({ toggle, isOpen }: IProps) => {
           <NavIcon to="/">Home</NavIcon>
           <NavIcon to="/about">About</NavIcon>
           <NavIcon to="/services">Services</NavIcon>
-          <NavIcon to="/blog">The Coach's Notebook</NavIcon>
+          <NavIcon to="/the-coach's-notebook">The Coach's Notebook</NavIcon>
           <NavIcon to="/contact">Contact</NavIcon>
         </Links>
       </Container>

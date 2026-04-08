@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/imagineTheFuture-client/static/css/main.d221dc40.css",
-    "main.js": "/imagineTheFuture-client/static/js/main.08322424.js",
+    "main.js": "/imagineTheFuture-client/static/js/main.45d7b85f.js",
     "static/js/453.c4c9855c.chunk.js": "/imagineTheFuture-client/static/js/453.c4c9855c.chunk.js",
     "static/media/Tiempos-Regular.otf": "/imagineTheFuture-client/static/media/Tiempos-Regular.5b06f37cd54f3ddba4ce.otf",
     "index.html": "/imagineTheFuture-client/index.html",
     "main.d221dc40.css.map": "/imagineTheFuture-client/static/css/main.d221dc40.css.map",
-    "main.08322424.js.map": "/imagineTheFuture-client/static/js/main.08322424.js.map",
+    "main.45d7b85f.js.map": "/imagineTheFuture-client/static/js/main.45d7b85f.js.map",
     "453.c4c9855c.chunk.js.map": "/imagineTheFuture-client/static/js/453.c4c9855c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d221dc40.css",
-    "static/js/main.08322424.js"
+    "static/js/main.45d7b85f.js"
   ]
 }
