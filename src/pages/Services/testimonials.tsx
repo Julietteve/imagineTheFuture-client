@@ -30,8 +30,8 @@ const Content = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 12rem;
-  margin-bottom: 12rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 
   @media (min-width: 1024px) {
     max-width: 1200px;

@@ -29,8 +29,8 @@ const Container = styled.section<{ $visible: boolean }>`
   justify-content: center;
   align-items: center;
   padding: 4rem;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 7%;
+  padding-bottom: 7%;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
@@ -64,8 +64,8 @@ const Description = styled.p`
   letter-spacing: 0.6px;
 
   @media (min-width: 768px) {
-    font-size: 0.9rem;
-    line-height: 24px;
+    font-size: 1.1rem;
+    line-height: 30px;
   }
 `;
 
@@ -103,7 +103,7 @@ const CTAButton = styled(Link)`
 
 const Text = styled.p`
   font-family: "Tiempos", serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 34px;
 `;

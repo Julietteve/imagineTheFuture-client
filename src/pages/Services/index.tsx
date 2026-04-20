@@ -89,17 +89,17 @@ const Services = () => {
                   across functions, from<br></br> operations and talent to
                   communications and positioning.
                 </Text>
-              </Block>
-              <TestimonialItem
-                quote={`"My coaching experience was met with patience and real-time results.<br>
+                <TestimonialItem
+                  quote={`"My coaching experience was met with patience and real-time results.<br>
                   Inés was well prepared, asked thought-provoking questions,<br>
                   and was deeply committed to the process.<br><br>
-
+                  
                   She helped me understand the value of preparation and approach<br>
                   each interview with clarity and intention. I absolutely recommend her –<br>
                   she brings both expertise and genuine support."`}
-                author="– VP Human Resources (VPHR) "
-              ></TestimonialItem>
+                  author="– VP Human Resources (VPHR) "
+                ></TestimonialItem>
+              </Block>
               <Block>
                 <Subtitle>Leadership & Career Coaching</Subtitle>
                 <Text>
@@ -114,35 +114,35 @@ const Services = () => {
                   <br></br>Clients range from emerging professionals to the
                   C-suite.
                 </Text>
-              </Block>
-              <TestimonialItem
-                quote={`“Inés’ coaching was truly holistic. She helped me work through <br>
-                what was holding me back and brought clarity to my direction.<br><br>
-
-                Her insight into building my professional brand – across resume,<br> 
-                LinkedIn, networking and overall search – made a real difference.<br>
-                I was able to focus my search and position myself effectively.<br><br>
+                <TestimonialItem
+                  quote={`“Inés’ coaching was truly holistic. She helped me work through <br>
+                  what was holding me back and brought clarity to my direction.<br><br>
+                  
+                  Her insight into building my professional brand – across resume,<br> 
+                  LinkedIn, networking and overall search – made a real difference.<br>
+                  I was able to focus my search and position myself effectively.<br><br>
 
                 I felt fully prepared for interviews and ultimately landed a role that<br>
                 feels like a strong fit.I’m now doing meaningful work with a great<br>
                 team – and I’m genuinely happy.”
                 "`}
-                author="– Instructional & Curriculum Leader | Higher Education Instructor"
-              ></TestimonialItem>
-              <TestimonialItem
-                quote={`“Inés was extremely supportive and insightful during a very<br>
-                challenging transition.<br><br>
-
-                She quickly established trust, helped me process the moment, and <br>
-                helped me stay focused and forward-looking.<br><br>
-                Each session was productive and thoughtful and her follow-up was <br>
-                consistent and thorough.<br><br>
-
-                Our work helped me gain clarity on my priorities and move forward with<br>
-                confidence into my next role.”
-                "`}
-                author="— CMO | New York"
-              ></TestimonialItem>
+                  author="– Instructional & Curriculum Leader | Higher Education Instructor"
+                ></TestimonialItem>
+                <TestimonialItem
+                  quote={`“Inés was extremely supportive and insightful during a very<br>
+                  challenging transition.<br><br>
+                  
+                  She quickly established trust, helped me process the moment, and <br>
+                  helped me stay focused and forward-looking.<br><br>
+                  Each session was productive and thoughtful and her follow-up was <br>
+                  consistent and thorough.<br><br>
+                  
+                  Our work helped me gain clarity on my priorities and move forward with<br>
+                  confidence into my next role.”
+                  "`}
+                  author="— CMO | New York"
+                ></TestimonialItem>
+              </Block>
               <Block>
                 <Subtitle>Strategic Outplacement</Subtitle>
                 <Text>
@@ -156,22 +156,22 @@ const Services = () => {
                   while helping organizations offer a considered,<br></br>{" "}
                   human-centered transition experience.
                 </Text>
-              </Block>
-              <TestimonialItem
-                quote={`
+                <TestimonialItem
+                  quote={`
                   “I learned a great deal from my coaching experience – most  importantly,<br>
                   my confidence improved significantly through mock interviews<br>
                   and feedback.<br><br>
-
+                  
                   Inés helped me identify habits and blind spots that were affecting my<br>
                   performance and provided clear, practical guidance. I also appreciated<br>
                   her flexibility and ability to adapt to my schedule.”
                   ”
-              `}
-                author="— CPA | New York"
-              ></TestimonialItem>
+                  `}
+                  author="— CPA | New York"
+                ></TestimonialItem>
+              </Block>
             </Wrapper>
-            <Subheading>The Thinking Behind the Work</Subheading>
+            <Subtitle>The Thinking Behind the Work</Subtitle>
             <TextLine>
               My work combines thoughtful dialogue with a<br></br>
               structured approach —<br></br>bringing clarity and order to

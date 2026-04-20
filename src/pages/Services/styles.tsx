@@ -20,7 +20,7 @@ export const HeadText = styled.h3`
   padding-bottom: 0.8rem;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 3rem;
   }
 `;
@@ -70,8 +70,8 @@ export const Block = styled.div`
   margin-top: 2rem;
 
   @media (min-width: 768px) {
-    margin-bottom: 3rem;
-    margin-top: 4rem;
+    margin-bottom: 10rem;
+    margin-top: 15rem;
   }
 `;
 
@@ -86,7 +86,7 @@ export const Subtitle = styled.h3`
   @media (min-width: 768px) {
     font-size: 1.5rem;
     line-height: 1.4;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -133,7 +133,7 @@ export const Container = styled.section<{ $visible: boolean }>`
 `;
 
 export const Content = styled.div`
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
 `;
 

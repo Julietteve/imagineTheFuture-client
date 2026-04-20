@@ -78,13 +78,15 @@ export default Nota;
 
 export const Container = styled.div`
   padding: 24px;
-  padding-bottom: 75px;
+  padding-bottom: 80px;
+  max-width: 700px;
+  margin: 0 auto;
 `;
 
 export const Titulo = styled.h1`
   font-family: "Tiempos", serif;
-  font-size: 1.5rem;
-  margin-bottom: 24px;
+  font-size: 24px;
+  margin-bottom: 14px;
   color: #111;
 `;
 
@@ -97,25 +99,25 @@ export const Subtitulo = styled.h2`
 
 export const Parrafo = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 0.75rem;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.5;
   color: #333;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 `;
 
 export const Bold = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 0.75rem;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.5;
   color: #111;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 `;
 
 export const Italic = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 0.75rem;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.5;
   color: #111;
   font-style: italic;
   margin-bottom: 12px;
@@ -124,7 +126,7 @@ export const Italic = styled.p`
 export const Saeta = styled.span`
   font-family: "Tiempos", serif;
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 16px;
   color: #111;
   display: inline;
 `;

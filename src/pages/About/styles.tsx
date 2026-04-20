@@ -60,7 +60,6 @@ export const ProfileImage = styled.img`
   max-width: 400px;
   height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 75%;
 
   @media (min-width: 768px) {
     width: 100%;
@@ -95,13 +94,13 @@ export const Paragraph = styled.p`
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   color: #0b0a0a;
 
   @media (min-width: 768px) {
     font-size: 0.9rem;
     line-height: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
   }
 `;
 
@@ -126,13 +125,12 @@ export const FirstParagraph = styled.p`
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
-  margin-bottom: 1rem;
+
   color: #0b0a0a;
 
   @media (min-width: 768px) {
     font-size: 0.9rem;
     line-height: 2rem;
-    margin-bottom: 1.5rem;
   }
 `;
 

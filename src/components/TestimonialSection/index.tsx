@@ -84,6 +84,7 @@ const Title = styled.h2`
   @media (min-width: 768px) {
     font-size: 1.8rem;
     line-height: 40px;
+    padding-top: 10rem;
   }
 `;
 
@@ -103,11 +104,11 @@ const Testimonial = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   @media (min-width: 768px) {
     flex: 1;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1rem;
   }
 `;
 
@@ -119,8 +120,10 @@ const Quote = styled.p`
   margin-bottom: 0;
 
   @media (min-width: 768px) {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 2rem;
   }
 `;
 
@@ -134,8 +137,9 @@ const Author = styled.p`
   font-weight: 500;
 
   @media (min-width: 768px) {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
   }
 `;
 

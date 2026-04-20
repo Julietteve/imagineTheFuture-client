@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { useInView } from "../../hooks/useInView";
 
 interface CTAProps {
@@ -14,10 +13,8 @@ const CTA: React.FC<CTAProps> = ({ text }) => {
     <>
       <Container ref={ref} $visible={isVisible}>
         <Content>
-          <Subheading>Start a conversation.</Subheading>
-          <Line></Line>
           <Text dangerouslySetInnerHTML={{ __html: text }}></Text>
-          <CTAButton to="/contact">
+          <CTAButton href="mailto:ines.imaginethefuture@gmail.com">
             Start a conversation.{" "}
             <text style={{ color: "#b08a4f" }}>→ </text>{" "}
           </CTAButton>
@@ -45,6 +42,7 @@ const Container = styled.section<{ $visible: boolean }>`
 
   @media (min-width: 768px) {
     padding: 5rem;
+    magin-top: 5rem;
   }
 `;
 
@@ -88,7 +86,7 @@ const Quote = styled.h3`
   }
 `;
 
-const CTAButton = styled(Link)`
+const CTAButton = styled.a`
   color: #000;
   border: none;
   background-color: transparent;
@@ -106,7 +104,6 @@ const CTAButton = styled(Link)`
     padding: 12px 24px;
     font-size: 1rem;
     letter-spacing: 1.5px;
-    margin-top: 2.5rem;
   }
 `;
 
@@ -121,7 +118,7 @@ const Text = styled.p`
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 1.4;
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
 `;
 

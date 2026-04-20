@@ -25,7 +25,7 @@ const WorkSection: React.FC = () => {
           sequence, and direction.
         </Description>
 
-        <Block style={{ marginTop: "6rem" }}>
+        <Block style={{ marginTop: "10rem" }}>
           <Subtitle style={{ marginTop: "10px" }}>Strategy</Subtitle>
           <Text>
             Vision, positioning, culture, and direction – advising leaders
@@ -81,7 +81,7 @@ const Description = styled.p`
 
   @media (min-width: 768px) {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 40px;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -110,7 +110,7 @@ const Title = styled.h2`
     font-size: 3.5rem;
     line-height: 1.3;
     margin-bottom: 8rem;
-    margin-top: 15rem;
+    margin-top: 25rem;
   }
 `;
 
@@ -131,8 +131,8 @@ const Block = styled.div`
   margin-top: 2rem;
 
   @media (min-width: 768px) {
-    margin-bottom: 3rem;
-    margin-top: 4rem;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
   }
 `;
 
@@ -158,8 +158,8 @@ const Text = styled.p`
   color: #363535;
 
   @media (min-width: 768px) {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 40px;
   }
 `;
 
@@ -201,7 +201,7 @@ const TextBottom = styled.p`
 
   @media (min-width: 768px) {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 40px;
     margin-top: 6rem;
     margin-bottom: 8rem;
   }

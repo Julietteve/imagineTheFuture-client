@@ -68,7 +68,7 @@ const Subheading = styled.h3`
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 8rem;
     margin-top: 5rem;
   }
@@ -109,8 +109,8 @@ const Title = styled.h1`
   @media (min-width: 768px) {
     font-size: 4rem;
     line-height: 1.2;
-    margin-top: 10rem;
-    margin-bottom: 15rem;
+    margin-top: 15rem;
+    margin-bottom: 25rem;
   }
 `;
 
@@ -125,6 +125,7 @@ const Name = styled.h2`
   @media (min-width: 768px) {
     font-size: 2.5rem;
     line-height: 1.3;
+    margin-bottom: 10rem;
   }
 `;
 
@@ -136,7 +137,7 @@ const Role = styled.p`
   font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
   }
 `;
@@ -149,8 +150,8 @@ const Description = styled.p`
   font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 50px;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }

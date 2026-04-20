@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import styled from "styled-components";
 import Nota from "../../components/Notas";
 import { notasList } from "../../components/Notas/notesList";
+import CTA from "../../components/CTA";
 
 const PageWrapper = styled.div`
   width: 100%;
@@ -16,7 +17,7 @@ const PageWrapper = styled.div`
 const NotaWrapper = styled.div<{ $isEven: boolean }>`
   background-color: ${(props) => (props.$isEven ? "#fafafa" : "#ffffff")};
   border-radius: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 80px;
 `;
 
 const BlogContainer = styled.div`
@@ -38,7 +39,7 @@ const Title = styled.h1`
   font-size: 1.4rem;
   color: #0b0a0a;
   margin-bottom: 0.8rem;
-  text-align: left;
+  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 2rem;
@@ -52,7 +53,8 @@ const Line = styled.div`
   background-color: #b7b7b7;
   margin-bottom: 1rem;
   margin-top: 0.8rem;
-  align-self: flex-start;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: 768px) {
     margin-bottom: 1.5rem;
@@ -66,7 +68,7 @@ const Description = styled.p`
   line-height: 1.6;
   color: #0b0a0a;
   margin-bottom: 2rem;
-  text-align: left;
+  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 0.9rem;
@@ -103,12 +105,26 @@ const Blog = () => {
             transition: "opacity 0.8s ease-out, transform 0.8s ease-out",
           }}
         >
-          <Title>The Coach's Notebook</Title>
-          <Line />
-          <Description>
-            A collection of reflections drawn from my work with clients –
-            <br></br> and from my own journey.
-          </Description>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/ball.jpg`}
+            alt="Blog Header"
+            style={{
+              width: "60%",
+              height: "auto",
+              borderRadius: "6px",
+              marginBottom: "1.5rem",
+              margin: "0 auto 1.5rem auto",
+              display: "block",
+            }}
+          />
+          <div style={{ textAlign: "center" }}>
+            <Title>Coach's Notebook</Title>
+            <Line />
+            <Description>
+              A collection of reflections drawn from my work with clients –
+              <br></br> and from my own journey.
+            </Description>
+          </div>
           <Spacer />
           {notasList.map((nota, index) => (
             <NotaWrapper key={nota.id} $isEven={index % 2 === 0}>
@@ -117,6 +133,7 @@ const Blog = () => {
           ))}
         </BlogContainer>
       </PageWrapper>
+      <CTA text="If this resonates — we can start a conversation."></CTA>
       <Footer />
     </>
   );

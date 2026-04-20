@@ -60,50 +60,60 @@ const About = () => {
                 <ContentContainer>
                   <TextMain>About</TextMain>
                   <Line></Line>
-                  <FirstParagraph>
+                  <Paragraph>
                     I was born in La Paz, Bolivia, and raised between Lima,
-                    Montevideo, and New York.
-                  </FirstParagraph>
+                    Montevideo, <br></br>and New York.
+                  </Paragraph>
 
                   <Paragraph>
                     I have lived and worked across five continents, and traveled
-                    to more than 50 countries — experiences that shaped my
-                    perspective and continue to inform how I think and advise.
+                    to more than <br></br> 50 countries — experiences that{" "}
+                    <br></br>
+                    shaped my perspective and continue to inform how I think and
+                    advise.
                   </Paragraph>
 
                   <Paragraph>
                     My work has centered on building and shaping organizations
-                    across corporate, nonprofit, and international sectors.
+                    across <br></br> corporate, nonprofit, and international
+                    sectors.
                   </Paragraph>
 
                   <Paragraph>
-                    In senior operational and people leadership roles, I have
-                    established international operations from the ground up and
-                    contributed to strategic direction through periods of
-                    growth, transformation, M&A activity, and public offerings.
+                    In senior operational and people <br></br>leadership roles,
+                    I have established international operations from <br></br>{" "}
+                    the ground up and contributed to strategic direction through
+                    periods of growth, transformation, M&A activity,<br></br>{" "}
+                    and public offerings.
                   </Paragraph>
 
                   <Paragraph>
-                    Over time, this work has brought me to the intersection of
-                    leadership, talent, strategy, and organizational design —
-                    partnering with decision-makers through complexity and
-                    change with a sustained focus on aligning strategy, culture
-                    and impact.
+                    Over time, this work has brought me <br></br> to the
+                    intersection of leadership, talent, strategy, and
+                    organizational design — partnering with decision-makers{" "}
+                    <br></br>
+                    through complexity and change with a sustained focus on
+                    aligning strategy, <br></br> culture and impact.
                   </Paragraph>
                   <Paragraph>
-                    I bring perspective, structure, and a sense of
+                    I bring perspective, structure, and a <br></br>sense of
                     accountability to the choices that shape careers, teams, and
+                    <br></br>
                     institutions.
                   </Paragraph>
                   <Paragraph>
-                    Beyond the work, I remain deeply interested in the interplay
-                    between structure and creativity — and in how reflection,
-                    culture, and lived experience shape leadership.
+                    Beyond the work, I remain deeply <br></br>interested in the
+                    interplay between<br></br> structure and creativity — and in
+                    how
+                    <br></br>
+                    reflection, culture, and lived<br></br> experience shape
+                    leadership.
                   </Paragraph>
                   <Paragraph>
-                    Travel, literature, painting, music, working with clay, and
-                    long walks — including the Camino — continue to shape how I
-                    observe, think, and act.
+                    Travel, literature, painting, music, <br></br>working with
+                    clay, and long walks — including the Camino — continue to
+                    <br></br>
+                    shape how I observe, think, and act.
                   </Paragraph>
                 </ContentContainer>
               </div>
