@@ -30,8 +30,7 @@ const Content = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
 
   @media (min-width: 1024px) {
     max-width: 1200px;
@@ -51,7 +50,7 @@ const Quote = styled.p`
   font-style: italic;
 
   @media (min-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 12px;
   }
 `;
 
@@ -73,7 +72,7 @@ const Author = styled.p`
 
 const Line = styled.div`
   width: 100px;
-  height: 1px;
+  height: 0.5px;
   margin-bottom: 1rem;
   background-color: #6e6e6d;
 `;

@@ -17,6 +17,7 @@ import {
   SocialLink,
   Subtitle,
   Logo,
+  CTAButton,
 } from "./styles";
 
 const Contact = () => {
@@ -47,8 +48,7 @@ const Contact = () => {
             <ContactContent>
               <Logo src={`${process.env.PUBLIC_URL}/images/logo.png`}></Logo>
               <ContactTitle>
-                If you’d like to start a conversation, you’re welcome{" "}
-                {<br></br>} to reach out directly.
+                If this resonates, you're welcome to reach out directly.
               </ContactTitle>
 
               <ContactInfo>
@@ -58,9 +58,10 @@ const Contact = () => {
                   </ContactLink>
                 </ContactItem>
               </ContactInfo>
-              <ContactLink href="mailto:ines.imaginethefuture@gmail.com">
-                <ContactTitle>Schedule a conversation →</ContactTitle>
-              </ContactLink>
+              <CTAButton href="https://calendly.com/ines-imaginethefuture/free-career-leadership-consultation">
+                Start a conversation{" "}
+                <text style={{ color: "#b08a4f" }}>→ </text>{" "}
+              </CTAButton>
             </ContactContent>
           </ContactContainer>
           <Footer />

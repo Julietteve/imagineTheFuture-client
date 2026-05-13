@@ -19,21 +19,21 @@ const HeroSection: React.FC = () => {
         <Subheading>Bringing clarity to complexity</Subheading>
         <Description>
           I work with professionals, leaders, and organizations navigating
-          change,<br></br>growth, and transition — clarifying direction, shaping
-          strategy, and <br></br> moving forward with impact.
+          change, growth, and transition <br></br>— when direction is unclear,
+          and decisions matter.
         </Description>
 
         <Description>
-          I partner with clients across career stages — <br></br>from emerging
-          talent to the C-suite.
+          I partner with clients across career stages — from emerging talent to
+          the C-suite.
         </Description>
         <Description>
-          Drawing on senior leadership experience<br></br> across operations,
-          HR, and talent acquisition —
+          Drawing on senior leadership experience across operations, HR, and
+          talent acquisition —
         </Description>
         <Description>
-          I advise leaders and professionals through<br></br>change,<br></br>
-          bringing both an organizational<br></br>and individual perspective.
+          I advise leaders and professionals through change, bringing
+          <br></br>both an organizational and individual perspective.
         </Description>
         <Line></Line>
       </Content>
@@ -125,7 +125,6 @@ const Name = styled.h2`
   @media (min-width: 768px) {
     font-size: 2.5rem;
     line-height: 1.3;
-    margin-bottom: 10rem;
   }
 `;
 
@@ -151,7 +150,7 @@ const Description = styled.p`
 
   @media (min-width: 768px) {
     font-size: 16px;
-    line-height: 50px;
+    line-height: 30px;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }

@@ -30,12 +30,11 @@ export const ContactTitle = styled.h1`
   font-family: "Inter", serif;
   font-size: 0.64rem;
   color: #2c2c2c;
-  font-weight: 400;
   line-height: 1.6;
   margin-bottom: 0.8rem;
 
   @media (min-width: 768px) {
-    font-size: 0.88rem;
+    font-size: 1.2rem;
     line-height: 1.4;
   }
 `;
@@ -76,8 +75,26 @@ export const ContactInfo = styled.div`
 export const ContactItem = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   align-items: center;
+`;
+
+export const CTAButton = styled.a`
+  color: #000;
+  border: none;
+  background-color: transparent;
+  font-size: 0.7rem;
+  font-family: "Inter", serif;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border-radius: 2px;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const ContactLabel = styled.h3`
@@ -94,20 +111,20 @@ export const ContactLabel = styled.h3`
 
 export const ContactLink = styled.a`
   text-decoration: none;
-  padding-top: 1.5rem;
+
   padding-bottom: 2.5rem;
   font-family: "Tiempos", serif;
   font-size: 0.56rem;
   color: #0b0a0a;
   transition: color 0.3s ease;
-  font-weight: 600;
+  font-weight: 800;
 
   &:hover {
     color: #062e64;
   }
 
   @media (min-width: 768px) {
-    padding-top: 2.5rem;
+    padding-top: 1rem;
     padding-bottom: 4.5rem;
     font-size: 0.88rem;
   }

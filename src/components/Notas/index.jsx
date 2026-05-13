@@ -12,115 +12,172 @@ function Nota({ titulo, contenido }) {
   };
 
   return (
-    <Container>
-      <Titulo>{titulo}</Titulo>
+    <>
+      <Container>
+        <Titulo>{titulo}</Titulo>
 
-      {contenido.map((bloque, i) => {
-        switch (bloque.tipo) {
-          case "parrafo":
-            return (
-              <Parrafo key={i}>{renderTextWithLineBreaks(bloque.text)}</Parrafo>
-            );
+        {contenido.map((bloque, i) => {
+          switch (bloque.tipo) {
+            case "titulo":
+              return (
+                <Titulo key={i}>{renderTextWithLineBreaks(bloque.text)}</Titulo>
+              );
+            case "subtitulo":
+              return (
+                <Subtitulo key={i}>
+                  {renderTextWithLineBreaks(bloque.text)}
+                </Subtitulo>
+              );
+            case "parrafo":
+              return (
+                <Parrafo key={i}>
+                  {renderTextWithLineBreaks(bloque.text)}
+                </Parrafo>
+              );
+            case "parrafoBloque":
+              return (
+                <ParrafoBloque key={i}>
+                  {renderTextWithLineBreaks(bloque.text)}
+                </ParrafoBloque>
+              );
+            case "giro":
+              return (
+                <ParrafoGiro key={i}>
+                  {renderTextWithLineBreaks(bloque.text)}
+                </ParrafoGiro>
+              );
 
-          case "bold":
-            return <Bold key={i}>{renderTextWithLineBreaks(bloque.text)}</Bold>;
-          case "italic":
-            return (
-              <Italic key={i}>{renderTextWithLineBreaks(bloque.text)}</Italic>
-            );
+            case "reflexivo":
+              return (
+                <ParrafoReflexivo key={i}>
+                  {renderTextWithLineBreaks(bloque.text)}
+                </ParrafoReflexivo>
+              );
+            case "insight":
+              return (
+                <Insight key={i}>
+                  {renderTextWithLineBreaks(bloque.text)}
+                </Insight>
+              );
+            case "cierreBold":
+              return (
+                <CierreBold key={i}>
+                  {renderTextWithLineBreaks(bloque.text)}
+                </CierreBold>
+              );
+            case "cierreRegular":
+              return (
+                <CierreRegular key={i}>
+                  {renderTextWithLineBreaks(bloque.text)}
+                </CierreRegular>
+              );
+            case "saeta":
+              return (
+                <Saeta key={i}>{renderTextWithLineBreaks(bloque.text)}</Saeta>
+              );
 
-          case "titulo":
-            return (
-              <Subtitulo key={i}>
-                {renderTextWithLineBreaks(bloque.text)}
-              </Subtitulo>
-            );
+            case "mixed":
+              return (
+                <Parrafo key={i}>
+                  {bloque.content.map((parte, j) => {
+                    if (parte.tipo === "saeta") {
+                      return <Saeta key={j}>{parte.text}</Saeta>;
+                    } else {
+                      return <span key={j}>{parte.text}</span>;
+                    }
+                  })}
+                </Parrafo>
+              );
 
-          case "highlight":
-            return (
-              <Parrafo key={i}>
-                <Highlight>{renderTextWithLineBreaks(bloque.text)}</Highlight>
-              </Parrafo>
-            );
+            default:
+              return null;
+          }
+        })}
 
-          case "saeta":
-            return (
-              <Saeta key={i}>{renderTextWithLineBreaks(bloque.text)}</Saeta>
-            );
-
-          case "mixed":
-            return (
-              <Parrafo key={i}>
-                {bloque.content.map((parte, j) => {
-                  if (parte.tipo === "saeta") {
-                    return <Saeta key={j}>{parte.text}</Saeta>;
-                  } else {
-                    return <span key={j}>{parte.text}</span>;
-                  }
-                })}
-              </Parrafo>
-            );
-
-          case "divider":
-            return <Divider key={i} />;
-
-          default:
-            return null;
-        }
-      })}
-
-      {/*  <Line /> */}
-    </Container>
+        {/*  <Line /> */}
+      </Container>
+      <Divider />
+    </>
   );
 }
 
 export default Nota;
 
 export const Container = styled.div`
-  padding: 24px;
-  padding-bottom: 80px;
   max-width: 700px;
-  margin: 0 auto;
+  margin-right: 0;
+  margin-bottom: 80px;
+  margin-top: 120px;
+  margin-left: 15%;
 `;
 
+export const Divider = styled.div`
+  height: 0.5px;
+  background-color: #f7e383;
+  margin-top: 60;
+  margin-bottom: 100px;
+  width: 80px;
+  margin: 0 auto;
+`;
 export const Titulo = styled.h1`
   font-family: "Tiempos", serif;
   font-size: 24px;
-  margin-bottom: 14px;
-  color: #111;
+  margin-bottom: 16px;
+  font-weight: bold;
 `;
 
-export const Subtitulo = styled.h2`
-  font-family: "Tiempos", serif;
-  font-size: 1.125rem;
-  margin-bottom: 24px;
-  color: #111;
+export const Subtitulo = styled.p`
+  font-family: "Inter", sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+  margin-bottom: 44px;
 `;
 
 export const Parrafo = styled.p`
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  margin-bottom: 10px;
-`;
-
-export const Bold = styled.p`
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #111;
-  font-weight: 600;
-  margin-bottom: 10px;
-`;
-
-export const Italic = styled.p`
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #111;
-  font-style: italic;
   margin-bottom: 12px;
+`;
+
+export const ParrafoBloque = styled.p`
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-bottom: 52px;
+`;
+
+export const ParrafoGiro = styled.p`
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 32px;
+  margin-top: 52px;
+`;
+
+export const ParrafoReflexivo = styled.p`
+  font-family: "Inter", sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+  margin-bottom: 40px;
+`;
+
+export const Insight = styled.p`
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 48px;
+`;
+
+export const CierreBold = styled.p`
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 52px;
+`;
+
+export const CierreRegular = styled.p`
+  font-family: "Inter", sans-serif;
+  font-weight: regular;
+  font-size: 16px;
 `;
 
 export const Saeta = styled.span`
@@ -129,23 +186,4 @@ export const Saeta = styled.span`
   font-size: 16px;
   color: #111;
   display: inline;
-`;
-
-export const Highlight = styled.span`
-  color: #787878;
-  padding: 1.5px 4.5px;
-  border-radius: 2px;
-`;
-
-export const Divider = styled.hr`
-  border: none;
-  border-top: 1px solid #ffffff;
-  margin: 30px 0;
-`;
-
-export const Line = styled.div`
-  width: 112px;
-  height: 1px;
-  background-color: #b7b7b7;
-  margin: 45px 0;
 `;

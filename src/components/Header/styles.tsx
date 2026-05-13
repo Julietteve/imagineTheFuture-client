@@ -27,7 +27,7 @@ export const MainLogoCircle = styled(LinkIcon)`
   align-items: center;
   display: flex;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   span {
     text-align: center;
 

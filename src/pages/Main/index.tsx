@@ -50,7 +50,10 @@ const Main = () => {
           <WorkSection />
           <TestimonialSection />
           <DecadeSection></DecadeSection>
-          <CTA text="In moments of transition, direction, or complex decisions."></CTA>
+          <CTA
+            showButton={false}
+            text="In moments of transition, direction, or complex decisions."
+          ></CTA>
           <Footer showTopDivider={true} />
         </>
       )}

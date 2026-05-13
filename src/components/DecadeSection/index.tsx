@@ -31,6 +31,7 @@ const Container = styled.section<{ $visible: boolean }>`
   padding: 4rem;
   padding-top: 7%;
   padding-bottom: 7%;
+  margin-bottom: 18%;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
@@ -41,9 +42,7 @@ const Container = styled.section<{ $visible: boolean }>`
     transform 0.9s ease-out;
 `;
 
-const Content = styled.div`
-  text-align: center;
-`;
+const Content = styled.div``;
 
 const Title = styled.h2`
   font-family: "Tiempos", serif;
@@ -66,6 +65,8 @@ const Description = styled.p`
   @media (min-width: 768px) {
     font-size: 1.1rem;
     line-height: 30px;
+    text-align: left;
+    margin-left: 15%;
   }
 `;
 
@@ -106,4 +107,5 @@ const Text = styled.p`
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 34px;
+  text-align: center;
 `;

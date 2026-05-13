@@ -29,7 +29,7 @@ export const FooterData = [
       },
       {
         name: "Coach’s Notebook",
-        url: "/coach's-notebook",
+        url: "/coach's-Notebook",
         external: false,
       },
     ],

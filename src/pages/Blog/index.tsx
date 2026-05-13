@@ -15,9 +15,16 @@ const PageWrapper = styled.div`
 `;
 
 const NotaWrapper = styled.div<{ $isEven: boolean }>`
-  background-color: ${(props) => (props.$isEven ? "#fafafa" : "#ffffff")};
-  border-radius: 6px;
-  margin-bottom: 80px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  padding: 30px 20px;
+  box-shadow: ${(props) =>
+    props.$isEven ? "0 2px 8px rgba(0,0,0,0.04)" : "none"};
+
+  @media (min-width: 768px) {
+    padding: 40px 30px;
+    margin-bottom: 80px;
+  }
 `;
 
 const BlogContainer = styled.div`
@@ -42,7 +49,7 @@ const Title = styled.h1`
   text-align: center;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
 `;
@@ -64,14 +71,15 @@ const Line = styled.div`
 
 const Description = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 0.7rem;
+  font-size: 14px;
   line-height: 1.6;
   color: #0b0a0a;
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: justify;
+  margin-left: 30%;
 
   @media (min-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 4rem;
   }
@@ -118,22 +126,22 @@ const Blog = () => {
             }}
           />
           <div style={{ textAlign: "center" }}>
-            <Title>Coach's Notebook</Title>
+            <Title>The Coach's Notebook</Title>
             <Line />
             <Description>
-              A collection of reflections drawn from my work with clients –
-              <br></br> and from my own journey.
+              A collection of reflections drawn from my work <br></br> with
+              clients –<br></br> and from my own journey.
             </Description>
           </div>
           <Spacer />
-          {notasList.map((nota, index) => (
-            <NotaWrapper key={nota.id} $isEven={index % 2 === 0}>
-              <Nota {...nota} />
-            </NotaWrapper>
-          ))}
         </BlogContainer>
+        {notasList.map((nota, index) => (
+          <Nota {...nota} />
+        ))}
       </PageWrapper>
-      <CTA text="If this resonates — we can start a conversation."></CTA>
+      <div style={{ marginTop: 180 }}>
+        <CTA text="If this resonates — we can start a conversation."></CTA>
+      </div>
       <Footer />
     </>
   );

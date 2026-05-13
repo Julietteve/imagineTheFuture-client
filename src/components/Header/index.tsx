@@ -24,7 +24,7 @@ const Header = () => {
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <NavIcon to="/about"> About </NavIcon>
           <NavIcon to="/services"> Services </NavIcon>
-          <NavIcon to="/coach's-notebook"> Coach's notebook </NavIcon>
+          <NavIcon to="/coach's-Notebook"> Coach's Notebook </NavIcon>
           <NavIcon to="/contact"> Contact </NavIcon>
         </div>
       </MainContainer>

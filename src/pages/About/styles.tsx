@@ -77,7 +77,7 @@ export const ImageContainer = styled.div`
   @media (min-width: 768px) {
     min-height: 400px;
     padding: 1.5rem 1rem 1.5rem 2rem;
-    margin-top: 3rem;
+    margin-top: 8rem;
   }
 `;
 
@@ -100,7 +100,7 @@ export const Paragraph = styled.p`
   @media (min-width: 768px) {
     font-size: 0.9rem;
     line-height: 2rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
   }
 `;
 

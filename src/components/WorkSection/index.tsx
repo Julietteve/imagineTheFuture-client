@@ -10,29 +10,27 @@ const WorkSection: React.FC = () => {
       <Content>
         <Title>How I Work</Title>
         <Description style={{ marginBottom: "15rem" }}>
-          My work brings together strategy, coaching, and <br></br>
-          organizational insight—
-          <br></br>creating clarity and structure in moments of change,<br></br>{" "}
-          growth, and decision.
+          My work brings together strategy, coaching, and organizational
+          insight—
+          <br></br>creating clarity and structure in moments of change, growth,
+          and decision.
         </Description>
         <Description>
           At the core of my work is SAETA™ —<br></br>a way to understand where
-          you are,<br></br>
-          what matters,<br></br> and how we move forward.
+          you are, what matters, and how we move forward.
         </Description>
         <Description>
-          It is not a rigid framework —<br></br>but a way to create focus,
-          sequence, and direction.
+          It is not a rigid framework — but a way to create focus, sequence, and
+          direction.
         </Description>
 
         <Block style={{ marginTop: "10rem" }}>
           <Subtitle style={{ marginTop: "10px" }}>Strategy</Subtitle>
           <Text>
-            Vision, positioning, culture, and direction – advising leaders
-            <br></br> and organizations as they grow, scale, and align strategy,
-            <br></br>
-            systems, people, and execution, to deliver results for their
-            <br></br> teams, customers, and stakeholders.
+            Vision, positioning, culture, and direction – advising leaders and
+            organizations <br></br> as they grow, scale, and align strategy,
+            systems, people, and execution, <br></br>to deliver results for
+            their teams, customers, and stakeholders.
           </Text>
         </Block>
 
@@ -40,17 +38,16 @@ const WorkSection: React.FC = () => {
           <Subtitle>Executive & Career Coaching</Subtitle>
           <Text>
             Working with professionals and leaders to clarify direction,
-            <br></br>
-            strengthen leadership presence, and move forward in<br></br>{" "}
+            strengthen leadership presence, <br></br> and move forward in
             transitions, growth, and key career decisions.
           </Text>
         </Block>
         <Block>
           <Subtitle>Organizational Alignment</Subtitle>
           <Text>
-            Working with organizations as leadership, structure, and<br></br>
-            culture evolve — ensuring strategy, people, and execution<br></br>
-            remain aligned through change.
+            Working with organizations as leadership, structure, and culture
+            evolve — <br></br> ensuring strategy, people, and execution remain
+            aligned through change.
           </Text>
         </Block>
         <Line></Line>
@@ -81,7 +78,7 @@ const Description = styled.p`
 
   @media (min-width: 768px) {
     font-size: 1rem;
-    line-height: 40px;
+    line-height: 30px;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -145,7 +142,7 @@ const Subtitle = styled.h3`
   margin-bottom: 0.3rem;
 
   @media (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 28px;
     line-height: 1.4;
     margin-bottom: 0.6rem;
   }
@@ -201,7 +198,7 @@ const TextBottom = styled.p`
 
   @media (min-width: 768px) {
     font-size: 1rem;
-    line-height: 40px;
+    line-height: 30px;
     margin-top: 6rem;
     margin-bottom: 8rem;
   }

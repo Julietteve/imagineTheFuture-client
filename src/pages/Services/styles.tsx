@@ -20,8 +20,8 @@ export const HeadText = styled.h3`
   padding-bottom: 0.8rem;
 
   @media (min-width: 768px) {
-    font-size: 1.2rem;
-    margin-top: 3rem;
+    font-size: 1.5rem;
+    margin-top: 14rem;
   }
 `;
 
@@ -29,7 +29,7 @@ export const LineText = styled.p`
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 30px;
   color: #0b0a0a;
 
   @media (min-width: 768px) {
@@ -42,7 +42,7 @@ export const Line = styled.div`
   height: 2px;
   background-color: #b7b7b7;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   @media (min-width: 768px) {
   }
 `;
@@ -60,8 +60,8 @@ export const Subheading = styled.h3`
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
-    margin-bottom: 7rem;
-    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
   }
 `;
 
@@ -84,8 +84,8 @@ export const Subtitle = styled.h3`
   margin-bottom: 0.8rem;
 
   @media (min-width: 768px) {
-    font-size: 1.5rem;
-    line-height: 1.4;
+    font-size: 2rem;
+    line-height: 30px;
     margin-bottom: 1rem;
   }
 `;
@@ -97,8 +97,8 @@ export const Text = styled.p`
   color: #0b0a0a;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 30px;
   }
 `;
 
@@ -139,12 +139,12 @@ export const Content = styled.div`
 
 export const TextMain = styled.h2`
   font-family: "Tiempos", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #0b0a0a;
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 0rem;
   }
 `;

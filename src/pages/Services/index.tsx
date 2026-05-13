@@ -63,11 +63,10 @@ const Services = () => {
               </Sub>
             </Subheading>
             <Text>
-              I work with professionals, leaders, and organizations at<br></br>{" "}
-              moments of change, growth, and transition — bringing<br></br>{" "}
+              I work with professionals, leaders, and organizations at moments
+              of change, <br></br>growth, and transition — <br></br> bringing
               perspective, structure, and thoughtful guidance to the decisions
-              <br></br>
-              that shape careers, leadership, and organizations.<br></br>
+              that shape careers,<br></br> leadership, and organizations.
               <br></br>
               The work is structured, yet never standardized.<br></br> Each
               engagement is shaped by context, need, and timing.
@@ -77,16 +76,15 @@ const Services = () => {
               <Block>
                 <Subtitle>Strategic Advisory</Subtitle>
                 <Text>
-                  Working with senior leaders and organizations to clarify{" "}
+                  Working with senior leaders and organizations to clarify
+                  direction, strengthen positioning,<br></br> and make sound
+                  decisions at moments that shape growth and transformation.
                   <br></br>
-                  direction, strengthen positioning, and make sound decisions at{" "}
-                  <br></br>
-                  moments that shape growth and transformation. <br></br>
                   <br></br>
                   The work focuses on leadership alignment, organizational,
-                  <br></br> effectiveness, and talent and culture strategy — as
-                  well as the<br></br> design and execution of key initiatives
-                  across functions, from<br></br> operations and talent to
+                  effectiveness, <br></br> and talent and culture strategy — as
+                  well as the design and execution of <br></br>key initiatives
+                  across functions,<br></br> from operations and talent to
                   communications and positioning.
                 </Text>
                 <TestimonialItem
@@ -104,15 +102,17 @@ const Services = () => {
                 <Subtitle>Leadership & Career Coaching</Subtitle>
                 <Text>
                   Guiding professionals and leaders at points of transition,
-                  growth,<br></br> and evolving responsibilities — clarifying
-                  direction,<br></br>
-                  strengthening positioning, and enabling more deliberate
+                  growth, and evolving responsibilities — <br></br>clarifying
+                  direction, strengthening positioning, and enabling more
+                  deliberate decisions.
                   <br></br>
-                  decisions.<br></br> Together, we refine narrative, strengthen
-                  presence, and take a <br></br> more intentional approach to
-                  career and leadership.<br></br>
+                  <br></br> Together, we refine narrative, strengthen presence,
+                  and take a more intentional approach<br></br> to career and
+                  leadership.
+                  <br></br>
                   <br></br>Clients range from emerging professionals to the
                   C-suite.
+                  <br></br>
                 </Text>
                 <TestimonialItem
                   quote={`“Inés’ coaching was truly holistic. She helped me work through <br>
@@ -147,14 +147,15 @@ const Services = () => {
                 <Subtitle>Strategic Outplacement</Subtitle>
                 <Text>
                   For organizations and individuals at moments of downsizing,
-                  <br></br>
                   restructuring, or transformation — <br></br>
-                  <br></br>bringing structure and perspective to situations that
-                  require<br></br> clarity and a path forward.<br></br>The work
-                  is thoughtful and high-touch — supporting<br></br> individuals
-                  in reflecting, repositioning, and moving forward,<br></br>{" "}
-                  while helping organizations offer a considered,<br></br>{" "}
-                  human-centered transition experience.
+                  bringing structure and perspective to situations that require
+                  clarity and a path forward.<br></br>
+                  <br></br>
+                  <br></br>The work is thoughtful and high-touch — <br></br>
+                  supporting individuals in reflecting, repositioning, and
+                  moving forward,<br></br>
+                  while helping organizations offer a considered,
+                  <br></br> human-centered transition experience.
                 </Text>
                 <TestimonialItem
                   quote={`
@@ -173,44 +174,40 @@ const Services = () => {
             </Wrapper>
             <Subtitle>The Thinking Behind the Work</Subtitle>
             <TextLine>
-              My work combines thoughtful dialogue with a<br></br>
-              structured approach —<br></br>bringing clarity and order to
-              complexity.
+              My work combines thoughtful dialogue with a structured approach —
+              <br></br>bringing clarity and order to complexity.
             </TextLine>
             <TextLine>
               Over time, a consistent way of working emerged —<br></br>across
-              sectors, leadership levels and organizational
-              <br></br> contexts.
+              sectors, leadership levels and organizational contexts.
             </TextLine>
             <TextLine>
-              I refer to this as <b>SAETA</b> — a lens that helps determine
-              <br></br>
-              where to begin and how to move forward.
+              <br></br> I refer to this as <b>SAETA</b> — a lens that helps
+              determine where to begin<br></br> and how to move forward.
             </TextLine>
             <TextLine>
               It is not a fixed process — <br></br>
-              but a way to understand context, define direction,<br></br>
-              and support clear decision-making.
+              but a way to understand context, define direction,<br></br> and
+              support clear decision-making.
             </TextLine>
             <TextLine>
               The starting point is always shaped by the situation — <br></br>
-              because no two individuals or organizations <br></br>
-              face the same context.
+              because no two individuals or organizations face the same context.
             </TextLine>
-            <div style={{ marginTop: "10rem", marginBottom: "10rem" }}>
+            <div style={{ marginTop: "5rem", marginBottom: "5rem" }}>
               <HeadText>Supporting tools</HeadText>
               <LineText>
-                Depending on the engagement, the work may incorporate<br></br>
-                structured reflection, selected frameworks, and targeted tools —
-                <br></br>— to deepen insight and support practical
+                Depending on the engagement, the work may incorporate structured
+                reflection, <br></br>selected frameworks, and targeted tools —
+                <br></br>to deepen insight and support practical
                 decision-making.
               </LineText>
             </div>
-            <CTA
-              text={`For moments of transition, leadership decisions, and periods of change.`}
-            ></CTA>
           </div>
         </Content>
+        <CTA
+          text={`If your organization — or you — are navigating change or growth`}
+        ></CTA>
       </PageWrapper>
       <Footer />
     </>

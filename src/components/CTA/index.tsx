@@ -4,18 +4,22 @@ import { useInView } from "../../hooks/useInView";
 
 interface CTAProps {
   text: string;
+  showButton?: boolean;
 }
 
-const CTA: React.FC<CTAProps> = ({ text }) => {
+const CTA: React.FC<CTAProps> = ({ text, showButton = true }) => {
   const { ref, isVisible } = useInView<HTMLElement>(0.2);
 
   return (
     <>
       <Container ref={ref} $visible={isVisible}>
         <Content>
-          <Text dangerouslySetInnerHTML={{ __html: text }}></Text>
+          {showButton && (
+            <Text dangerouslySetInnerHTML={{ __html: text }}></Text>
+          )}
+
           <CTAButton href="mailto:ines.imaginethefuture@gmail.com">
-            Start a conversation.{" "}
+            Start a conversation{" "}
             <text style={{ color: "#b08a4f" }}>→ </text>{" "}
           </CTAButton>
         </Content>
@@ -28,9 +32,10 @@ export default CTA;
 
 const Container = styled.section<{ $visible: boolean }>`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 2rem 0.8rem;
+  margin-left: 10%;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
@@ -47,7 +52,7 @@ const Container = styled.section<{ $visible: boolean }>`
 `;
 
 const Content = styled.div`
-  text-align: center;
+  text-align: left;
 `;
 
 const Title = styled.h2`
@@ -91,34 +96,31 @@ const CTAButton = styled.a`
   border: none;
   background-color: transparent;
   font-size: 0.7rem;
-  font-family: "Tiempos", serif;
-  letter-spacing: 0.8px;
+  font-family: "Inter", serif;
   cursor: pointer;
   transition: color 0.3s ease;
   border-radius: 2px;
   display: inline-block;
   text-decoration: none;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
 
   @media (min-width: 768px) {
-    padding: 12px 24px;
-    font-size: 1rem;
-    letter-spacing: 1.5px;
+    font-size: 18px;
   }
 `;
 
 const Text = styled.p`
-  font-family: "Tiempos", serif;
+  font-family: "Inter", serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 1.4;
-    margin-top: 6rem;
   }
 `;
 
