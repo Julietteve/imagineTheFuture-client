@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
         <Subheading>Bringing clarity to complexity</Subheading>
         <Description>
           I work with professionals, leaders, and organizations navigating
-          change, growth, and transition <br></br>— when direction is unclear,
+          change, growth, and <br></br>transition — when direction is unclear,
           and decisions matter.
         </Description>
 
@@ -69,8 +69,8 @@ const Subheading = styled.h3`
 
   @media (min-width: 768px) {
     font-size: 1.2rem;
-    margin-bottom: 8rem;
-    margin-top: 5rem;
+    margin-bottom: 10rem;
+    margin-top: 12rem;
   }
 `;
 
@@ -107,10 +107,10 @@ const Title = styled.h1`
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 1.2;
     margin-top: 15rem;
-    margin-bottom: 25rem;
+    margin-bottom: 20rem;
   }
 `;
 
@@ -123,7 +123,7 @@ const Name = styled.h2`
   font-weight: 550;
 
   @media (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 1.3;
   }
 `;
@@ -149,7 +149,7 @@ const Description = styled.p`
   font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     margin-top: 1rem;
     margin-bottom: 2rem;

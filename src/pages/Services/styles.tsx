@@ -59,7 +59,7 @@ export const Subheading = styled.h3`
   padding-bottom: 0.6rem;
 
   @media (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     margin-top: 6rem;
   }

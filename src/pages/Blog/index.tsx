@@ -76,12 +76,26 @@ const Description = styled.p`
   color: #0b0a0a;
   margin-bottom: 2rem;
   text-align: justify;
-  margin-left: 30%;
+  margin-left: 25%;
 
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 4rem;
+    margin-bottom: 0.8rem;
+  }
+`;
+
+const DescriptionBottom = styled.p`
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0b0a0a;
+  text-align: justify;
+  margin-left: 25%;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.6;
   }
 `;
 
@@ -117,7 +131,7 @@ const Blog = () => {
             src={`${process.env.PUBLIC_URL}/images/ball.jpg`}
             alt="Blog Header"
             style={{
-              width: "60%",
+              width: "40%",
               height: "auto",
               borderRadius: "6px",
               marginBottom: "1.5rem",
@@ -129,9 +143,12 @@ const Blog = () => {
             <Title>The Coach's Notebook</Title>
             <Line />
             <Description>
-              A collection of reflections drawn from my work <br></br> with
-              clients –<br></br> and from my own journey.
+              Reflections on clarity, positioning, leadership,<br></br>and work
+              –
             </Description>
+            <DescriptionBottom>
+              drawn from my work with others, and my own journey.
+            </DescriptionBottom>
           </div>
           <Spacer />
         </BlogContainer>

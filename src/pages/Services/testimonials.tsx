@@ -44,7 +44,7 @@ const Testimonial = styled.div``;
 const Quote = styled.p`
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  line-height: 18px;
+  line-height: 22px;
   color: #0b0a0a;
   margin-bottom: 0;
   font-style: italic;

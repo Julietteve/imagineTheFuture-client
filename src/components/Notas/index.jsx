@@ -95,8 +95,8 @@ function Nota({ titulo, contenido }) {
         })}
 
         {/*  <Line /> */}
+        <Divider />
       </Container>
-      <Divider />
     </>
   );
 }
@@ -106,24 +106,24 @@ export default Nota;
 export const Container = styled.div`
   max-width: 700px;
   margin-right: 0;
-  margin-bottom: 80px;
-  margin-top: 120px;
+  margin-bottom: 100px;
+  margin-top: 100px;
   margin-left: 15%;
 `;
 
 export const Divider = styled.div`
   height: 0.5px;
   background-color: #f7e383;
-  margin-top: 60;
   margin-bottom: 100px;
-  width: 80px;
-  margin: 0 auto;
+  margin-top: 50px;
+  width: 120px;
 `;
 export const Titulo = styled.h1`
   font-family: "Tiempos", serif;
   font-size: 24px;
   margin-bottom: 16px;
   font-weight: bold;
+  padding-top: 50px;
 `;
 
 export const Subtitulo = styled.p`

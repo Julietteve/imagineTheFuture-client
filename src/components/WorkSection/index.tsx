@@ -9,7 +9,7 @@ const WorkSection: React.FC = () => {
     <Container ref={ref as any} $visible={isVisible}>
       <Content>
         <Title>How I Work</Title>
-        <Description style={{ marginBottom: "15rem" }}>
+        <Description style={{ marginBottom: "7rem" }}>
           My work brings together strategy, coaching, and organizational
           insight—
           <br></br>creating clarity and structure in moments of change, growth,
@@ -49,8 +49,8 @@ const WorkSection: React.FC = () => {
             evolve — <br></br> ensuring strategy, people, and execution remain
             aligned through change.
           </Text>
+          <Line></Line>
         </Block>
-        <Line></Line>
         <TextBottom>
           Over the past decade, I have partnered with professionals<br></br> and
           leaders across sectors, geographies, and career stages.
@@ -107,7 +107,7 @@ const Title = styled.h2`
     font-size: 3.5rem;
     line-height: 1.3;
     margin-bottom: 8rem;
-    margin-top: 25rem;
+    margin-top: 15rem;
   }
 `;
 
@@ -129,7 +129,7 @@ const Block = styled.div`
 
   @media (min-width: 768px) {
     margin-bottom: 5rem;
-    margin-top: 10rem;
+    margin-top: 3rem;
   }
 `;
 

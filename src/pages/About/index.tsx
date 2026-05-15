@@ -65,7 +65,7 @@ const About = () => {
                     Lima, Montevideo, <br></br>and New York.
                   </Paragraph>
 
-                  <Paragraph>
+                  <Paragraph style={{ marginBottom: "20px" }}>
                     I have lived and worked across five continents, and traveled
                     to more than <br></br> 50 countries — experiences that{" "}
                     <br></br>
@@ -79,7 +79,7 @@ const About = () => {
                     sectors.
                   </Paragraph>
 
-                  <Paragraph>
+                  <Paragraph style={{ marginBottom: "20px" }}>
                     In senior operational and people <br></br>leadership roles,
                     I have established international operations from <br></br>{" "}
                     the ground up and contributed to strategic direction through
@@ -101,7 +101,7 @@ const About = () => {
                     <br></br>
                     institutions.
                   </Paragraph>
-                  <Paragraph>
+                  <Paragraph style={{ marginTop: "40px" }}>
                     Beyond the work, I remain deeply <br></br>interested in the
                     interplay between<br></br> structure and creativity — and in
                     how

@@ -47,7 +47,7 @@ const Container = styled.section<{ $visible: boolean }>`
 
   @media (min-width: 768px) {
     padding: 5rem;
-    magin-top: 5rem;
+    margin-top: 1rem;
   }
 `;
 
@@ -106,7 +106,7 @@ const CTAButton = styled.a`
   font-weight: 600;
 
   @media (min-width: 768px) {
-    font-size: 18px;
+    font-size: 22px;
   }
 `;
 

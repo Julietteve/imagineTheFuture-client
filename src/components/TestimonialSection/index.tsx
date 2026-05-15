@@ -24,10 +24,9 @@ const TestimonialsSection: React.FC = () => {
 
           <Testimonial>
             <Quote>
-              “Inés brings a rare combination of strategic insight<br></br> and
-              practical judgment. She creates the space to<br></br> think,
-              challenge assumptions, and move forward<br></br> with clarity and
-              confidence. ”
+              “Inés brings a rare combination of strategic insight and practical
+              judgment. She creates the space to think, challenge assumptions,
+              <br></br>and move forward with clarity and confidence. ”
             </Quote>
             <Author>Senior Executive, IBM</Author>
           </Testimonial>
@@ -119,7 +118,7 @@ const Quote = styled.p`
   margin-bottom: 0;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 35px;
     text-align: center;
     margin-top: 2rem;

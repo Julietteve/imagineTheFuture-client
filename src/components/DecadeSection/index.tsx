@@ -13,7 +13,7 @@ const DecadeSection: React.FC = () => {
           <Text>A decade of independent practice —</Text>
           <Description>
             built on a career partnering with leaders<br></br> and organizations
-            through growth, change, and transformation.
+            through growth, change, <br></br> and transformation.
           </Description>
         </Content>
       </Container>
@@ -29,9 +29,9 @@ const Container = styled.section<{ $visible: boolean }>`
   justify-content: center;
   align-items: center;
   padding: 4rem;
-  padding-top: 7%;
+  padding-top: 5%;
   padding-bottom: 7%;
-  margin-bottom: 18%;
+  margin-bottom: 5%;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
@@ -66,7 +66,7 @@ const Description = styled.p`
     font-size: 1.1rem;
     line-height: 30px;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 0%;
   }
 `;
 
@@ -105,7 +105,7 @@ const CTAButton = styled(Link)`
 const Text = styled.p`
   font-family: "Tiempos", serif;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 34px;
   text-align: center;
 `;
