@@ -9,7 +9,7 @@ const WorkSection: React.FC = () => {
     <Container ref={ref as any} $visible={isVisible}>
       <Content>
         <Title>How I Work</Title>
-        <Description style={{ marginBottom: "7rem" }}>
+        <Description style={{ marginBottom: "3rem" }}>
           My work brings together strategy, coaching, and organizational
           insight—
           <br></br>creating clarity and structure in moments of change, growth,
@@ -106,8 +106,7 @@ const Title = styled.h2`
   @media (min-width: 768px) {
     font-size: 3.5rem;
     line-height: 1.3;
-    margin-bottom: 8rem;
-    margin-top: 15rem;
+    padding-block: clamp(10rem, 12vw, 12rem);
   }
 `;
 
@@ -197,9 +196,9 @@ const TextBottom = styled.p`
   margin-bottom: 1.5rem;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 30px;
-    margin-top: 6rem;
-    margin-bottom: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
   }
 `;

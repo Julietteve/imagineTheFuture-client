@@ -49,7 +49,7 @@ const Title = styled.h1`
   text-align: center;
 
   @media (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
   }
 `;
@@ -76,10 +76,10 @@ const Description = styled.p`
   color: #0b0a0a;
   margin-bottom: 1rem;
   text-align: justify;
-  margin-left: 25%;
+  margin-left: 20%;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 0.6rem;
   }
@@ -91,10 +91,10 @@ const DescriptionBottom = styled.p`
   line-height: 1.6;
   color: #0b0a0a;
   text-align: justify;
-  margin-left: 25%;
+  margin-left: 20%;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
   }
 `;

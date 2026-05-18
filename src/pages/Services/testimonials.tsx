@@ -50,7 +50,7 @@ const Quote = styled.p`
   font-style: italic;
 
   @media (min-width: 768px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 

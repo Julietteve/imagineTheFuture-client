@@ -27,7 +27,7 @@ export const Data = styled.div`
 export const Title = styled.h5`
   font-family: "Tiempos", sans-serif;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #041414;
   margin-top: 2rem;
 `;
@@ -43,7 +43,7 @@ export const DataContainer = styled.div`
 export const Anchor = styled.a`
   color: grey;
   font-family: "Inter", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-decoration: none;
   padding-top: 12px;
 
@@ -53,7 +53,7 @@ export const Anchor = styled.a`
 `;
 
 export const Logo = styled.img`
-  width: 18%;
+  width: 22%;
   margin-left: 1.5rem;
   cursor: pointer;
 `;

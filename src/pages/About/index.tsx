@@ -61,43 +61,45 @@ const About = () => {
                   <TextMain>About</TextMain>
                   <Line></Line>
                   <Paragraph>
-                    I was born in La Paz, Bolivia, <br></br>and raised between
+                    I was born in La Paz, Bolivia, and raised <br></br> between
                     Lima, Montevideo, <br></br>and New York.
                   </Paragraph>
 
                   <Paragraph style={{ marginBottom: "20px" }}>
-                    I have lived and worked across five continents, and traveled
-                    to more than <br></br> 50 countries — experiences that{" "}
-                    <br></br>
-                    shaped my perspective and continue to inform how I think and
-                    advise.
+                    I have lived and worked across five<br></br> continents, and
+                    traveled to more than <br></br> 50 countries — experiences
+                    that shaped<br></br> my perspective and continue to inform{" "}
+                    <br></br>how I think and advise.
                   </Paragraph>
 
                   <Paragraph>
-                    My work has centered on building and shaping organizations
-                    across <br></br> corporate, nonprofit, and international
-                    sectors.
+                    My work has centered on building<br></br> and shaping
+                    organizations across corporate,<br></br> nonprofit, and
+                    international sectors.
                   </Paragraph>
 
                   <Paragraph style={{ marginBottom: "20px" }}>
                     In senior operational and people <br></br>leadership roles,
-                    I have established international operations from <br></br>{" "}
-                    the ground up and contributed to strategic direction through
-                    periods of growth, transformation, M&A activity,<br></br>{" "}
-                    and public offerings.
+                    I have established<br></br> international operations from
+                    the
+                    <br></br>ground up and contributed to strategic
+                    <br></br>
+                    direction through periods of growth,<br></br>
+                    transformation, M&A activity, and public <br></br>offerings.
                   </Paragraph>
 
                   <Paragraph>
-                    Over time, this work has brought me <br></br> to the
-                    intersection of leadership, talent, strategy, and
-                    organizational design — partnering with decision-makers{" "}
-                    <br></br>
-                    through complexity and change with a sustained focus on
-                    aligning strategy, <br></br> culture and impact.
+                    Over time, this work has brought me to <br></br>the
+                    intersection of leadership, talent,<br></br> strategy, and
+                    organizational design — <br></br>partnering with
+                    decision-makers <br></br>
+                    through complexity and change with a <br></br>sustained
+                    focus on aligning strategy, <br></br> culture and impact.
                   </Paragraph>
                   <Paragraph>
                     I bring perspective, structure, and a <br></br>sense of
-                    accountability to the choices that shape careers, teams, and
+                    accountability to the choices <br></br>that shape careers,
+                    teams, and
                     <br></br>
                     institutions.
                   </Paragraph>
@@ -111,7 +113,8 @@ const About = () => {
                   </Paragraph>
                   <Paragraph>
                     Travel, literature, painting, music, <br></br>working with
-                    clay, and long walks — including the Camino — continue to
+                    clay, and long walks — <br></br>including the Camino —
+                    continue to
                     <br></br>
                     shape how I observe, think, and act.
                   </Paragraph>

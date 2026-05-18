@@ -106,7 +106,7 @@ const CTAButton = styled.a`
   font-weight: 600;
 
   @media (min-width: 768px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 `;
 
@@ -119,7 +119,7 @@ const Text = styled.p`
   margin-top: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
   }
 `;

@@ -56,13 +56,13 @@ export const ColDiv = styled.div`
   padding: 2rem;
 `;
 export const ProfileImage = styled.img`
-  width: 95%;
-  max-width: 400px;
+  width: 60%;
+  max-width: 300px;
   height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   @media (min-width: 768px) {
-    width: 100%;
+    width: 90%;
     max-width: 500px;
   }
 `;
@@ -75,7 +75,7 @@ export const ImageContainer = styled.div`
   padding: 1rem;
 
   @media (min-width: 768px) {
-    min-height: 400px;
+    min-height: 300px;
     padding: 1.5rem 1rem 1.5rem 2rem;
     margin-top: 8rem;
   }
@@ -98,7 +98,7 @@ export const Paragraph = styled.p`
   color: #0b0a0a;
 
   @media (min-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 2rem;
     margin-bottom: 0.5rem;
   }

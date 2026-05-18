@@ -69,8 +69,7 @@ const Subheading = styled.h3`
 
   @media (min-width: 768px) {
     font-size: 1.2rem;
-    margin-bottom: 10rem;
-    margin-top: 12rem;
+    padding-block: clamp(6rem, 9vw, 9rem);
   }
 `;
 
@@ -96,7 +95,6 @@ const SubheadingGroup = styled.div`
 const NameRoleGroup = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 `;
 
 const Title = styled.h1`
@@ -107,10 +105,9 @@ const Title = styled.h1`
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 4.5rem;
+    font-size: 4.6rem;
     line-height: 1.2;
-    margin-top: 15rem;
-    margin-bottom: 20rem;
+    padding-block: clamp(15rem, 12vw, 12rem);
   }
 `;
 

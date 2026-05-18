@@ -194,7 +194,7 @@ const Services = () => {
               The starting point is always shaped by the situation — <br></br>
               because no two individuals or organizations face the same context.
             </TextLine>
-            <div style={{ marginTop: "25rem", marginBottom: "5rem" }}>
+            <div style={{ marginTop: "15rem", marginBottom: "5rem" }}>
               <HeadText>Supporting tools</HeadText>
               <LineText>
                 Depending on the engagement, the work may incorporate structured

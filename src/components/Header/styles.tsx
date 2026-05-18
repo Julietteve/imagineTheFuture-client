@@ -17,8 +17,8 @@ export const MainContainer = styled.div`
   }
 `;
 export const MainLogoCircle = styled(LinkIcon)`
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: #fff;
   color: #062e64;
   border: #062e64 1px solid;
@@ -27,7 +27,7 @@ export const MainLogoCircle = styled(LinkIcon)`
   align-items: center;
   display: flex;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   span {
     text-align: center;
 
@@ -44,7 +44,7 @@ export const If = styled.span``;
 export const NavIcon = styled(LinkIcon)`
   font-family: "Tiempos", sans-serif;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   color: #0b0a0a;
   padding-left: 10px;

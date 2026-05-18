@@ -70,8 +70,8 @@ export const Block = styled.div`
   margin-top: 2rem;
 
   @media (min-width: 768px) {
-    margin-bottom: 10rem;
-    margin-top: 15rem;
+    margin-bottom: 8rem;
+    margin-top: 10rem;
   }
 `;
 
@@ -86,7 +86,7 @@ export const Subtitle = styled.h3`
   @media (min-width: 768px) {
     font-size: 2rem;
     line-height: 30px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
@@ -97,7 +97,7 @@ export const Text = styled.p`
   color: #0b0a0a;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 1.1rem;
     line-height: 30px;
   }
 `;
@@ -111,7 +111,7 @@ export const TextLine = styled.p`
   margin-top: 1.5rem;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -144,7 +144,7 @@ export const TextMain = styled.h2`
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 0rem;
   }
 `;

@@ -106,9 +106,9 @@ export default Nota;
 export const Container = styled.div`
   max-width: 700px;
   margin-right: 0;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  margin-left: 15%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-left: 25%;
 `;
 
 export const Divider = styled.div`
@@ -120,35 +120,34 @@ export const Divider = styled.div`
 `;
 export const Titulo = styled.h1`
   font-family: "Tiempos", serif;
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 16px;
   font-weight: bold;
-  padding-top: 50px;
 `;
 
 export const Subtitulo = styled.p`
   font-family: "Inter", sans-serif;
   font-weight: regular;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 44px;
 `;
 
 export const Parrafo = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 12px;
 `;
 
 export const ParrafoBloque = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 52px;
 `;
 
 export const ParrafoGiro = styled.p`
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 32px;
   margin-top: 52px;
 `;
@@ -156,34 +155,34 @@ export const ParrafoGiro = styled.p`
 export const ParrafoReflexivo = styled.p`
   font-family: "Inter", sans-serif;
   font-weight: regular;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 40px;
 `;
 
 export const Insight = styled.p`
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 48px;
 `;
 
 export const CierreBold = styled.p`
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 52px;
 `;
 
 export const CierreRegular = styled.p`
   font-family: "Inter", sans-serif;
   font-weight: regular;
-  font-size: 16px;
+  font-size: 18px;
 `;
 
 export const Saeta = styled.span`
   font-family: "Tiempos", serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: #111;
   display: inline;
 `;

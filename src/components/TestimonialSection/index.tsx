@@ -45,8 +45,8 @@ const Container = styled.section<{ $visible: boolean }>`
   align-items: center;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 6rem;
-  margin-bottom: 20%;
+  margin-top: 1rem;
+  margin-bottom: 15%;
 
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
