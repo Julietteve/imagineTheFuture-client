@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { NavLink as LinkIcon } from "react-router-dom";
 
 export const MainContainer = styled.div`
-  width: 65%;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1.2rem;
@@ -17,8 +18,14 @@ export const MainContainer = styled.div`
   }
 `;
 export const MainLogoCircle = styled(LinkIcon)`
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1;
   background-color: #fff;
   color: #062e64;
   border: #062e64 1px solid;
@@ -27,7 +34,7 @@ export const MainLogoCircle = styled(LinkIcon)`
   align-items: center;
   display: flex;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   span {
     text-align: center;
 
@@ -39,7 +46,12 @@ export const MainLogoCircle = styled(LinkIcon)`
     color: #fff;
   }
 `;
-export const If = styled.span``;
+export const If = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+`;
 
 export const NavIcon = styled(LinkIcon)`
   font-family: "Tiempos", sans-serif;

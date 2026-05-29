@@ -11,17 +11,21 @@ const Header = () => {
   return (
     <div
       style={{
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
         paddingTop: "1.5rem",
+        paddingBottom: "5rem",
       }}
     >
       <MainContainer>
         <MainLogoCircle to="/">
           <span>if</span>
         </MainLogoCircle>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+          }}
+        >
           <NavIcon to="/about"> About </NavIcon>
           <NavIcon to="/services"> Services </NavIcon>
           <NavIcon to="/coach's-Notebook"> Coach's Notebook </NavIcon>

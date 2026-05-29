@@ -13,6 +13,8 @@ import {
   Blog,
 } from "./pages";
 import Tiempos from "./assets/fonts/Tiempos-Regular.otf";
+import { PageFrame } from "./components/PageFrame";
+import Footer from "./components/Footer";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -56,16 +58,19 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/:id" element={<ServiceDetail />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/coach's-Notebook" element={<Blog />} />
-      </Routes>
+      <PageFrame>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/:id" element={<ServiceDetail />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/coach's-Notebook" element={<Blog />} />
+        </Routes>
+      </PageFrame>
+      <Footer />
     </>
   );
 }

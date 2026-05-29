@@ -55,17 +55,7 @@ export const ColDiv = styled.div`
   flex-direction: column;
   padding: 2rem;
 `;
-export const ProfileImage = styled.img`
-  width: 60%;
-  max-width: 300px;
-  height: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  @media (min-width: 768px) {
-    width: 90%;
-    max-width: 500px;
-  }
-`;
+export const ProfileImage = styled.img``;
 
 export const ImageContainer = styled.div`
   height: 100%;

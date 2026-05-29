@@ -62,12 +62,7 @@ const WorkSection: React.FC = () => {
 
 export default WorkSection;
 
-const Container = styled.section<{ $visible: boolean }>`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-`;
+const Container = styled.section<{ $visible: boolean }>``;
 
 const Description = styled.p`
   font-size: 0.7rem;
@@ -84,14 +79,12 @@ const Description = styled.p`
   }
 `;
 const Content = styled.div`
-  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
 
   @media (min-width: 768px) {
-    width: 65%;
     padding: 0;
   }
 `;
@@ -127,8 +120,8 @@ const Block = styled.div`
   margin-top: 2rem;
 
   @media (min-width: 768px) {
-    margin-bottom: 5rem;
-    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
   }
 `;
 
@@ -178,7 +171,7 @@ const SectionDivider = styled.div`
 `;
 
 const Line = styled.div`
-  width: 60px;
+  width: 90px;
   height: 2px;
   background-color: #f7e383;
   margin-bottom: 2rem;

@@ -24,7 +24,7 @@ const DecadeSection: React.FC = () => {
 export default DecadeSection;
 
 const Container = styled.section<{ $visible: boolean }>`
-  background-color: #fafafa;
+  background-color: #fffdfd;
   display: flex;
   justify-content: center;
   align-items: center;

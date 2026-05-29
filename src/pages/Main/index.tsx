@@ -12,13 +12,7 @@ import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 
 // Componente para controlar márgenes de toda la página
-const PageWrapper = styled.div`
-  width: 100%;
-  max-width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-`;
+const PageWrapper = styled.div``;
 
 const Main = () => {
   const [loading, setLoading] = useState(false);
@@ -54,7 +48,6 @@ const Main = () => {
             showButton={false}
             text="In moments of transition, direction, or complex decisions."
           ></CTA>
-          <Footer showTopDivider={true} />
         </>
       )}
     </PageWrapper>

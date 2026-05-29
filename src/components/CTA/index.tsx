@@ -34,9 +34,6 @@ const Container = styled.section<{ $visible: boolean }>`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem 0.8rem;
-  margin-left: 10%;
-
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
     $visible ? "translateY(0px)" : "translateY(40px)"};
@@ -46,8 +43,7 @@ const Container = styled.section<{ $visible: boolean }>`
     transform 0.9s ease-out;
 
   @media (min-width: 768px) {
-    padding: 5rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 `;
 

@@ -43,8 +43,6 @@ const Container = styled.section<{ $visible: boolean }>`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 15%;
-  margin-right: 15%;
   margin-top: 1rem;
   margin-bottom: 15%;
 
@@ -60,14 +58,12 @@ const Container = styled.section<{ $visible: boolean }>`
 const Content = styled.div`
   margin-top: 2rem;
   margin-bottom: 2rem;
-  max-width: 900px;
-  width: 100%;
+
   display: flex;
   flex-direction: column;
   gap: 3rem;
 
   @media (min-width: 1024px) {
-    max-width: 1200px;
   }
 `;
 

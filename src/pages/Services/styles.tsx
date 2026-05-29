@@ -42,7 +42,7 @@ export const Line = styled.div`
   height: 2px;
   background-color: #b7b7b7;
   margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.6rem;
   @media (min-width: 768px) {
   }
 `;
@@ -71,7 +71,7 @@ export const Block = styled.div`
 
   @media (min-width: 768px) {
     margin-bottom: 8rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 `;
 
@@ -132,16 +132,13 @@ export const Container = styled.section<{ $visible: boolean }>`
     transform 0.8s ease-out;
 `;
 
-export const Content = styled.div`
-  width: 70%;
-  margin: 0 auto;
-`;
+export const Content = styled.div``;
 
 export const TextMain = styled.h2`
   font-family: "Tiempos", serif;
   font-size: 2.5rem;
   color: #0b0a0a;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 
   @media (min-width: 768px) {
     font-size: 3.5rem;

@@ -45,12 +45,12 @@ const Quote = styled.p`
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 22px;
-  color: #0b0a0a;
+  color: #303030;
   margin-bottom: 0;
   font-style: italic;
 
   @media (min-width: 768px) {
-    font-size: 13px;
+    font-size: 12px;
   }
 `;
 

@@ -195,12 +195,19 @@ const Services = () => {
               because no two individuals or organizations face the same context.
             </TextLine>
             <div style={{ marginTop: "15rem", marginBottom: "5rem" }}>
-              <HeadText>Supporting tools</HeadText>
+              <HeadText>Supporting Tools & Frameworks</HeadText>
               <LineText>
                 Depending on the engagement, the work may incorporate structured
-                reflection, <br></br>selected frameworks, and targeted tools —
-                <br></br>to deepen insight and support practical
-                decision-making.
+                reflection, <br />
+                selected frameworks, and targeted tools —
+                <br />
+                to deepen insight and support practical decision-making.
+                <StyledList>
+                  <li>Values & leadership style clarification</li>
+                  <li>Executive positioning and narrative development</li>
+                  <li>Interview frameworks and storytelling</li>
+                  <li>Assessments and structured reflection tools</li>
+                </StyledList>
               </LineText>
             </div>
           </div>
@@ -209,9 +216,36 @@ const Services = () => {
           text={`If your organization — or you — are navigating change or growth`}
         ></CTA>
       </PageWrapper>
-      <Footer />
     </>
   );
 };
+
+// Styled component for the vertical list
+const StyledList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  letter-spacing: 0.01em;
+
+  li {
+    position: relative;
+    padding-left: 1.5em;
+    line-height: 1.5;
+  }
+  li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #f7e383;
+    font-size: 1rem;
+    top: 0;
+  }
+`;
 
 export default Services;

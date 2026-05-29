@@ -64,7 +64,6 @@ const Contact = () => {
               </CTAButton>
             </ContactContent>
           </ContactContainer>
-          <Footer />
         </>
       )}
     </>

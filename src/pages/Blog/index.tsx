@@ -6,13 +6,7 @@ import Nota from "../../components/Notas";
 import { notasList } from "../../components/Notas/notesList";
 import CTA from "../../components/CTA";
 
-const PageWrapper = styled.div`
-  width: 100%;
-  max-width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-`;
+const PageWrapper = styled.div``;
 
 const NotaWrapper = styled.div<{ $isEven: boolean }>`
   border-radius: 12px;
@@ -46,7 +40,6 @@ const Title = styled.h1`
   font-size: 1.4rem;
   color: #0b0a0a;
   margin-bottom: 0.8rem;
-  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 3rem;
@@ -75,8 +68,6 @@ const Description = styled.p`
   line-height: 1.6;
   color: #0b0a0a;
   margin-bottom: 1rem;
-  text-align: justify;
-  margin-left: 20%;
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -90,8 +81,8 @@ const DescriptionBottom = styled.p`
   font-size: 14px;
   line-height: 1.6;
   color: #0b0a0a;
-  text-align: justify;
-  margin-left: 20%;
+  text-align: center;
+  margin-left: 0;
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -131,7 +122,7 @@ const Blog = () => {
             src={`${process.env.PUBLIC_URL}/images/ball.jpg`}
             alt="Blog Header"
             style={{
-              width: "32%",
+              width: "45%",
               height: "auto",
               borderRadius: "6px",
               marginBottom: "1.5rem",
@@ -139,15 +130,21 @@ const Blog = () => {
               display: "block",
             }}
           />
-          <div style={{ textAlign: "center" }}>
-            <Title>The Coach's Notebook</Title>
-            <Line />
-            <Description>
-              Reflections on clarity, positioning, leadership,and work –
-            </Description>
-            <DescriptionBottom>
-              drawn from my work with others, and my own journey.
-            </DescriptionBottom>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              style={{
+                textAlign: "left",
+                marginBottom: "8rem",
+              }}
+            >
+              <Title>The Coach's Notebook</Title>
+              <Line />
+              <Description>
+                Reflections on clarity, positioning, leadership, and work-{" "}
+                <br />
+                drawn from my work with others, and my own journey.
+              </Description>
+            </div>
           </div>
           <Spacer />
         </BlogContainer>
@@ -158,7 +155,6 @@ const Blog = () => {
       <div style={{ marginTop: 180 }}>
         <CTA text="If this resonates — we can start a conversation."></CTA>
       </div>
-      <Footer />
     </>
   );
 };

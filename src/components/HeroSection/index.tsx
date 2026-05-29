@@ -46,11 +46,6 @@ export default HeroSection;
 /* ================= STYLES ================= */
 
 const Container = styled.section<{ $visible: boolean }>`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
     $visible ? "translateY(0px)" : "translateY(40px)"};
@@ -68,20 +63,17 @@ const Subheading = styled.h3`
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-block: clamp(6rem, 9vw, 9rem);
   }
 `;
 
 const Content = styled.div`
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
 
   @media (min-width: 768px) {
-    width: 65%;
     padding: 0;
   }
 `;
@@ -107,7 +99,7 @@ const Title = styled.h1`
   @media (min-width: 768px) {
     font-size: 4.6rem;
     line-height: 1.2;
-    padding-block: clamp(15rem, 12vw, 12rem);
+    padding-block: clamp(8rem, 8vw, 8rem);
   }
 `;
 
@@ -126,7 +118,7 @@ const Name = styled.h2`
 `;
 
 const Role = styled.p`
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   color: #0b0a0a;
   margin-bottom: 0.6rem;
@@ -146,8 +138,8 @@ const Description = styled.p`
   font-family: "Inter", sans-serif;
 
   @media (min-width: 768px) {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 35px;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }

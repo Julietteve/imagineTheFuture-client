@@ -7,7 +7,7 @@ export const FooterContainer = styled.div<{ $showTopDivider?: boolean }>`
   flex-direction: row;
   width: 65%;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 8rem;
   ${({ $showTopDivider }) =>
     $showTopDivider && `border-top: 1px solid #e5e5e5;`}
 

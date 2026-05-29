@@ -103,13 +103,7 @@ function Nota({ titulo, contenido }) {
 
 export default Nota;
 
-export const Container = styled.div`
-  max-width: 700px;
-  margin-right: 0;
-  margin-bottom: 60px;
-  margin-top: 60px;
-  margin-left: 25%;
-`;
+export const Container = styled.div``;
 
 export const Divider = styled.div`
   height: 0.5px;

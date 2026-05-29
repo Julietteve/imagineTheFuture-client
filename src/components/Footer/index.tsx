@@ -20,7 +20,7 @@ interface FooterProps {
 let styleLink = {
   color: "grey",
   fontFamily: "Inter, sans-serif",
-  fontSize: "0.8rem",
+  fontSize: "0.9rem",
   textDecoration: "none",
   paddingTop: "12px",
 };
