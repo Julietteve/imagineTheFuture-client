@@ -104,8 +104,11 @@ const CTAButton = styled(Link)`
 
 const Text = styled.p`
   font-family: "Tiempos", serif;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 34px;
   text-align: center;
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
+  }
 `;

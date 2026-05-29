@@ -56,14 +56,15 @@ const Container = styled.section<{ $visible: boolean }>`
 `;
 
 const Content = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-left: 5%;
 
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  @media (min-width: 768px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
-  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 `;
 
@@ -108,13 +109,14 @@ const Testimonial = styled.div`
 
 const Quote = styled.p`
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 20px;
   color: #0b0a0a;
   margin-bottom: 0;
+  text-align: center;
 
   @media (min-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 35px;
     text-align: center;
     margin-top: 2rem;
@@ -129,6 +131,7 @@ const Author = styled.p`
   line-height: 18px;
   color: #2c2c2c;
   font-weight: 500;
+  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 16px;

@@ -77,11 +77,11 @@ export const Block = styled.div`
 
 export const Subtitle = styled.h3`
   font-family: "Tiempos", serif;
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 0.9rem;
+  line-height: 10px;
   color: #000;
   font-weight: 600;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.3rem;
 
   @media (min-width: 768px) {
     font-size: 2rem;

@@ -28,7 +28,7 @@ export const ContactContent = styled.div`
 
 export const ContactTitle = styled.h1`
   font-family: "Inter", serif;
-  font-size: 0.64rem;
+  font-size: 0.9rem;
   color: #2c2c2c;
   line-height: 1.6;
   margin-bottom: 0.8rem;
@@ -82,7 +82,7 @@ export const CTAButton = styled.a`
   color: #000;
   border: none;
   background-color: transparent;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-family: "Inter", serif;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -114,7 +114,7 @@ export const ContactLink = styled.a`
 
   padding-bottom: 2.5rem;
   font-family: "Tiempos", serif;
-  font-size: 0.56rem;
+  font-size: 0.9rem;
   color: #0b0a0a;
   transition: color 0.3s ease;
   font-weight: 800;
@@ -178,7 +178,7 @@ export const SocialLink = styled.a`
 `;
 
 export const Logo = styled.img`
-  width: 40%;
+  width: 50%;
   margin-bottom: 2rem;
   cursor: pointer;
 

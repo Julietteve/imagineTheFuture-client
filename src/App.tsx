@@ -1,5 +1,5 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import {
@@ -54,21 +54,36 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const ContentWrapper = styled.div`
+  position: relative;
+  z-index: 1;
+
+  margin-left: 18vw;
+  margin-right: 18vw;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    padding-inline: 20px;
+  }
+`;
+
 function App() {
   return (
     <>
       <GlobalStyle />
       <PageFrame>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:id" element={<ServiceDetail />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/coach's-Notebook" element={<Blog />} />
-        </Routes>
+        <ContentWrapper>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/:id" element={<ServiceDetail />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/coach's-Notebook" element={<Blog />} />
+          </Routes>
+        </ContentWrapper>
       </PageFrame>
       <Footer />
     </>

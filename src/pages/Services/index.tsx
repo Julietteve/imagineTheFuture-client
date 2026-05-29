@@ -246,6 +246,18 @@ const StyledList = styled.ul`
     font-size: 1rem;
     top: 0;
   }
+
+  @media (max-width: 600px) {
+    font-size: 0.92rem;
+    gap: 0.7rem;
+    margin: 1.2rem 0 0 0;
+    li {
+      padding-left: 1em;
+    }
+    li::before {
+      font-size: 0.92rem;
+    }
+  }
 `;
 
 export default Services;

@@ -60,7 +60,8 @@ const Subheading = styled.h3`
   font-size: 0.8rem;
   color: #0b0a0a;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
@@ -91,10 +92,10 @@ const NameRoleGroup = styled.div`
 
 const Title = styled.h1`
   font-family: "Tiempos", serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.2;
   color: #71706d;
-  margin-bottom: 1rem;
+  margin-bottom: 6rem;
 
   @media (min-width: 768px) {
     font-size: 4.6rem;

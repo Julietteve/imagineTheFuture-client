@@ -49,6 +49,11 @@ const Container = styled.section<{ $visible: boolean }>`
 
 const Content = styled.div`
   text-align: left;
+  margin-left: 10%;
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-left: 0%;
+  }
 `;
 
 const Title = styled.h2`
@@ -91,7 +96,7 @@ const CTAButton = styled.a`
   color: #000;
   border: none;
   background-color: transparent;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-family: "Inter", serif;
   cursor: pointer;
   transition: color 0.3s ease;

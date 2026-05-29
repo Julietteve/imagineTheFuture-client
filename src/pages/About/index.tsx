@@ -13,6 +13,7 @@ const AboutContainer = styled.div``;
 const Columns = styled.div`
   display: flex;
   align-items: flex-start;
+  margin-left: 10%;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -21,10 +22,18 @@ const Columns = styled.div`
 
 const LeftColumn = styled.div`
   flex: 1;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const RightColumn = styled.div`
   flex: 1;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const About = () => {

@@ -54,6 +54,11 @@ export const ColDiv = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 export const ProfileImage = styled.img``;
 

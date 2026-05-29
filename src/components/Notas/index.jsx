@@ -103,7 +103,18 @@ function Nota({ titulo, contenido }) {
 
 export default Nota;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-left: 5%;
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+`;
 
 export const Divider = styled.div`
   height: 0.5px;
@@ -111,12 +122,23 @@ export const Divider = styled.div`
   margin-bottom: 100px;
   margin-top: 50px;
   width: 120px;
+
+  @media (max-width: 600px) {
+    width: 60px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
 `;
 export const Titulo = styled.h1`
   font-family: "Tiempos", serif;
   font-size: 26px;
   margin-bottom: 16px;
   font-weight: bold;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const Subtitulo = styled.p`
@@ -124,18 +146,33 @@ export const Subtitulo = styled.p`
   font-weight: regular;
   font-size: 18px;
   margin-bottom: 44px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const Parrafo = styled.p`
   font-family: "Inter", sans-serif;
   font-size: 18px;
   margin-bottom: 12px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
 `;
 
 export const ParrafoBloque = styled.p`
   font-family: "Inter", sans-serif;
   font-size: 18px;
   margin-bottom: 52px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const ParrafoGiro = styled.p`
@@ -144,6 +181,12 @@ export const ParrafoGiro = styled.p`
   font-size: 18px;
   margin-bottom: 32px;
   margin-top: 52px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
 `;
 
 export const ParrafoReflexivo = styled.p`
@@ -151,6 +194,11 @@ export const ParrafoReflexivo = styled.p`
   font-weight: regular;
   font-size: 18px;
   margin-bottom: 40px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
 `;
 
 export const Insight = styled.p`
@@ -158,6 +206,11 @@ export const Insight = styled.p`
   font-weight: bold;
   font-size: 18px;
   margin-top: 48px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+    margin-top: 24px;
+  }
 `;
 
 export const CierreBold = styled.p`
@@ -165,12 +218,21 @@ export const CierreBold = styled.p`
   font-weight: bold;
   font-size: 18px;
   margin-top: 52px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+    margin-top: 24px;
+  }
 `;
 
 export const CierreRegular = styled.p`
   font-family: "Inter", sans-serif;
   font-weight: regular;
   font-size: 18px;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
 `;
 
 export const Saeta = styled.span`
@@ -179,4 +241,8 @@ export const Saeta = styled.span`
   font-size: 18px;
   color: #111;
   display: inline;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
 `;

@@ -117,7 +117,7 @@ const Subheading = styled.h3`
 
 const Block = styled.div`
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: rem;
 
   @media (min-width: 768px) {
     margin-bottom: 4rem;

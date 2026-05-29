@@ -98,6 +98,15 @@ const Spacer = styled.div`
   }
 `;
 
+const SpacerDown = styled.div`
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-bottom: 8rem;
+  }
+`;
+
 const Blog = () => {
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -131,12 +140,7 @@ const Blog = () => {
             }}
           />
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <div
-              style={{
-                textAlign: "left",
-                marginBottom: "8rem",
-              }}
-            >
+            <SpacerDown>
               <Title>The Coach's Notebook</Title>
               <Line />
               <Description>
@@ -144,7 +148,7 @@ const Blog = () => {
                 <br />
                 drawn from my work with others, and my own journey.
               </Description>
-            </div>
+            </SpacerDown>
           </div>
           <Spacer />
         </BlogContainer>
