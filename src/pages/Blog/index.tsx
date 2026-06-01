@@ -144,7 +144,7 @@ const Blog = () => {
               <Title>The Coach's Notebook</Title>
               <Line />
               <Description>
-                Reflections on clarity, positioning, leadership, and work-{" "}
+                Reflections on clarity, positioning, leadership, and work —{" "}
                 <br />
                 drawn from my work with others, and my own journey.
               </Description>

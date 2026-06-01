@@ -64,7 +64,7 @@ const Subheading = styled.h3`
   margin-bottom: 5rem;
 
   @media (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     padding-block: clamp(6rem, 9vw, 9rem);
   }
 `;
