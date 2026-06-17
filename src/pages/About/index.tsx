@@ -34,7 +34,7 @@ const About = () => {
                     <div className='row'>
                         <div className='col-md-4 col-sm-12'>
                             <AboutMe>
-                                About Me.
+                                About Me...
                             </AboutMe>
                         </div>
                         <div className='col-md-8 col-sm-12'>
