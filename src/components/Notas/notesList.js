@@ -463,4 +463,56 @@ export const notasList = [
       },
     ],
   },
+  {
+    id: 8,
+    titulo: "Interviewing Is a Conversation",
+    contenido: [
+      {
+        tipo: "subtitulo",
+        text: "Most people approach interviewing as an \n evaluation ",
+      },
+      {
+        tipo: "parrafo",
+        text: "A test.",
+      },
+      {
+        tipo: "parrafo",
+        text: "A performance.",
+      },
+      {
+        tipo: "parrafo",
+        text: "A moment to prove themselves.",
+      },
+
+      { tipo: "giro", text: "And in part, it is." },
+
+      { tipo: "giro", text: "But it happens within a conversation." },
+
+      {
+        tipo: "parrafo",
+        text: "In some contexts, the process may include ",
+      },
+      {
+        tipo: "parrafoBloque",
+        text: "assessments, tasks, or presentations.",
+      },
+
+      {
+        tipo: "parrafo",
+        text: "These are part of the process.",
+      },
+
+      {
+        tipo: "parrafo",
+        text: "They do not define the interaction.",
+      },
+
+      { tipo: "cierreBold", text: "An interview is a conversation." },
+      {
+        tipo: "cierreRegular",
+        text: "The process is a series of conversations.",
+      },
+    ],
+  },
+  
 ];
